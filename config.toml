@@ -1,0 +1,4 @@
+baseURL = "https://zietlow.io/"
+languageCode = "en-us"
+title = "Zietlow personal blog"
+theme = "ananke"
