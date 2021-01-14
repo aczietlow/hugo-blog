@@ -1,5 +1,4 @@
 baseurl = "https://zietlow.io/"
-title = "Zietlow"
 Title = "Zietlow"
 author = "Chris Zietlow"
 copyright = "Copyright © 2008–2021, Chris Zietlow"
@@ -102,7 +101,7 @@ enforceDarkMode = false
 languageMenuName = "🌐"
 
 # Title separator, default to |.
-# titleSeparator = "|"
+titleSeparator = "|"
 
 # Enable or disable comment globally. Default to true.
 # comment = false
@@ -118,5 +117,5 @@ languageMenuName = "🌐"
 # customFonts = false # toggle to true if you want to use custom fonts only.
 
 # The year when ths website was created, this value is used in the copyright
-# notice of the foßoter.
+# notice of the footer.
 since = 2020
