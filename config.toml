@@ -1,5 +1,6 @@
 baseurl = "https://zietlow.io/"
-title = "Go to 11!"
+title = "Zietlow"
+Title = "Zietlow"
 author = "Chris Zietlow"
 copyright = "Copyright © 2008–2021, Chris Zietlow"
 # canonifyurls = true
