@@ -1,0 +1,17 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $caption := .Get "caption" -}}
+{{- $dimension := .Get "dimension" -}}
+{{ with $dimension }}
+{{ else }}
+    {{ $dimension = "1x1" }}
+{{ end }}
+
+<div class="gallery-item item-{{$dimension}}">
+    <img class="thumb placeholder" src="{{$src}}" data-src="{{$src}}" data-image="{{$src}}" data-title="{{$alt}}" alt="{{$alt}}">
+    {{ with $caption }}
+        <div class="caption"><span>$caption</span></div>
+    {{ end }}
+</div>
+
+
