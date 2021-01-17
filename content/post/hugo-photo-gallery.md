@@ -10,7 +10,6 @@ tags: [
 categories: [
   "Hugo"
 ]
-draft: true
 ---
 
 I typically spend my weekends shooting landscape photography or hacking away my newest side project.  Trying to start the new year off by killing two birds with one stone, I embarked to build a lightweight lightbox component into my fresh hugo blog.
