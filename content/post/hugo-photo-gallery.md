@@ -89,6 +89,6 @@ After some quick [Sass](https://github.com/aczietlow/hugo-blog/blob/master/asset
 
 {{< gallery >}}
   {{< gallery-item src="https://live.staticflickr.com/7901/47368926912_61a1122d76_k.jpg" alt="Glass Orb Photo by Chris Zietlow" caption="Charleston Battery Park" dimension="3x4" >}}
-  {{< gallery-item src="https://live.staticflickr.com/4855/45173560614_72ec13aecc_k.jpg" alt="Fall Shoot Photo by Chris Zietlow" dimension="4x3">}}
+  {{< gallery-item src="https://live.staticflickr.com/4855/45173560614_72ec13aecc_k.jpg" alt="Fall Shoot Photo by Chris Zietlow" caption="Abandoned railroad tracks" dimension="4x3">}}
   {{< gallery-item src="https://live.staticflickr.com/65535/48705742973_1a13a6f07c_k.jpg" alt="New Orlenes Photo by Chris Zietlow" dimension="4x3" caption="St Louis Cathedral in New Orlenes">}}
 {{< /gallery >}}
