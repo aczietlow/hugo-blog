@@ -1,7 +1,6 @@
 ---
 title: "Lightbox Gallery with Go Templates in Hugo"
-date: 2021-01-11T08:43:33-05:00
-draft: true
+date: 2021-01-17
 tags: [
   "Markdown",
   "hugo",
@@ -9,23 +8,24 @@ tags: [
   "css"
 ]
 categories: [
-  "themes"
+  "Hugo"
 ]
+draft: true
 ---
 
-I typically spend my weekends shooting landscape photography or hacking away my newest side project.  Trying to start the new year off by killing two birds with one stone, I embarked to enable a lightweight lightbox component into my fresh hugo blog.
+I typically spend my weekends shooting landscape photography or hacking away my newest side project.  Trying to start the new year off by killing two birds with one stone, I embarked to build a lightweight lightbox component into my fresh hugo blog.
 
-I wanted a reusable component, once complete I could quickly drop in any future blog post to share a new series of photos. Given that I choose Hugo based on the ease of writing content within Markdown, I didn't want to deviate to far from that paradigm. Not wanting to add markup with my markdown files, I quickly landed on implementing new *Shortcodes*.
+I wanted a reusable component, once complete I could quickly drop in any future blog post to share a new series of photos. Given that I chose Hugo based on the ease of writing content in Markdown, I didn't want to deviate from that paradigm. Not wanting to add complex markup with my markdown content files, I quickly landed on implementing new *Shortcodes*.
 
-*Shortcodes* within Hugo were designed for adding markup rich content within markdown without breaking the simplicity of markdown. Hugo actually ships with several simple yet common Shortcodes. E.g. If an author wanted to embed an youtube video they could simply use the following within their markdown.
+*Shortcodes* within Hugo were designed for adding markup rich content within markdown without breaking its simplicity. Hugo ships with several simple yet common Shortcodes right out of the box included a Shortcode for highlights, Twitter, Vimneo, and Youtube. E.g. if an author wanted to embed a youtube video they could simply use the following within their markdown.
 
 ```html
     {{</* youtube _X8NzH12INY */>}}
 ```
 
-To use Shortcodes Hugo will match the shortcode using the first word in within the snippet to match a corresponding template. All shortcode templates must be located within `layouts/shortcodes`. Parameters can follow the name, are space deliminated, and can be either name or positioned. So the following `{{</* foo bar baz */>}}` will load the template `templates/shortcodes/foo.html` and pass `bar` and `baz` as parameters to the template.
+Hugo will match the Shortcode using the first word in within the snippet to match with a corresponding template. All Shortcode templates must be located within `layouts/shortcodes`. Parameters can follow the name, are space delimited, and can be either name or positioned. So the following `{{</* foo bar baz */>}}` will load the template `templates/shortcodes/foo.html` and pass `bar` and `baz` as parameters to the template.
 
-I'll add a new template to match my gallery desires. I need the number of images added to a gallery to be variable, so I'll create a separate shortcode for the gallery item. I plan on nested the gallery item shortcode within the gallery. To access this child shortcode I'll use the `.Inner` variable.
+To start I'll add a new template to match my gallery markup I want rendered to the page. I need the number of images added to a gallery to be variable, so I'll create a separate Shortcode for the gallery item. I plan on nested the gallery item shortcode within the gallery. To access this child shortcode I'll use the provided `.Inner` variable within the gallery template I create.
 
 ```html
 <!--layouts/shortcodes/gallery.html-->
@@ -56,8 +56,6 @@ Next I'll add the html for the gallery items.
 ```
 
 Some decisions may start to become clear looking at the above template. I've decided to pass named parameters of "src", "alt", "caption", and "dimension" to the gallery items. This will allow me to control variations on the final rendered gallery from the content markdown files. Photo captions will be optional, and dimensions will have a default value of "1x1" if a value is not provided.
-
-
 
 No to add the newly created Shortcodes to a content post markdown file. 
 
