@@ -5,7 +5,7 @@ tags: [
   "Markdown",
   "hugo",
   "Go Templates",
-  "css"
+  "code"
 ]
 categories: [
   "Hugo"
