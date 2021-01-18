@@ -15,67 +15,67 @@
             <description>
                 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
             </description>
-            <custom_professional:prefix>
+            <prefix>
                 Mr.
-            </custom_professional:prefix>
-            <custom_professional:firstName>
+            </prefix>
+            <firstName>
                 Alex
-            </custom_professional:firstName>
-            <custom_professional:middleName>
+            </firstName>
+            <middleName>
                 mid
-            </custom_professional:middleName>
-            <custom_professional:lastName>
+            </middleName>
+            <lastName>
                 DeRito
-            </custom_professional:lastName>
-            <custom_professional:suffix>
+            </lastName>
+            <suffix>
                 suffix
-            </custom_professional:suffix>
-            <custom_professional:accreditation>
+            </suffix>
+            <accreditation>
                 accred
-            </custom_professional:accreditation>
-            <custom_professional:professionalType>
-            </custom_professional:professionalType>
-            <custom_professional:headshotImageUrl>
+            </accreditation>
+            <professionalType>
+            </professionalType>
+            <headshotImageUrl>
                 http://khlaw.docksal/sites/default/files/2020-12/jack-skellington.jpg
-            </custom_professional:headshotImageUrl>
-            <custom_professional:headshotImageAltText>
+            </headshotImageUrl>
+            <headshotImageAltText>
                 jack
-            </custom_professional:headshotImageAltText>
-            <custom_professional:barAdmissions>
+            </headshotImageAltText>
+            <barAdmissions>
                 1560, 34
-            </custom_professional:barAdmissions>
-            <custom_professional:offices>
+            </barAdmissions>
+            <offices>
                 61, 94
-            </custom_professional:offices>
-            <custom_professional:email>
+            </offices>
+            <email>
                 aderito+test@mindgrub.com
-            </custom_professional:email>
-            <custom_professional:phone>
+            </email>
+            <phone>
                 1232
-            </custom_professional:phone>
-            <custom_professional:phone2>
+            </phone>
+            <phone2>
                 1234
-            </custom_professional:phone2>
-            <custom_professional:fax>
+            </phone2>
+            <fax>
                 1231
-            </custom_professional:fax>
-            <custom_professional:fax2>
+            </fax>
+            <fax2>
                 1233
-            </custom_professional:fax2>
-            <custom_professional:education>
+            </fax2>
+            <education>
 
                 a:2:{i:0;a:4:{s:6:&quot;school&quot;;s:3:&quot;306&quot;;s:6:&quot;degree&quot;;s:10:&quot;BS Science&quot;;s:9:&quot;grad_year&quot;;s:4:&quot;2011&quot;;s:4:&quot;note&quot;;s:4:&quot;Note&quot;;}i:1;a:4:{s:6:&quot;school&quot;;s:3:&quot;274&quot;;s:6:&quot;degree&quot;;s:8:&quot;BS Stuff&quot;;s:9:&quot;grad_year&quot;;s:4:&quot;2012&quot;;s:4:&quot;note&quot;;s:7:&quot;Notes 2&quot;;}}
 
-            </custom_professional:education>
-            <custom_generic:metaTitle>
+            </education>
+            <metaTitle>
 
 
-            </custom_generic:metaTitle>
-            <custom_generic:metaDesc>
+            </metaTitle>
+            <metaDesc>
 
 
 
-            </custom_generic:metaDesc>
+            </metaDesc>
             <guid isPermaLink="false">
 
                 13593
