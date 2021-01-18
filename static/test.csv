@@ -1,2 +1,2 @@
-title,'link','description','prefix', 'firstName', 'middleMan', 'lastName', 'suffix', 'accreditation', 'headshotImageUrl', 'barAdmissions', 'offices', 'email', 'phone', 'fax', 'education'
+title,link,description,prefix,firstName,middleMan,lastName,suffix,accreditation,headshotImageUrl,barAdmissions,offices,email,phone,fax,education
 ALex Derito,http://khlaw.docksal/people/alex-derito,Test,Mr,Alex,Deriot,Derito,mr,accred,http://khlaw.docksal/sites/default/files/2020-12/jack-skellington.jpg,"1560, 34","61, 94",aderito+test@mindgrub.com,1234,1234,123
