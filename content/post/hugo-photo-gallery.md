@@ -1,6 +1,6 @@
 ---
 title: "Lightbox Gallery with Go Templates in Hugo"
-date: 2021-01-17
+date: 2021-01-18
 tags: [
   "Markdown",
   "hugo",
