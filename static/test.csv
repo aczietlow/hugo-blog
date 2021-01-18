@@ -1,2 +1,2 @@
-title,link,description,prefix,firstName,middleMan,lastName,suffix,accreditation,headshotImageUrl,barAdmissions,offices,email,phone,fax,education,personType,populatedOn
-ALex Derito,http://khlaw.docksal/people/alex-derito,Test,Mr,Alex,Deriot,Derito,mr,accred,https://zietlow.io/images/blogs/jackson.png,"1560, 34","61, 94",aderito+test@mindgrub.com,1234,1234,123,1,"Keller Heckman"
+title,link,description,prefix,firstName,middleMan,lastName,suffix,accreditation,headshotImageUrl,barAdmissions,offices,email,phone,fax,education,personType,populatedOn,personType2
+ALex Derito,http://khlaw.docksal/people/alex-derito,Test,Mr,Alex,Deriot,Derito,mr,accred,https://zietlow.io/images/blogs/jackson.png,"1560, 34","61, 94",aderito+test@mindgrub.com,1234,1234,123,1,"Keller Heckman","associate"
