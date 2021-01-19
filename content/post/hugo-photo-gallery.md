@@ -33,7 +33,7 @@ To start, I'll add a new template to match the gallery markup I want rendered to
 </div>
 ```
 
-Next I'll add the html for the gallery items.
+Next I'll add the template for the gallery items.
 
 ```html
 <!--layouts/shortcodes/gallery-item.html-->
