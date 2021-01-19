@@ -1,6 +1,8 @@
-# hugoBasicExample
+# Hugo Blog
 
-This repository offers an example site for [Hugo](https://gohugo.io/) and also it provides the default content for demos hosted on the [Hugo Themes Showcase](https://themes.gohugo.io/).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a5f117ab-4776-4515-a322-53a9b48c020b/deploy-status)](https://app.netlify.com/sites/fervent-wilson-b1c416/deploys)
+
+This repository offers an example site for [Hugo](https://gohugo.io/)
 
 # Using
 
