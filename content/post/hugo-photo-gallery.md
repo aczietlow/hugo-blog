@@ -14,9 +14,9 @@ categories: [
 
 I typically spend my weekends shooting landscape photography or hacking away my newest side project.  Trying to start the new year off by killing two birds with one stone, I embarked to build a lightweight lightbox component into my fresh hugo blog.
 
-I want a reusable component, that once complete will allow me to quickly drop it into a future blog post inorder share a new series of photos. Given that I chose Hugo based on the ease of writing content in Markdown, I didn't want to deviate from that paradigm. Not wanting to add complex markup with my markdown content files, I quickly landed on implementing new *Shortcodes*.
+I want a reusable component, that once complete will allow me to quickly drop it into a future blog post in order to share a new series of photos. Given that I chose Hugo based on the ease of writing content in Markdown, I didn't want to deviate from that paradigm. Not wanting to add complex markup with my markdown content files, I quickly landed on implementing new *Shortcodes*.
 
-*Shortcodes* within Hugo were designed for adding markup rich content within markdown without breaking its simplicity. Hugo ships with several simple, common Shortcodes including a Shortcode for highlights, Twitter, Vimneo, and Youtube embeds. Below is an example of the included Youtube shortcode.
+*Shortcodes* within Hugo were designed for adding markup rich content within markdown without breaking its simplicity. Hugo ships with several simple, common Shortcodes including a Shortcode for highlights, Twitter, Vimeo, and YouTube embeds. Below is an example of the included YouTube shortcode.
 
 ```html
     {{</* youtube _X8NzH12INY */>}}
@@ -66,7 +66,7 @@ Next I'll add the newly created Shortcodes to a content post markdown file.
 {{</* /gallery */>}}
 ```
 
-42 ms later when Hugo is done with a fresh site rebuild the newly added shortcode will render the following HTML.
+42 ms later, Hugo is done with a fresh site rebuild the newly added shortcode will render the following HTML.
 
 ```html
 <div class="gallery">
