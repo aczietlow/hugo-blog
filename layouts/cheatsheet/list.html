@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class="content">
+    <article>
+        <h1>{{ .Title }}</h1>
+    </article>
+    <div class="cheatsheets">
+        {{ range .Pages }}
+        <div class="cheatsheets__post">
+            <article class="card">
+                <section class="card__content">
+                    <h2 class="card__title"><a href="{{ .Permalink }}" class="link link_yank">{{ .Params.title }}</a></h2>
+                    {{ if .Params.teaser }}
+                    <p class="card__text">{{ truncate 320 .Params.teaser }}</p>
+                    {{ end }}
+                </section>
+            </article>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+{{ end }}
