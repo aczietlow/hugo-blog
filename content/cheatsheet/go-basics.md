@@ -12,13 +12,7 @@ teaser: "A brief teaser description to provide a lead in on content of the cheat
 codeLineNumbers: false
 ---
 
-
-## Introduction
-
-<!-- card -->
-To complete this showcase:
-
-{{< two-column>}}
+{{< three-column>}}
 
 {{<cheatsheet-section>}}
 ### Variables
@@ -44,6 +38,37 @@ fmt.Printf("%T\n", b)
 ```
 {{</ cheatsheet-section>}}
 
+
+
+
+{{< cheatsheet-section>}}
+### Functions
+
+function singature `func functionname(parametername type) returntype {`
+```go
+func addNum(a int, b int) int {
+  var sum = a + b
+  return sum
+}
+```
+{{</ cheatsheet-section>}}
+
+{{< cheatsheet-section>}}
+### hello world
+
+```go
+package main
+
+import (
+  "fmt"
+)
+
+func main() {
+  fmt.Printf("Hello, Chris.\n")
+}
+```
+
+{{</ cheatsheet-section>}}
 
 {{< cheatsheet-section>}}
 ### Composite Data Types
@@ -84,35 +109,6 @@ for index, value := range listX {
 //1 2
 //2 5
 //3 8
-```
-
-{{</ cheatsheet-section>}}
-
-{{< cheatsheet-section>}}
-### Functions
-
-function singature `func functionname(parametername type) returntype {`
-```go
-func addNum(a int, b int) int {
-  var sum = a + b
-  return sum
-}
-```
-{{</ cheatsheet-section>}}
-
-{{< cheatsheet-section>}}
-### hello world
-
-```go
-package main
-
-import (
-  "fmt"
-)
-
-func main() {
-  fmt.Printf("Hello, Chris.\n")
-}
 ```
 
 {{</ cheatsheet-section>}}
@@ -177,4 +173,4 @@ fmt.Println(realOdd)
 ```
 {{</ cheatsheet-section>}}
 
-{{< /two-column>}}
+{{< /three-column>}}
