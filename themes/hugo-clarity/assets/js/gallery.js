@@ -6,11 +6,9 @@ let images = [];
 let currentIndex = 0;
 let wasSwiping = false;
 
+
 $(() => {
     if ( $('.gallery').length) {
-
-
-        console.log('test')
         initGallery();
         createLightbox();
     }
