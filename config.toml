@@ -19,6 +19,7 @@ DefaultContentLanguage = "en"
 category = "categories"
 tag = "tags"
 series = "series"
+languages = "languages"
 
 
 [markup]
