@@ -25,8 +25,8 @@
     {{- $codeScriptPath := "js/code.js" }}
     {{- $code := resources.Get $codeScriptPath | resources.ExecuteAsTemplate $codeScriptPath . }}
 
-    {{- $codeGalleryPath := "js/gallery.js" }}
-    {{- $code := resources.Get $codeGalleryPath | resources.ExecuteAsTemplate $codeGalleryPath . }}
+    {{- $galleryPath := "js/gallery.js" }}
+    {{- $gallery := resources.Get $galleryPath | resources.ExecuteAsTemplate $galleryPath . }}
 
     {{- $customScriptPath := "js/custom.js" }}
     {{ if (fileExists "../../assets/js/custom.js") }}
@@ -37,7 +37,7 @@
     {{- $mainScriptPath := "js/index.js" }}
     {{- $main := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . }}
 
-    {{- $bundle := slice $highlight $functions $code $main $custom | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" -}}
+    {{- $bundle := slice $highlight $functions $code $main $custom $gallery | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" -}}
 
     <!-- preload assets declaration -->
     <link rel="preload" href="{{ $styles.Permalink }}" integrity = "{{ $styles.Data.Integrity }}" as="style" crossorigin="anonymous">
