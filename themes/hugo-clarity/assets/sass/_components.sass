@@ -230,7 +230,6 @@
         background: var(--translucent-light)
         cursor: pointer
         z-index: 999
-        overflow-y: auto
       &_toggle
         margin-top: 0.5rem
         margin-left: 0.5rem
@@ -537,7 +536,6 @@
     -webkit-appearance: none
     cursor: pointer
     position: relative
-    position: relative
     overflow: hidden
     box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.15)
     &::after
@@ -591,7 +589,7 @@
   &__post
     flex-grow: 1
     flex-shrink: 0
-    flex-basis: 33%
+    flex-basis: 32%
     padding: 1rem
     @media screen and (max-width: 769px)
       flex-basis: 100%
@@ -608,10 +606,10 @@
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  &__section
+  > .column__section
     flex-grow: 1
     flex-shrink: 0
-    flex-basis: 33%
+    flex-basis: 32%
     padding: 1rem
     @media screen and (max-width: 769px)
       flex-basis: 100%
@@ -621,10 +619,22 @@
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  &__section
+  > .column__section
     flex-grow: 1
     flex-shrink: 0
     flex-basis: 45%
     padding: 1rem
     @media screen and (max-width: 769px)
       flex-basis: 100%
+
+.column__section
+  h3
+    display: flex
+  >::after
+    margin-left: 24px
+    content: ''
+    align-self: center
+    flex-grow: 1
+    width: 1px
+    height: 1px
+    background: linear-gradient(to right,rgba(255,255,255,0.5),transparent 80%)

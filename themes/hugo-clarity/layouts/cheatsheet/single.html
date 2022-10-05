@@ -9,7 +9,7 @@
 {{- $bg := (path.Join "images" $image | absLangURL) }}
 <div class="wrap content">
   <article class="post_content">
-    <h1 class="post_title">Test of the thing{{ .Title }}</h1>
+    <h1 class="post_title">{{ .Title }}</h1>
     {{- .Content }}
     {{ if and ( ne .Site.Params.comment false ) ( ne .Params.comment false ) }}
       {{ partial "comments" . }}
