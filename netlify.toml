@@ -33,10 +33,8 @@ HUGO_ENABLEGITINFO = "true"
 from = "/.well-known/*"
 to = "/well-known/:splat"
 status = 200
-force = true # COMMENT: ensure that we alwaysK redirect
-headers = {X-From = "Netlify"}
 
 [[redirects]]
-from = "/test/*"
+from = "/test2/*"
 to = "/categories/:splat"
 status = 200
