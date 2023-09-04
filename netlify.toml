@@ -28,9 +28,3 @@ HUGO_VERSION = "0.80.0"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
-
-[[redirects]]
-from = "/.well-known/*"
-to = "/well-known/:splat"
-status = 200
-force = true
