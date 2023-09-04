@@ -30,8 +30,8 @@ HUGO_VERSION = "0.80.0"
 HUGO_ENABLEGITINFO = "true"
 
 [[redirects]]
-from = "/.well_known/*"
-to = "/well_known/:splat"
+from = "/.well-known/*"
+to = "/well-known/:splat"
 status = 200
 force = true # COMMENT: ensure that we alwaysK redirect
 headers = {X-From = "Netlify"}
