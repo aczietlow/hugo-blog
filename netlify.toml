@@ -35,6 +35,11 @@ to = "/well-known/:splat"
 status = 200
 
 [[redirects]]
+from = "/.well-known/acme-challenge/*"
+to = "/well-known/acme-challenge/:splat"
+status = 200
+
+[[redirects]]
 from = "/test2/*"
 to = "/categories/:splat"
 status = 200
