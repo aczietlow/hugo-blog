@@ -1,6 +1,6 @@
 ---
 title: "Jellyfin Joy: How to Turn Old DVDs into Your Personal Streaming Library"
-date: 2023-09-28
+date: 2023-09-29
 tags: [
     "jellyfin",
     "plex"
