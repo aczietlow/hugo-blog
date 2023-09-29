@@ -1,5 +1,5 @@
 ---
-title: Uploading DVDs to Self Hosted Media Server
+title: "Jellyfin Joy: How to Turn Old DVDs into Your Personal Streaming Library"
 date: 2023-09-28
 tags: [
     "jellyfin",
