@@ -12,9 +12,7 @@ categories : [
 ]
 ---
 
-There are periodic times throughout the year at work when I will unknowingly be subjected to [red team](https://en.wikipedia.org/wiki/Red_team) testing in the form of phishing email attempts. These are vital in validating an organization's ability to detect and respond to unfriendly actors attempting to gain access to unauthorized data. While keeping these detection skills sharp is critical, what follows is how I've mostly automated the detection of these red team phishing campaigns.
-
-If there is ever a sliver of doubt, one of the first things I will do is view the source of the email in question. There are a few low-hanging fruit that can help to identify phishing emails such as poor grammar, clearly malicious URLs, or the deposed prince of Nigeria asking for money. A few higher value validations I prefer to review is if the mail in question has valid DKIM, DMARC, and SPF records. Malicious actors can and will attempt to spoof the domain an email is actually coming from. 
+There are times throughout the year at work when I will unknowingly be subjected to [red team](https://en.wikipedia.org/wiki/Red_team) testing in the form of phishing email attempts. These are vital in validating an organization's ability to detect and respond to unfriendly actors attempting to gain access to unauthorized data. While keeping these detection skills sharp is critical, what follows is how I've mostly automated the detection of these red team phishing campaigns.
 
 Consider the following email:
 
@@ -107,7 +105,7 @@ The first time you run the script, you will need to authorize it to your Gmail a
 
 ![Google App Script Auth](../../../images/blogs/email/app-script-auth.png)
 
-5. Victory!
+5. Victory!K
 
 Now phishing emails are labeled with my custom "It's a Trap!" label and moved out of my inbox.
 
@@ -122,4 +120,11 @@ Now phishing emails are labeled with my custom "It's a Trap!" label and moved ou
 
 ![Outlook](../../../images/blogs/email/outlook.webp)
 
-This isn't intended to be a panacea and may in fact lull your awareness and readiness for these kinds of attack vectors in the future. Again, I want to stress the use of caution and wisdom in implementing something like this. In my case it was a small quality of life improvement in response to a now former customer with an overzealous red team. 
+## Considerations
+
+If there is ever a sliver of doubt, one of the first things I will do is view the source of the email in question. There are a few low-hanging fruit that can help to identify phishing emails such as poor grammar, clearly malicious URLs, or the deposed prince of Nigeria asking for money. A few higher value validations I prefer to review is if the mail in question has valid DKIM, DMARC, and SPF records. Malicious actors can and will attempt to spoof the domain an email is actually coming from.
+
+None of this is intended to be a panacea. Creating filters to bypass practice these skills may in fact lull your awareness and readiness for these kinds of attack vectors in the future. Again, I want to stress the use of caution and wisdom in implementing something like this. For me it was a small quality of life improvement in response to a now former customer with an overzealous red team. If that is the case for you, I'd encourage you to try the same. 
+
+As always stay alert and vigilant. 
+
