@@ -10,6 +10,7 @@ tags : [
 categories : [
     "efficiency"
 ]
+thumbnail: "images/blogs/email/fake-phishing.webp"
 ---
 
 There are times throughout the year at work when I will unknowingly be subjected to [red team](https://en.wikipedia.org/wiki/Red_team) testing in the form of phishing email attempts. These are vital in validating an organization's ability to detect and respond to unfriendly actors attempting to gain access to unauthorized data. While keeping these detection skills sharp is critical, what follows is how I've mostly automated the detection of these red team phishing campaigns.
