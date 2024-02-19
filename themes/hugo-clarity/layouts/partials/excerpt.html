@@ -10,6 +10,9 @@
     <div class="excerpt_footer partition">
       <div class="excerpt_thumbnail">
         <img src='{{ if (hasPrefix . "http") }}{{ . }}{{ else }}{{ absURL . }}{{ end }}' alt="{{ $.Title }}">
+        {{ if $.Params.thumbnail_byline }}
+        <p class="img_alt">{{ $.Params.thumbnail_byline }}</p>
+        {{ end }}
       </div>
       {{ else }}
       <div class="excerpt_footer">
