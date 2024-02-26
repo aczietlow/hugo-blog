@@ -10,4 +10,8 @@ categories : [
 ]
 ---
 
+From my perch the state of technology has been in an arm race for data over the decade. 
+
 "blogumentation"
+
+

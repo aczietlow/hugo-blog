@@ -1,7 +1,7 @@
 ---
 title: "2024 Pre-wrapped"
 date: 2024-12-30
-draft: false
+draft: true
 categories : [
     "life"
 ]
@@ -11,29 +11,29 @@ I'm writing this on behalf of future Chris. It's far and beyond time that past C
 
 Over the past four years I've prescribed to the philosophy of "reach for the stars... even if you stumble you'll land in the clouds". While this has worked well for me in the past, in has not yielded the ideal results. 2024 marked a year of change, growth, and new experimentation. At a high level I'd like to think I was able to recenter myself and drastically improve life satisfaction. 
 
+> This post will be locked upon publish, 2024-02-28. Any subsequent update will only to revise formatting, update goal completion progress, or add context and description to aforementioned goals. 
+
 ## Content Creation
 
 | Goals                        | Progress | Completion Date |
 |------------------------------|----------|-----------------|
 | 12 monthly blog posts        | 1/12     |                 |
-| 2 "thought leadership" posts | 0/2      |                 |
+| 4 "thought leadership" posts | 0/4      |                 |
 | Publish 1 Video              | 0/1      |                 |
 | Read 12 books                | 0/12     |                 |
 | 500 Stock Photos             | 0/500    |                 |
 
-<--- The following is where I left off. Future self should come back.
-
 ## Work Projects
 
-Team Rename
+Team Rename - Because I want to be a part of the meme of changing team/product names every 
 
-Tenancy MVP
+Legacy Applications
 
 Data viz for Dora metrics
 
 ## Side Projects
 
-[IssueFrolic](https://github.com/aczietlow/goFxSocials)
+[goFxSocials](https://github.com/aczietlow/goFxSocials) - Discord bot that provides a command to "fix" oEmbed links shared. 
 
 Jellyfin home launched
 
