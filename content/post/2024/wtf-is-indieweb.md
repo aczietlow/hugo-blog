@@ -11,9 +11,9 @@ categories : [
 
 From my perch looking out at the state of technology has been in an arm race for data over the decade. Upon reflecting on my footprint of data and web persona over the decades I realize that much of that has been lost over my lifetime. I ceded **control** of my data to various platforms, some of which are no longer around, some of which have drastically changed what they do with content I've shared with them, and all of which could change overnight without my input. Practically this has manifested itself in two outcomes. Some content I created on external platforms is gone forever, and some of that content is practically gone. Rather than remaining complicit to the direction the corporate web is heading, I'm embracing the revolution of the IndieWeb.
 
-What is the InidieWeb exactly? 
+What is the IndieWeb exactly? 
 
-The IndieWeb is collection of principles and tenants around pushing back against the "corporate" web of today. Those principles include:
+The IndieWeb is collection of principles and tenets around pushing back against the "corporate" web of today. Those principles include:
 - **Own your data** - control how your content is used, and retain access to it
 - **Use & publish visible data** - Make for humans first, APIs second
 - **Make what _you_ need** - Make tools, code, and widgets for yourself first and foremost. Don't build for everyone, family, or even friends.
