@@ -1,7 +1,7 @@
 baseurl = "https://zietlow.io/"
 Title = "Zietlow"
 author = "Chris Zietlow"
-copyright = "Copyright © 2008–2021, Chris Zietlow"
+copyright = "Copyright © 2008–2024, Chris Zietlow"
 # canonifyurls = true
 paginate = 10
 theme = "hugo-clarity"
