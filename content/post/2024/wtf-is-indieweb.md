@@ -2,10 +2,10 @@
 title: "WTF is the IndieWeb"
 date: 2024-02-29
 tags : [
-    "indieweb"
+    "IndieWeb"
 ]
 categories : [
-    "indieweb"
+    "IndieWeb"
 ]
 ---
 
