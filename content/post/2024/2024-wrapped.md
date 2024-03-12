@@ -17,10 +17,10 @@ Over the past four years I've prescribed to the philosophy of "reach for the sta
 
 | Goals                        | Progress | Completion Date |
 |------------------------------|----------|-----------------|
-| 12 monthly blog posts        | 1/12     |                 |
+| 12 monthly blog posts        | 2/12     |                 |
 | 4 "thought leadership" posts | 0/4      |                 |
 | Publish 1 Video              | 0/1      |                 |
-| Read 12 books                | 0/12     |                 |
+| Read 12 books                | 1/12     |                 |
 | 500 Stock Photos             | 0/500    |                 |
 
 ## Work Projects
