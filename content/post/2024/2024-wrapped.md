@@ -34,7 +34,6 @@ Data viz for Dora metrics
 ## Side Projects
 
 [goFxSocials](https://github.com/aczietlow/goFxSocials) - Discord bot that provides a command to "fix" oEmbed links shared. 
-
 Jellyfin home launched
 
 Homelab upgrades
