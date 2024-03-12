@@ -11,7 +11,7 @@ I'm writing this on behalf of future Chris. It's far and beyond time that past C
 
 Over the past four years I've prescribed to the philosophy of "reach for the stars... even if you stumble you'll land in the clouds". While this has worked well for me in the past, in has not yielded the ideal results. 2024 marked a year of change, growth, and new experimentation. At a high level I'd like to think I was able to recenter myself and drastically improve life satisfaction. 
 
-> This post will be locked upon publish, 2024-02-28. Any subsequent update will only to revise formatting, update goal completion progress, or add context and description to aforementioned goals. 
+> This post will be locked on 2024-02-29. Any subsequent update will only to revise formatting, update goal completion progress, or add context and description to aforementioned goals. 
 
 ## Content Creation
 
@@ -49,7 +49,7 @@ Healthier allows me to focus and accomplish more
 * Resting heart rate sub 65
 * Body fat of less than 20%
 
-Ran a 10k at sub 55 minutes
+Run a 10k at sub 55 minutes
 
 Benched 225 again
 
