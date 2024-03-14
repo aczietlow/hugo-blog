@@ -1,0 +1,15 @@
+<div class="hidden">
+    <p>This post's permalink is <a class="u-url" href="{{ .Permalink }}">{{ .Permalink }}</a> and has the following summary:</p>
+    <blockquote class="p-summary">
+        {{ if .Params.summary }}
+        {{ .Params.summary }}
+        {{ else if .Params.abstract }}
+        {{ .Params.abstract }}
+        {{ else if .Summary }}
+        {{ truncate 320 .Summary }}
+        {{ end }}
+    </blockquote>
+    <p>The canonical URL for this post is
+        <a class="u-uid" href="{{ .Permalink }}">{{ .Permalink }}</a>
+    </p>
+</div>
