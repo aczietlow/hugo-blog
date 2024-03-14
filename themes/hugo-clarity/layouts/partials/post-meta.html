@@ -14,8 +14,12 @@
     </span>
     {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
-  {{- if $showReadTime }}
-    <span class="post_time">{{ if ($scratch.Get "writeSeparator") }} | {{ end }}{{ T "reading_time" . }}</span>
+  {{- if $showDate }}
+    {{ if ($scratch.Get "writeSeparator") }} |&nbsp;{{ end }}
+    <a rel="author" class="p-author h-card" href="{[ .Site.BaseURL ]}">Chris Zietlow</a>
+  {{- end }}
+    {{- if $showReadTime }}
+    <span class="post_time">{{ if ($scratch.Get "writeSeparator") }}&nbsp;| {{ end }}{{ T "reading_time" . }}</span>
     {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
 <!--  {{- with .Params.tags -}}-->
