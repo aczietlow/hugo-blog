@@ -4,7 +4,7 @@
       <h3 class="post_link">
         <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title  }}</a>
       </h3>
-      {{ partial "post-meta" . }}
+      {{ partial "post-list-meta" . }}
     </div>
     {{- with .Params.thumbnail }}
     <div class="excerpt_footer partition">

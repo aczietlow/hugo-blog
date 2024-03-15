@@ -185,30 +185,31 @@ These options set global values that some pages or all pages in the site use by 
 
 These options can be set from a page [frontmatter](https://gohugo.io/content-management/front-matter#readout) or via [archetypes](https://gohugo.io/content-management/archetypes/#readout).
 
-| Parameter | Value Type | Overrides Global |
-|:---- | ---- | ---- |
-| title | string | N/A |
-| date | date | N/A |
-| description | string | N/A |
-| draft | boolean | N/A |
-| featured | boolean | N/A |
-| tags | array/string | N/A |
-| categories | array/string | N/A |
-| toc | boolean | N/A |
-| thumbnail | file path (string) | N/A |
-| featureImage | file path (string) | N/A |
-| shareImage | file path (string) | N/A |
-| codeMaxLines | integer | yes |
-| codeLineNumbers | boolean | yes |
-| figurePositionShow | boolean | yes |
+| Parameter           | Value Type | Overrides Global |
+|:--------------------| ---- | ---- |
+| title               | string | N/A |
+| date                | date | N/A |
+| description         | string | N/A |
+| draft               | boolean | N/A |
+| featured            | boolean | N/A |
+| tags                | array/string | N/A |
+| categories          | array/string | N/A |
+| toc                 | boolean | N/A |
+| thumbnail           | file path (string) | N/A |
+| featureImage        | file path (string) | N/A |
+| shareImage          | file path (string) | N/A |
+| codeMaxLines        | integer | yes |
+| codeLineNumbers     | boolean | yes |
+| figurePositionShow  | boolean | yes |
 | figurePositionLabel | string | no |
-| comments | boolean | yes |
-| enableMathNotation | boolean | yes |
-| showDate | boolean | N/A |
-| showShare | boolean | N/A |
-| showReadTime | boolean | N/A |
-| sidebar | boolean | N/A |
-| singleColumn | boolean | N/A |
+| comments            | boolean | yes |
+| enableMathNotation  | boolean | yes |
+| showDate            | boolean | N/A |
+| showAuthor          | boolean | N/A |
+| showShare           | boolean | N/A |
+| showReadTime        | boolean | N/A |
+| sidebar             | boolean | N/A |
+| singleColumn        | boolean | N/A |
 
 ### Modify Menus
 
