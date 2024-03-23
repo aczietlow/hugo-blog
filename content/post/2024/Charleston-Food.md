@@ -1,6 +1,6 @@
 ---
 title: "2024 Charleston Foodie List"
-date: 2024-03-22
+date: 2024-03-23
 draft: false
 tags : [
     "food"
@@ -10,7 +10,7 @@ categories : [
 ]
 ---
 
-It's a Thursday night, and I'm looking for a great dining experience with my wife. A colleague is in town and wants to sample "a unique Charleston experience." Most common yet friends are coming in from up north and are asking for a recommendation. What follows is my personal list of food recommendations for the Charleston area. 
+It's a Thursday night, and I'm looking for a great dining experience with my wife. A colleague is in town and wants to sample "a unique Charleston experience." Most common yet, friends are coming in from up north and are asking for a recommendation. What follows is my personal list of food recommendations for the Charleston area. 
 
 ![Gourmet Pop-tart](../../../images/blogs/pop-tart.jpg)
 
@@ -72,7 +72,7 @@ Fannie & the Fox $$$ [reviews](https://g.co/kgs/LMzX98D)
 
 ### Steak
 
-Halls chop house $$$$ [reviews](https://g.co/kgs/RBZEXTf)
+Halls Chop House $$$$ [reviews](https://g.co/kgs/RBZEXTf)
 : it's a steakhouse, not much to say
 
 Oak Steakhouse $$$$ [reviews](https://g.co/kgs/FEuxXSP)
@@ -127,7 +127,7 @@ Paddock & Whiskey [reviews](https://g.co/kgs/Sooigzh)
 ### Brunch 
 _If it doesn't include mimosa's it's just a late breakfast_
 
-Millers all day $$ [reviews](https://g.co/kgs/8FyttCp)
+Millers All Day $$ [reviews](https://g.co/kgs/8FyttCp)
 : good food and mimosa, amazing cinnamon roll
 
 Pink Cactus $$ [reviews](https://g.co/kgs/uAQdZoc)
