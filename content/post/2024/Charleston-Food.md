@@ -14,8 +14,6 @@ It's a Thursday night, and I'm looking for a great dining experience with my wif
 
 ![Gourmet Pop-tart](../../../images/blogs/pop-tart.jpg)
 
-
-
 ### Seafood
 
 Fleet Landing $$ [reviews](https://g.co/kgs/DNCkcya)
