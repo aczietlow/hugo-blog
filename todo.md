@@ -1,0 +1,5 @@
+- [ ] Implement h-entry
+- [ ] Implement h-feed
+- [ ] implement h-card
+- [ ] webmentions
+- [ ] bridgy
