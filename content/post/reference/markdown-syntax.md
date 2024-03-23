@@ -61,10 +61,10 @@ The blockquote element represents content that is quoted from another source, op
 
 Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
 
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
+| Name  | Age |
+|-------|-----|
+| Bob   | 27  |
+| Alice | 23  |
 
 #### Inline Markdown within tables
 
@@ -140,6 +140,18 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 * Dairy
   * Milk
   * Cheese
+
+#### Description List
+
+term
+: term description
+
+term
+: term description
+
+complex term
+: term description
+: multiple term description
 
 ## Other Elements — abbr, sub, sup, kbd, mark
 
