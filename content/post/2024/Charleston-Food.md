@@ -10,7 +10,7 @@ categories : [
 ]
 ---
 
-It's a Thursday night, and I'm looking for a great dining experience with my wife. A colleague is in town and wants to sample "a unique Charleston experience." Most common yet, friends are coming in from up north and are asking for a recommendation. What follows is my personal list of food recommendations for the Charleston area. 
+It's a Thursday night, and I'm looking for a great dining experience with my wife. A colleague is in town and wants to sample "a unique Charleston experience." Most common yet, friends are coming in from up north and are asking for a recommendation. What follows is my personal list of food recommendations for the Charleston area.
 
 ![Gourmet Pop-tart](../../../images/blogs/pop-tart.jpg)
 
