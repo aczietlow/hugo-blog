@@ -28,6 +28,9 @@ Cod Father $ [reviews](https://g.co/kgs/bPt85V8)
 The Ordinary $$$ [reviews](https://g.co/kgs/BNw3Qk2)
 : IDK it's on my list per a recommendation
 
+O-Ku $$ [review](https://g.co/kgs/Z7TFCQx)
+: Recommeded nice Sushi and Japanese eatry
+
 ### Fun / Experience
 
 EO (Edmunds Oast) $$$ [reviews](https://g.co/kgs/C1Ps6B2)
