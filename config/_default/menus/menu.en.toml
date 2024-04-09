@@ -8,11 +8,16 @@
   url = "cheatsheet/"
   weight = -109
 
+  [[main]]
+    name = "Projects"
+    url = "project/"
+    weight = -105
+
 # Submenus are done this way: parent -> identifier
 [[main]]
   name = "Links"
   identifier = "Links"
-  weight = -108
+  weight = -103
 [[main]]
   parent = "Links"
   name = "LinkedIn"
@@ -25,7 +30,7 @@
 [[main]]
   name = "About"
   url = "about/"
-  weight = -107
+  weight = -100
 
 # social menu links
 
