@@ -1,0 +1,25 @@
+<div class="card__content__metadata">
+    {{ if .Params.source }}
+        <div>
+            <strong>Source:</strong> <a href="{{ .Params.source }}">Github</a>
+        </div>
+    {{ end }}
+
+    {{ if .Params.license }}
+        <div>
+            <strong>License:</strong> {{ .Params.license }}
+        </div>
+    {{ end }}
+
+    {{ if .Params.latest }}
+        <div>
+            <strong>Latest:</strong> <a href="{{ .Params.source }}">{{ .Params.latest }}</a>
+        </div>
+    {{ end }}
+
+    {{ if .Params.activity }}
+        <div>
+            <strong>Activity:</strong> {{ .Params.activity }}
+        </div>
+    {{ end }}
+</div>

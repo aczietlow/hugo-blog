@@ -8,6 +8,11 @@ tags: [
 draft: true
 teaser: "A brief teaser description for project"
 codeLineNumbers: true
+thumbnail: "images/blogs/jellyfin-logo.png"
+source: https://github.com/aczietlow/goFxSocials
+license: Apache-2.0
+latest: 2024.4.3
+activity: 2024-04-12
 ---
 
 ## Introduction

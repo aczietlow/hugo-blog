@@ -1,19 +1,16 @@
 ---
-title: "Demo 1"
+title: "Go Fix Social Links"
 date: 2024-04-04
 tags: [
   "bot",
   "go",
   "discord"
 ]
-draft: true
-teaser: "A bot to watch for bad social links posted in discord, and fix them"
+teaser: "A Discord bot to fix oembed links from social media."
 codeLineNumbers: true
+thumbnail: "images/projects/fix-socials.png"
 source: https://github.com/aczietlow/goFxSocials
-thumbnail: "images/blogs/jellyfin-logo.png"
-license: Apache-2.0
-latest: 2024.4.3
-activity: 2024-04-12
+activity: 2024.01.04
 ---
 
 ## Introduction

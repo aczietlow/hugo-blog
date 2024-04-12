@@ -3,5 +3,8 @@
 - [ ] implement h-card
 - [ ] webmentions
 - [ ] bridgy
-- [ ] Look at microblog
 - [ ] add webring
+- [ ] add projects section
+
+
+- [ ] Look at microblog
