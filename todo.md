@@ -1,6 +1,9 @@
 - [ ] implement h-card
 - [ ] add webring
 - [ ] Implement h-entry
+  - post
+  - project
+  - cheatsheet
 - [ ] Implement h-feed
 - [ ] webmentions
 - [ ] bridgy
