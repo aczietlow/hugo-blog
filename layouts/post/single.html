@@ -24,6 +24,18 @@
     <div class="e-content">
     {{- .Content }}
     </div>
+    {{- with .Params.tags -}}
+      <span>
+        {{- if ($scratch.Get "writeSeparator") }}&nbsp;| {{ end }}
+        {{- range . }}
+          {{- $tag := urlize . -}}
+          <a href='{{ absLangURL (printf "tags/%s" $tag) }}' title="{{ . }}" class="post_tag button button_translucent">
+            <span class="p-category">{{- . }}</span>
+          </a>
+        {{- end }}
+      </span>
+      {{- $scratch.Set "writeSeparator" true }}
+    {{- end }}
     {{- $showComments := true }}
     {{- if eq $s.comments false }}
       {{- $showComments = false }}
