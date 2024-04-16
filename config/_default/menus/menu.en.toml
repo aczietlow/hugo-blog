@@ -8,10 +8,10 @@
   url = "cheatsheet/"
   weight = -109
 
-  [[main]]
-    name = "Projects"
-    url = "project/"
-    weight = -105
+[[main]]
+  name = "Projects"
+  url = "project/"
+  weight = -105
 
 # Submenus are done this way: parent -> identifier
 [[main]]

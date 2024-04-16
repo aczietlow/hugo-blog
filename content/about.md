@@ -2,7 +2,7 @@
 title = "About"
 description = "A blurb about me."
 date = "2021-01-01"
-aliases = ["about-us", "about-hugo", "contact"]
+aliases = ["about-us", "contact"]
 author = "Chris Zietlow"
 comment = false
 +++
