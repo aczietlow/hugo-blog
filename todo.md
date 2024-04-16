@@ -2,12 +2,11 @@
 - [ ] add webring
 - [ ] Implement h-entry
   - [x] post
-  - [ ] project
-  - [ ] cheatsheet
 - [x] Implement h-feed
 - [ ] webmentions
 - [ ] bridgy
 - [x] add projects section
+- -[ ] Clean up microformats errors
 
 
 - [ ] Look at microblog
@@ -25,6 +24,6 @@
   - Have ability to switch themes at some point in the future
 - [ ] switch to a more open analytics and tracking tool
 - [ ] Replace "zietlow.io" in main menu with home icon
-- [ ] Fix row vertical spacing on /projects
+- [x] Fix row vertical spacing on /projects
 - [ ] Add little user icon before author in post-meta-data
   
