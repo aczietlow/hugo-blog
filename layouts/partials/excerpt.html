@@ -3,7 +3,7 @@
     <article class="h-entry">
       <div class="excerpt_header">
         <h3 class="post_link">
-          <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title  }}</a>
+          <a href="{{ .Permalink }}" title="{{ .Title }}" class="p-name u-url">{{ .Title  }}</a>
         </h3>
         {{ partial "post-list-meta" . }}
       </div>
@@ -19,7 +19,7 @@
         <div class="excerpt_footer">
           {{- end }}
           <div>
-            <p class="pale">
+            <p class="pale p-summary">
               {{ if .Params.summary }}
                 {{ .Params.summary }}
               {{ else if .Params.abstract }}
