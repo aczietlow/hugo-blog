@@ -17,8 +17,11 @@
   {{- end }}
   {{- if $showAuthor }}
     {{ if ($scratch.Get "writeSeparator") }} |&nbsp;{{ end }}
-    <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}">Chris Zietlow</a>
-  {{- end }}
+    <span class="p-author h-card">
+      <a rel="author" class="p-name u-url" href="{{ .Site.BaseURL }}">Chris Zietlow</a>
+      <img class="u-photo" src='{{ absURL "images/me.jpg" }}' alt="Chris Zietlow Profile Image">
+    </span>
+    {{- end }}
     {{- if $showReadTime }}
     <span class="post_time">{{ if ($scratch.Get "writeSeparator") }}&nbsp;| {{ end }}{{ T "reading_time" . }}</span>
     {{- $scratch.Set "writeSeparator" true }}

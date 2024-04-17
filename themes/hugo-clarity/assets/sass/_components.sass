@@ -594,13 +594,45 @@
     @media screen and (max-width: 769px)
       flex-basis: 100%
 
+.projects
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  &__post
+    flex-grow: 1
+    flex-shrink: 0
+    flex-basis: 32%
+    padding: 0 .75rem
+    display: flex
+    @media screen and (max-width: 769px)
+      flex-basis: 100%
+
+.project-icon
+  width: 32px
+  height: 32px
+  border-radius: 0
+  object-fit: scale-down
+  margin-right: 10px
+  margin-left: 0
 
 .card
-  margin-bottom: 3rem
+  margin-bottom: 2rem
   border-radius: 0.5rem
   background: var(--post-bg)
+  flex: 1 1 200px
   &__content
     padding: 1rem
+    &__top
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      width: 100%
+    &__desciption
+      display: flex
+    &__metadata
+      display: block
+      a
+        text-decoration: underline
 
 .three-column
   display: flex
@@ -638,3 +670,17 @@
     width: 1px
     height: 1px
     background: linear-gradient(to right,rgba(255,255,255,0.5),transparent 80%)
+
+
+.h-feed
+  .h-feed-description
+    display: none
+
+.h-card
+  img.u-photo
+    display: none
+  a.u-url
+    text-decoration: underline
+  p.img_alt
+    display: none
+

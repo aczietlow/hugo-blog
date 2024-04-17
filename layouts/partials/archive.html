@@ -2,6 +2,7 @@
 {{ if .IsHome }}
   {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{ end }}
+
 <div class="grid-inverse wrap content">
   <div class="h-feed">
     <div class="h-feed-description">
