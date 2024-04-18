@@ -1,12 +1,12 @@
 - [x] implement h-card
 - [ ] add webring
-- [ ] Implement h-entry
+- [x] Implement h-entry
   - [x] post
 - [x] Implement h-feed
 - [ ] webmentions
 - [ ] bridgy
 - [x] add projects section
-- -[ ] Clean up microformats errors
+- [x] Clean up microformats errors
 
 
 - [ ] Look at microblog
@@ -26,4 +26,10 @@
 - [ ] Replace "zietlow.io" in main menu with home icon
 - [x] Fix row vertical spacing on /projects
 - [ ] Add little user icon before author in post-meta-data
+- [ ] Add little tag like icon before categories in post- single template
+- [ ] Replace theme with patternFly
+- [ ] Homepage should be feed of all content
+- [ ] Only blog content should be a part of the h-feed
+- [ ] look more into indieauth
+- [ ] Add client side search.
   
