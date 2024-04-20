@@ -21,3 +21,4 @@ hugo -D -F server -t hugo-clarity
 ## Notes for future self
 
 Hugo Pipes process SASS/SCSS, JS, and images as part of the build process.
+
