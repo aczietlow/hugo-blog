@@ -6,6 +6,7 @@ draft: true
 wip: true
 complete: true
 isbn: 9780756419189
+type: reads
 ---
 
-The narrow road
+Follows the adventures of Bast doing Bast things around the Waystone inn

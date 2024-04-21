@@ -6,7 +6,7 @@ draft: true
 wip: true
 complete: true
 isbn:  9780756419189
+type: listens
 ---
 
-
-Team of teams
+Gripping story of rapid structural innovation.

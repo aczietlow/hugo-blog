@@ -7,6 +7,7 @@ wip: true
 complete: true
 isbn: 1591847486 # use isbn-13
 source: https://hbr.org/2003/05/it-doesnt-matter # Source of article
+type: reads
 ---
 
 **Insert Lead paragraph here.**
