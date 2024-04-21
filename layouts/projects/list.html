@@ -15,10 +15,9 @@
                     </div>
                     <div class="card__content__description">
                         {{ if .Params.teaser }}
-                        <p class="card__text">{ truncate 180 .Params.teaser }}</p>
+                        <p class="card__text">{{ truncate 180 .Params.teaser }}</p>
                         {{ end }}
                     </div>
-                    <h2>TEST</h2>
                     {{ partial "cards/github-metadata.html" . }}
                 </section>
             </article>
