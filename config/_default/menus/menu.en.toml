@@ -4,14 +4,24 @@
   weight = -110
 
 [[main]]
+name = "Blog"
+url = "posts/"
+weight = -108
+
+[[main]]
   name = "Cheatsheets"
-  url = "cheatsheet/"
-  weight = -109
+  url = "cheatsheets/"
+  weight = -108
 
 [[main]]
   name = "Projects"
-  url = "project/"
+  url = "projects/"
   weight = -105
+
+[[main]]
+  name = "Library"
+  url = "library/"
+  weight = -101
 
 # Submenus are done this way: parent -> identifier
 #[[main]]

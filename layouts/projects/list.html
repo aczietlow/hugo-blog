@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<div class="content">
+    <article>
+        <h1>{{ .Title }}</h1>
+    </article>
+    <div class="projects">
+        {{ range .Pages }}
+        <div class="projects__post">
+            <article class="card">
+                <section class="card__content">
+                    <div class="card__content__top">
+                        <img src='{{ if (hasPrefix .Params.thumbnail "http") }}{{ .Params.thumbnail }}{{ else }}{{ absURL .Params.thumbnail }}{{ end }}' alt="{{ $.Title }}" class="project-icon">
+                        <h2 class="card__title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h2>
+                    </div>
+                    <div class="card__content__description">
+                        {{ if .Params.teaser }}
+                        <p class="card__text">{{ truncate 180 .Params.teaser }}</p>
+                        {{ end }}
+                    </div>
+                </section>
+            </article>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
