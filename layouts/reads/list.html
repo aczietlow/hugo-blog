@@ -3,6 +3,7 @@
 <div class="content">
     <article>
         <h1>{{ .Title }}</h1>
+        Book
     </article>
     <div class="projects">
         {{ range .Pages }}
@@ -18,7 +19,6 @@
                         <p class="card__text">{{ truncate 180 .Params.teaser }}</p>
                         {{ end }}
                     </div>
-                    {{ partial "cards/github-metadata.html" . }}
                 </section>
             </article>
         </div>
