@@ -17,7 +17,11 @@ Build local instance (with drafts and future posts enabled)
 hugo -D -F server -t hugo-clarity 
 ```
 
+## Content creation 
+
+`hugo new posts/2024/my-new-post.md`
 
 ## Notes for future self
 
 Hugo Pipes process SASS/SCSS, JS, and images as part of the build process.
+

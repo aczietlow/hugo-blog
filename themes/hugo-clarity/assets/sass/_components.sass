@@ -684,3 +684,15 @@
   p.img_alt
     display: none
 
+.library
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  &__post
+    flex-grow: 1
+    flex-shrink: 0
+    flex-basis: 24%
+    padding: 0 .75rem
+    display: flex
+    @media screen and (max-width: 769px)
+      flex-basis: 100%

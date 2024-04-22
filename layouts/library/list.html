@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<div class="content">
+    <h1>{{ .Title }}</h1>
+    <div class="library">
+        {{ range .Pages }}
+        <div class="library__post">
+            <article class="card">
+                <section class="card__content">
+                    <div class="card__content__top">
+                        <h2 class="card__title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h2>
+                    </div>
+                    <div>
+                        <i>{{ .Type }}</i>
+                    </div>
+                    <div class="card__content__description">
+                        {{ if .Params.description }}
+                        <p class="card__text">{{ truncate 120 .Params.description  }}</p>
+                        {{ end }}
+                    </div>
+                </section>
+            </article>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
