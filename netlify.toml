@@ -1,6 +1,9 @@
 [build]
 publish = "public"
 command = "hugo --gc --minify"
+[build.publish]
+[build.publish.headers]
+Link-rel = ["noopener"]
 
 [context.production.environment]
 HUGO_VERSION = "0.80.0"

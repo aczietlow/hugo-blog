@@ -17,7 +17,7 @@
     {{- end }}
 
     {{- if eq .Params.indieAuth true  }}
-      <a href="{{ $url }}" rel="noopener me">
+      <a href="{{ $url }}" rel="me">
         {{ partial "sprite" (dict "icon" $label) }}
       </a>
     {{- else }}
