@@ -7,5 +7,7 @@ source: https://www.youtube.com/watch?v=MRwZQGdllDY
 type: listens
 ---
 
+This is interesting marking the difference between complication and complexity.e
+
 {{< youtube id=MRwZQGdllDY loading=lazy >}}
 
