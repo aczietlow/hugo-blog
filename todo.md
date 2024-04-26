@@ -4,6 +4,9 @@
 - [x] Implement h-entry
   - [x] post
 - [x] Implement h-feed
+- [ ] IndieAuth
+  - [ ] indieauth.com
+  - [ ] Indie OAuth client [more](https://indieweb.org/IndieAuth)
 - [ ] webmentions
 - [ ] bridgy
 - [ ] add webring
@@ -13,6 +16,9 @@
 
 ## Backlog
 
+- [ ] Make cheatsheet for hugo
+  - `<pre>{{ debug.Dump .Site.Menus.social }}</pre>`
+- [ ] Look for jetbrains hugo plugin
 - [ ] write plugin to pull github project stats. Activity, releases, license, etc
 - [ ] Implement Reading list
   - inspiration: 

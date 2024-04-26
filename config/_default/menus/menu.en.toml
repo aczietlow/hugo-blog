@@ -49,13 +49,23 @@ weight = -108
   type = "social"
   weight = 1
   url = "https://github.com/aczietlow"
+  [social.params]
+    indieAuth = true
 [[social]]
   name = "drupal"
   type = "social"
   weight = 2
   url = "https://www.drupal.org/u/aczietlow"
 [[social]]
+  name = "twitter"
+  type = "social"
+  weight = 3
+  url = "https://twitter.com/aczietlow"
+  [social.params]
+    indieAuth = true
+[[social]]
   name = "linkedin"
+  type = "social"
   weight = 4
   url = "https://www.linkedin.com/in/chris-zietlow-85b35849"
 [[social]]

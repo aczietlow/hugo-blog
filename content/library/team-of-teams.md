@@ -6,7 +6,7 @@ draft: true
 wip: true
 complete: true
 isbn:  9780756419189
-type: listens
+type: read
 ---
 
 Gripping story of rapid structural innovation.
