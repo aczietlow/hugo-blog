@@ -15,22 +15,163 @@ codeLineNumbers: false
 
 ## Introduction
 
-## New Cheatsheet
+## 3 Column Layout
 
-To complete this showcase:
+{{< three-column>}}
 
-1. Write the story about your site in this file.
-2. Add a summary to the `bio.md` file in this folder.
-3. Replace the `featured-template.png` with a screenshot of your site. You can rename it, but it must contain the word `featured`.
-4. Create a new pull request in https://github.com/gohugoio/hugoDocs/pulls
+{{<cheatsheet-section>}}
+### 3 Column: Column 1
 
-The content of this bundle explained:
+Brief Description
 
-index.md
-: The main content file. Fill in required front matter metadata and write your story. I does not have to be a novel. It can even be self-promotional, but it should include Hugo in some form.
+```go
+// Add code here
+var str string
+str = "World"
+fmt.Printf("Hello %s!", str)
+```
 
-bio.md
-: A short summary of the website. Site credits (who built it) fits nicely here.
+```go
+// Second example blog for "Brief Description"
+var str string
+str = "World"
+fmt.Printf("Hello %s!", str)
+```
 
-featured.png
-: A reasonably sized screenshot of your website. It can be named anything, but the name must start with "featured". The sample image is `1500x750` (2:1 aspect ratio).
+{{</ cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+### 3 Column: Column 2
+
+Brief Description
+
+```go
+// Add code here
+var str string
+str = "World"
+fmt.Printf("Hello %s!", str)
+```
+
+{{</ cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+### 3 Column: Column 3
+
+Brief Description
+
+```go
+// Add code here
+var str string
+str = "World"
+fmt.Printf("Hello %s!", str)
+```
+
+```go
+// Second example blog for "Brief Description"
+var str string
+str = "World"
+fmt.Printf("Hello %s!", str)
+```
+
+{{</ cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+### 3 Column: Column 4
+
+Brief Description
+
+```go
+// Add code here
+var str string
+str = "World"
+fmt.Printf("Hello %s!", str)
+```
+
+{{</ cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+### 3 Column: Column 5
+
+Brief Description
+
+```go
+// Add code here
+var str string
+str = "World"
+fmt.Printf("Hello %s!", str)
+```
+
+{{</ cheatsheet-section>}}
+
+{{< /three-column>}}
+
+## 2 Column Layout
+
+{{< two-column>}}
+
+{{<cheatsheet-section>}}
+### 2 Column: Section 1
+
+Brief Description
+
+```go
+// Add code here
+var str string
+str = "World"
+fmt.Printf("Hello %s!", str)
+```
+{{</ cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+### 2 Column: Section 2
+
+Brief Description
+
+```go
+// Add code here
+var str string
+str = "World"
+fmt.Printf("Hello %s!", str)
+```
+{{</ cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+### 2 Column: Section 3
+
+Brief Description
+
+```go
+// Add code here
+var str string
+str = "World"
+fmt.Printf("Hello %s!", str)
+```
+{{</ cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+### 2 Column: Section 4
+
+Brief Description
+
+```go
+// Add code here
+var str string
+str = "World"
+fmt.Printf("Hello %s!", str)
+```
+{{</ cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+### 2 Column: Section 5
+
+Brief Description
+
+```go
+// Add code here
+var str string
+str = "World"
+fmt.Printf("Hello %s!", str)
+```
+{{</ cheatsheet-section>}}
+
+{{< /two-column>}}
