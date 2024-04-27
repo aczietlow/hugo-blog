@@ -156,6 +156,11 @@
     grid-template-columns: 4rem 1fr
     align-items: center
     position: relative
+  &_head
+    @include content
+    a:not(.arrow)
+      text-decoration: underline
+
 
 .button
   background-color: $theme
