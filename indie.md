@@ -21,9 +21,10 @@ Make HTML semantically meaningful again. Extending html to make site content con
 ## IndieAuth
 
 IndieAuth.com
-- [ ] Social links should use rel-me `rel=me` attributes
-- [ ] ensure h-card is present on site 
-- [ ] Add backlinks to your website on social profiles
+- [x] Social links should use rel-me `rel=me` attributes
+- [x] ensure h-card is present on site 
+- [x] Add backlinks to your website on social profiles
+- [x] Declare authorization endpoint
 
 
 Oauth provider

@@ -1,24 +1,21 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Git"
+date: 2024-04-27T16:14:06-04:00
 tags: [
   "tag1",
-  "Project"
+  "Cheatsheet"
+]
+languages: [
+  "lang1"
 ]
 draft: true
-teaser: "A brief teaser description for project"
-codeLineNumbers: true
-thumbnail: "images/blogs/jellyfin-logo.png"
-thumbnail_byline: "Byline for thumbnail image" # Sets a byline under the thumbnail image
-source: https://github.com/aczietlow/goFxSocials
-license: Apache-2.0
-latest: 2024.4.3
-activity: 2024-04-12
+teaser: "A brief teaser description to provide a lead in on content of the cheatsheet."
+codeLineNumbers: false
 ---
 
 ## Introduction
 
-## Project
+## New Cheatsheet
 
 To complete this showcase:
 

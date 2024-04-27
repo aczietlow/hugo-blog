@@ -4,20 +4,21 @@
 - [x] Implement h-entry
   - [x] post
 - [x] Implement h-feed
-- [ ] IndieAuth
-  - [ ] indieauth.com
-  - [ ] Indie OAuth client [more](https://indieweb.org/IndieAuth)
+- [x] IndieAuth
+  - [x] indieauth.com
+  - [x] Indie OAuth client [more](https://indieweb.org/IndieAuth)
 - [ ] webmentions
 - [ ] bridgy
-- [ ] add webring
+- [x] add webring
 
 
 - [ ] Look at microblog
 
 ## Backlog
 
-- [ ] Make cheatsheet for hugo
+- [x] Make cheatsheet for hugo
   - `<pre>{{ debug.Dump .Site.Menus.social }}</pre>`
+- [x] Make cheatsheet archetype for scaffolding quicker
 - [ ] Look for jetbrains hugo plugin
 - [ ] write plugin to pull github project stats. Activity, releases, license, etc
 - [ ] Implement Reading list
@@ -27,14 +28,14 @@
     - https://www.jvt.me/kind/listens/
 - [ ] Refactor theme to separate site structure markup from theming logic
   - Have ability to switch themes at some point in the future
+- [ ] Replace theme with patternFly
 - [ ] switch to a more open analytics and tracking tool
 - [ ] Replace "zietlow.io" in main menu with home icon
 - [ ] Add little user icon before author in post-meta-data
 - [ ] Add little tag like icon before categories in post- single template
-- [ ] Replace theme with patternFly
 - [ ] Homepage should be feed of all content
 - [ ] Only blog content should be a part of the h-feed
-- [ ] look more into indieauth
+- [x] look more into indieauth
 - [ ] Add client side search.
 - [ ] Finish updated the scrivener project post 
 - [ ] Add license to goFxSocial
