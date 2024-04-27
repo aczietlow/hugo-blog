@@ -40,7 +40,7 @@ languages = "languages"
 author = "Chris"
 twitter = "@aczietlow"
 largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
-introDescription = "Philomath, Shitty Photographer, Technologist, hugs on a blockchain, and believes the oxford comma isn't optional."
+introDescription = "Recovering Software Engineer, Philomath, Shitty Photographer, Technologist, believes the oxford comma isn't optional."
 # description = "" # set your site's description here. will be use for home page content meta tags (seo). Alternatively set this description in your homepage content file i.e content/_index.md. Whatever is set in the latter will take precedence
 
 # Google analytics Id

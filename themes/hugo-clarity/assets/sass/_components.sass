@@ -213,6 +213,9 @@
     margin-bottom: 3rem
     border-radius: 0.5rem
     background: var(--post-bg)
+    .h-card
+      a.u-url
+        display: inline
   &_tag
     padding: 0.2rem 0.8rem
     font-size: 0.8rem
@@ -671,7 +674,6 @@
     height: 1px
     background: linear-gradient(to right,rgba(255,255,255,0.5),transparent 80%)
 
-
 .h-feed
   .h-feed-description
     display: none
@@ -680,12 +682,11 @@
   img.u-photo
     display: none
   a.u-url
+    display: none
     text-decoration: underline
   p.img_alt
     display: none
-
-.sidebar
-  .h-card
+  p.p-note
     display: none
 
 .library
