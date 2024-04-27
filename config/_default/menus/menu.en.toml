@@ -56,13 +56,13 @@ weight = -108
   type = "social"
   weight = 2
   url = "https://www.drupal.org/u/aczietlow"
-[[social]]
-  name = "twitter"
-  type = "social"
-  weight = 3
-  url = "https://twitter.com/aczietlow"
-  [social.params]
-    indieAuth = true
+#[[social]]
+#  name = "twitter"
+#  type = "social"
+#  weight = 3
+#  url = "https://twitter.com/aczietlow"
+#  [social.params]
+#    indieAuth = true
 [[social]]
   name = "linkedin"
   type = "social"
