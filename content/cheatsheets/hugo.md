@@ -20,15 +20,9 @@ hugo --gc
 ```
 
 ```shell
-# Recompile assets in developer friendly mode
-# Enabled compiling drafts, and content with future post dates
-hugo -D --buildFuture --ignoreCache
-```
-
-```shell
-# Recompile assets in developer friendly mode
-# - include drafts, and content with future post dates
-# - include content with future post dates
+# Recompile in developer friendly mode
+# -D Enabled compiling drafts
+# -F content with future post dates
 # - ignore cache
 hugo -D -F --ignoreCache
 ```
@@ -70,9 +64,10 @@ hugo server -D -F
 ### Letting Hugo Scaffold New Content
 
 ```sh
-# Will generate new content, automatically setting the date
+# Generate new content
+# - automatically sets the date
 # Selects the kind of post based on path
-# If you can archetypes available, those will be used
+# Attempts to find & use archetype
 `hugo new projects/some-new-project.md`
 ```
 
