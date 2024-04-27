@@ -1,5 +1,5 @@
 ---
-title: "Put a Ring on It" # Title of the blog post.
+title: "IndieAuth" # Title of the blog post.
 date: 2024-04-27T14:25:39-04:00 # Date of post creation.
 description: "Allowing a site to be discoverable through a ring" # Description used for search engine.
 draft: true
@@ -9,7 +9,7 @@ categories:
   - IndieWeb
 tags:
   - IndieWeb
-  - Blogging
+  - authentication
 d# comment: false # Disable comment if false.
 ---
 
