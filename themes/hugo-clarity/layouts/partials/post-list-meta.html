@@ -16,7 +16,7 @@
     {{- if $showReadTime }}
     <span class="post_time">{{ if ($scratch.Get "writeSeparator") }}&nbsp;| {{ end }}{{ T "reading_time" . }}</span>
   {{- end }}
-    <div>{{ if ($scratch.Get "writeSeparator") }}&nbsp;| {{ end }}{{ partial "author" . }}</div>
+    <div>{{ if ($scratch.Get "writeSeparator") }}&nbsp;| {{ end }}{{ partial "h-card" . }}</div>
 
 <!--  {{- with .Params.tags -}}-->
 <!--    <span>-->
