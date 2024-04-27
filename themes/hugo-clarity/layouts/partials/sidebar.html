@@ -1,6 +1,10 @@
 {{ $s := .Site.Params }}
 <aside class="sidebar">
   <section class="sidebar_inner">
+    {{ if .IsHome }}
+    {{- partial "h-card" . }}
+    {{ end }}
+
     {{- if $s.IntroDescription }}
       {{- $author := $s.Author  }}
       {{- $showAuthorPhoto := false }}
@@ -11,7 +15,7 @@
         {{- end }}
       {{- end }}
       {{- if $showAuthorPhoto }}
-        <div class="author_header">
+              <div class="author_header">
           <img src="{{ absURL $author.photo }}" alt="{{ $author.name }} photo">
           <h2>{{  $author.name }}</h2>
         </div>
