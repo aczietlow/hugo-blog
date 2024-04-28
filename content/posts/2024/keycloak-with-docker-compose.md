@@ -16,7 +16,6 @@ tags:
   - iam
   - sso
 ---
-K
 Keycloak is an open sourced project for identity and access management developed by Red Hat. It is designed to be a versatile and robust IAM solution for both authentication and authorization for apps and services. What follows is a brief guide on how to run Keycloak locally using docker compose.
 
 ## Docker Compose
