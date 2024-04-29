@@ -32,7 +32,7 @@ tags:
   * Still working on his chewing and biting issues
 * Installed a permanent baby gate in front of our stairs
 * Finished personal finance statements for March
-  * This take about ~1 hour per month
+  * This takes about ~1 hour per month
   * Looking for better tools to automate this
 * Started running again
   * After a 3-week break, I did a 2.5-mile run at ~9 min/mile pace
