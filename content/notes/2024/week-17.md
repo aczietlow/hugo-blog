@@ -36,6 +36,9 @@ tags:
   * Looking for better tools to automate this
 * Started running again
   * After a 3-week break, I did a 2.5-mile run at ~9 min/mile pace
+* Watched
+  * 1st round of the NFL draft
+  * Random episodes of Killing Eve with Alaina
 
 ## Insights Upon Reflection
 
