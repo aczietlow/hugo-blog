@@ -21,7 +21,7 @@ Keycloak is an open sourced project for identity and access management developed
 
 ## Docker Compose
 
-By default, Keycloak will use a dev-file for storage, but for our use case we'll be using Postgres. Keycloak does [support](https://www.keycloak.org/server/db) other databases as well.
+By default, Keycloak will use a dev-file for storage, but for our use case we will be using Postgres. Keycloak does [support](https://www.keycloak.org/server/db) other databases as well.
 
 ```yaml
 #docker-compose.yml
@@ -90,7 +90,7 @@ A run down of what the above accomplished:
 
 ## Some Notes 
 
-This instance of Keycloak was started using the `start-dev` option when starting the server. This is, as the command applies, a more developer friendly method for getting started quickly. Some default configurations for start-dev are: 
+This instance of Keycloak was started using the `start-dev` option when starting the server. This approach, as indicated by the command, is a more developer-friendly method for getting started quickly. Some default configurations for start-dev are: 
 - HTTP is enabled (HTTPS is available, but not required)
 - Strict hostname matching is disabled
 - Theme-caching and template-caching are disabled 

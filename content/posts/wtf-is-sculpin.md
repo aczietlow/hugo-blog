@@ -2,7 +2,7 @@
 title: WTF is Sculpin
 date: 2017-03-07
 tags: [
-    "wtf is",
+    "wtf-is",
     "sculpin"
 ]
 thumbnail: "images/blogs/jackson.png"
