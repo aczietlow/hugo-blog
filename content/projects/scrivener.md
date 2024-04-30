@@ -10,7 +10,7 @@ teaser: "Transcoding automation for ripped MKV video containers to MP4 container
 codeLineNumbers: true
 thumbnail: "images/projects/git-logo.png"
 source: https://github.com/aczietlow/scrivener
-license: MIT Licenses
+license: MIT License
 activity: 2023-09-06
 ---
 

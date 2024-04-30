@@ -38,7 +38,7 @@
 - [x] look more into indieauth
 - [ ] Add client side search.
 - [ ] Finish updated the scrivener project post 
-- [ ] Add license to goFxSocial
+- [x] Add license to goFxSocial
 - [ ] Add credit and attribution to Jamie and changelog for really energizing me on this
 
 ## Even later backlog
