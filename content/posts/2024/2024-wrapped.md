@@ -17,7 +17,7 @@ Over the past four years I've prescribed to the philosophy of "reach for the sta
 
 | Goals                        | Progress | Completion Date |
 |------------------------------|----------|-----------------|
-| 12 monthly blog posts        | 2/12     |                 |
+| 12 monthly blog posts        | 4/12     |                 |
 | 4 "thought leadership" posts | 0/4      |                 |
 | Publish 1 Video              | 0/1      |                 |
 | Read 12 books                | 1/12     |                 |
@@ -29,16 +29,16 @@ Team Rename - Because I want to be a part of the meme of changing team/product n
 
 Legacy Applications
 
-Data viz for Dora metrics
+Data viz for DORA metrics
 
 ## Side Projects
 
-[goFxSocials](https://github.com/aczietlow/goFxSocials) - Discord bot that provides a command to "fix" oEmbed links shared. 
+Launched [project](/projects) catalog to log and track all side projects small and large
+
+* [goFxSocials](https://github.com/aczietlow/goFxSocials) - Discord bot that provides a command to "fix" oEmbed links shared. 
 Jellyfin home launched
-
-Homelab upgrades
-
-Ryan's MF'ing project
+* Homelab upgrades
+* Ryan's MF'ing project
 
 ## Health
 
@@ -48,7 +48,7 @@ Healthier allows me to focus and accomplish more
 * Resting heart rate sub 65
 * Body fat of less than 20%
 
-Run a 10k at sub 55 minutes
+Run a 10k at sub 55 minutes (Ran bridge run at 54:53 on 04/06!)
 
 Benched 225 again
 
