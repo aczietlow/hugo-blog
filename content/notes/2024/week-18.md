@@ -6,7 +6,7 @@ tags:
   - weekly-notes
 ---
 
-* Work has been getting pretty busy
+* This week work was just work
   * Focusing on productivity measurements and improvements
   * Continuing to build base knowledge of underlying tech stack at work
     * OIDC
