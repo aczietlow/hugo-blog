@@ -1,6 +1,6 @@
 ---
 title: "GoGoPing"
-date: 2024-05-05T20:19:11-04:00
+date: 2021-08-21
 tags: [
   "go"
 ]

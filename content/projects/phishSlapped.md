@@ -1,6 +1,6 @@
 ---
 title: "PhishSlapped"
-date: 2024-05-05T20:15:12-04:00
+date: 2024-02-03
 tags: [
   "email",
   "docker",
@@ -14,7 +14,5 @@ source: https://github.com/aczietlow/goFxSocials
 #latest: 2024.02.08
 activity: 2024-02-08
 ---
-
-## Introduction
 
 A repo I use for testing sending of phishing emails via gophish, and mailhog. 
