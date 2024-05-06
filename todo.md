@@ -19,7 +19,7 @@
 - [x] Make cheatsheet for hugo
   - `<pre>{{ debug.Dump .Site.Menus.social }}</pre>`
 - [x] Make cheatsheet archetype for scaffolding quicker
-- [ ] Look for jetbrains hugo plugin
+- [x] Look for jetbrains hugo plugin
 - [ ] write plugin to pull github project stats. Activity, releases, license, etc
 - [ ] Implement Reading list
   - inspiration: 
@@ -40,6 +40,7 @@
 - [ ] Finish updated the scrivener project post 
 - [x] Add license to goFxSocial
 - [ ] Add credit and attribution to Jamie and changelog for really energizing me on this
+- [ ] Update the /project type to contain more info to their project page. Or should the links just go directly to the github page instead?
 
 ## Even later backlog
 - [ ] https://indiepass.app/

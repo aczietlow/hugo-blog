@@ -66,7 +66,7 @@ enableMathNotation = true
 
 # directory(s) where your articles are located
 # see config details here https://gohugo.io/functions/where/#mainsections
-mainSections = ["posts", "projects", "notes"]
+mainSections = ["posts", "notes"]
 
 # center logo on navbar
 centerLogo = false # Set to "true" for centering or "false" for left aligned.

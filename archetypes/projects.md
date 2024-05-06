@@ -8,12 +8,12 @@ tags: [
 draft: true
 teaser: "A brief teaser description for project"
 codeLineNumbers: true
-thumbnail: "images/blogs/jellyfin-logo.png"
+thumbnail: "images/projects/git-logo.png"
 thumbnail_byline: "Byline for thumbnail image" # Sets a byline under the thumbnail image
 source: https://github.com/aczietlow/goFxSocials
 license: Apache-2.0
-latest: 2024.4.3
-activity: 2024-04-12
+latest: 2024.4.3 # Latest release
+activity: 2024-04-12 # Latest commit to HEAD
 ---
 
 ## Introduction
