@@ -4,6 +4,12 @@ Tracking progress and features implemented in progress to join the indieWeb
 
 This will be useful when I start updating the theme of this site.
 
+## Initial
+
+- Pick a framework/Platform
+- Get a domain
+- Get started
+
 ## Implemented microformats2
 
 Make HTML semantically meaningful again. Extending html to make site content consumable in standard format without having to implement an API.
@@ -26,5 +32,7 @@ IndieAuth.com
 - [x] Add backlinks to your website on social profiles
 - [x] Declare authorization endpoint
 
-
 Oauth provider
+
+
+## WebMentions

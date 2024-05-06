@@ -19,7 +19,7 @@
 - [x] Make cheatsheet for hugo
   - `<pre>{{ debug.Dump .Site.Menus.social }}</pre>`
 - [x] Make cheatsheet archetype for scaffolding quicker
-- [ ] Look for jetbrains hugo plugin
+- [x] Look for jetbrains hugo plugin
 - [ ] write plugin to pull github project stats. Activity, releases, license, etc
 - [ ] Implement Reading list
   - inspiration: 
