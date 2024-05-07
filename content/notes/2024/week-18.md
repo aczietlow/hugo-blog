@@ -24,7 +24,7 @@ tags:
   * Need to see about doing a BoF presentation
   * And make decision about HAM radio license
 * Week 2 of Cooper's training
-  * Installed and set up his pin
+  * Installed and set up his pen
   * Working on more commands 
   * Building a structured routine for him
 * Watched
