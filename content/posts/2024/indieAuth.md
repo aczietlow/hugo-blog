@@ -11,7 +11,7 @@ tags:
   - IndieWeb
   - authentication
   - IndieAuth
-d# comment: false # Disable comment if false.
+# comment: false # Disable comment if false.
 ---
 
 Suppose you want to authenticate with an application for <insert examples here>. 
