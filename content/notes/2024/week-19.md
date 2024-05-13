@@ -22,6 +22,7 @@ tags:
   - Really want to set up an IndieAuth server from the ground up
     - Because fun
     - It's useful in improving my grasp of OAuth
+- Spent 6 hours attempting to "fix" flooring in foyer. Instead of replacing a single plank of LVP in the middle of the floor, I damaged the piece that I cut to fit the corner and managed to damage the adjacent boards. I now have to replace 4 flooring planks
 - Cooper updates
   - He's able to sleep in 5 hour blocks at night without a bladder accident
   - We're getting closer on bathroom training. If the door is open, most of the time he will choose to use the bathroom in the yard. It's not consistent, and if it's not easily accessible to him, he'll take the path of least resistance
@@ -30,9 +31,11 @@ tags:
   - Lexie continues to enjoy his companionship
 - Went to North Augusta to catch up with family for Mother's Day
 - Followed the reaction to the roast of Tom Brady. Personally I enjoyed the clips from fellow teammates and coaches. The appeal of celebrities and comedians tearing someone down baffles me somewhat; both for participants and for the audience
+- Went out for multiple date nights with Alaina. This was good for us both
 - Watched
   - Marley and Me
   - Homeward Bound: The Incredible Journey
+  - Couple of episodes of Clarkson's Farm
   
 ## Conclusion
 
