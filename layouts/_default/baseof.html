@@ -52,6 +52,28 @@
     {{- end }}
     {{- end }}
     {{ partial "hooks/head-end.html" . }}
+
+    {{ if .Store.Get "hasMermaid" }}
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'dark',
+        htmlLabels: true,
+        securityLevel: 'loose',
+        sequence: {
+          showSequenceNumbers: true,
+          diagramMarginX: 50,
+          diagramMarginY: 10,
+          boxTextMargin: 5,
+          noteMargin: 10,
+          messageMargin: 35,
+          mirrorActors: false,
+        }
+      });
+    </script>
+    {{ end }}
+
   </head>
   {{- $maxCodeLines := 100 }}
   {{- with $s.codeMaxLines }}
