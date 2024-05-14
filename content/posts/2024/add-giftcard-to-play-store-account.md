@@ -31,7 +31,7 @@ In order to add a Google Play Store gift card to you account, follow the below s
 
 ![Redeem Gift Card code](../../../images/blogs/tech-support/play-store4.png)
 
-6. *Enter the code off the label (include spaces)*
+6. *Enter the code off the label (include spaces). Do not use the camera to scan the barcode* 
 
 ![Enter gift code card](../../../images/blogs/tech-support/play-store5.png)
 
