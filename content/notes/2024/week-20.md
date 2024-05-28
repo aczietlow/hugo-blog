@@ -1,7 +1,7 @@
 ---
 title: "Week 20/52" # Title of the blog post.
 date: 2024-05-19T06:11:01-04:00 # Date of post creation.
-description: "Personal notes description"
+description: "Adjusting work/life balance"
 tags:
   - weekly-notes
 ---
