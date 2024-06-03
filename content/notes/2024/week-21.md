@@ -15,8 +15,11 @@ tags:
   - Captured some sunrise photos in the morning
     - Even the journey of rolling out of the house around 5am was a sense of catharsis
   - Took a very enthusiastic walk in park
+- Had Lunch with Scotty in Charleston
+  - Tried a newer Asain fusion place
 - Continued church streak
 - Cooper now knows how to shake
+  - Also took him for his first vet visit at the mobile vet at Tractor Supply
 - Watched 
   - Monaco Grand Prix - Historical race, but what a predictable and boring race to watch
   - True Detective S1 (3 episodes) - An excellent, yet extremely heavy how
