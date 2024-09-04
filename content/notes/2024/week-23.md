@@ -1,7 +1,6 @@
 ---
 title: "Week 23" # Title of the blog post.
 date: 2024-06-09T18:03:40-04:00 # Date of post creation.
-draft: true
 description: "Recharging and finding a center at a tech conference"
 tags:
   - weekly-notes

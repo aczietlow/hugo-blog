@@ -1,7 +1,6 @@
 ---
 title: "Week 26" # Title of the blog post.
 date: 2024-07-01T16:08:35-04:00 # Date of post creation.
-draft: true
 description: "Reorganizing after a chaotic June"
 tags:
   - weekly-notes

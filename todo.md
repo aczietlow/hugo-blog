@@ -11,7 +11,6 @@
 - [ ] bridgy
 - [x] add webring
 
-
 - [ ] Look at microblog
 
 ## Backlog

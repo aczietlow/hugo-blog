@@ -1,5 +1,5 @@
 ---
-title: "Week 19/52" # Title of the blog post.
+title: "Week 19" # Title of the blog post.
 date: 2024-05-12
 description: "It's been a while since I've been this invested an animals bladder schedule."
 tags:

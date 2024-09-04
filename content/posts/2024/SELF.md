@@ -21,8 +21,6 @@ tags:
 # comment: false # Disable comment if false.
 ---
 
-
-
 Notes
 
 - Went to talk on Matrix

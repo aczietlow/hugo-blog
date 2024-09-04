@@ -16,7 +16,7 @@ tags:
     - Even the journey of rolling out of the house around 5am was a sense of catharsis
   - Took a very enthusiastic walk in park
 - Had Lunch with Scotty in Charleston
-  - Tried a newer Asain fusion place
+  - Tried a newer Asian fusion place
 - Continued church streak
 - Cooper now knows how to shake
   - Also took him for his first vet visit at the mobile vet at Tractor Supply
