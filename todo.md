@@ -27,7 +27,6 @@
     - https://www.jvt.me/kind/listens/
 - [ ] Refactor theme to separate site structure markup from theming logic
   - Have ability to switch themes at some point in the future
-- [ ] Replace theme with patternFly
 - [ ] switch to a more open analytics and tracking tool
 - [ ] Replace "zietlow.io" in main menu with home icon
 - [ ] Add little user icon before author in post-meta-data
