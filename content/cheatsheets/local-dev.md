@@ -45,6 +45,18 @@ e - end of next word
 
 {{</cheatsheet-section>}}
 
+{{<cheatsheet-section>}}
+### Navigation
+
+```
+G - end of file
+gg || :0 - beginning of the file
+% - jump to matching '()', '{}', '[]'
+<c-B> - page up
+<c-F> - page down
+```
+{{</cheatsheet-section>}}
+
 {{</three-column>}}
 
 ## Neovim Basics
