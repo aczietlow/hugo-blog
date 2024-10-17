@@ -85,5 +85,15 @@ space-sk  - search keymaps
 ```
 {{</cheatsheet-section>}}
 
-
+{{<cheatsheet-section>}}
+### Harpoon
+```
+space-a   - add to list
+<c-e>     - show list
+<c-1>     - Select 1 from list
+<c-2>     - Select 2 from list
+<c-3>     - Select 3 from list
+<c-4>     - Select 4 from list
+```
+{{</cheatsheet-section>}}
 {{</three-column>}}
