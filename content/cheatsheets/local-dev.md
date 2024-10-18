@@ -20,7 +20,7 @@ codeLineNumbers: false
 ← - h
 → - l
 ↓ - j
-```
+  ```
 {{</cheatsheet-section>}}
 
 {{<cheatsheet-section>}}
@@ -55,6 +55,25 @@ gg || :0 - beginning of the file
 <c-B> - page up
 <c-F> - page down
 ```
+{{</cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+
+### Text Editing
+
+```
+a   - append
+A   - append from the end of the line
+i   - insert
+o   - insert from new line
+O   - insert from prev line
+s   - delete character & insert
+S   - Delete line and insert
+C   - delete to the end of line and insert
+r   - replace single character
+R   - Enter Replace mode
+```
+
 {{</cheatsheet-section>}}
 
 {{</three-column>}}
@@ -97,3 +116,21 @@ space-a   - add to list
 ```
 {{</cheatsheet-section>}}
 {{</three-column>}}
+
+## Local Dev Tools
+
+{{<three-column>}}
+
+{{<cheatsheet-section>}}
+### Kitty Terminal
+
+```
+<c-shift-t>     - new tab
+<c-shift-q>     - close tab
+<c-shift-right> - next tab
+<c-shift-left>  - previous tab
+```
+{{</cheatsheet-section>}}
+
+{{</three-column>}}
+
