@@ -132,5 +132,19 @@ space-a   - add to list
 ```
 {{</cheatsheet-section>}}
 
+
+{{<cheatsheet-section>}}
+### Tmux
+
+```
+tmux new -s sessionName - Start a new session with name
+tmux a -t sessionName   - Attach to session with given name
+tmux ls                 - list all sessions
+tmux kill-session -t sessionName
+<c-b> + d               - detact from session
+```
+{{</cheatsheet-section>}}
+
 {{</three-column>}}
+
 
