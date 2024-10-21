@@ -52,8 +52,8 @@ e - end of next word
 G - end of file
 gg || :0 - beginning of the file
 % - jump to matching '()', '{}', '[]'
-<c-B> - page up
-<c-F> - page down
+<c-b> - page up
+<c-f> - page down
 ```
 {{</cheatsheet-section>}}
 
