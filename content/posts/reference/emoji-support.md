@@ -6,6 +6,7 @@ description = "Guide to emoji usage in Hugo"
 draft=true
 tags = [
     "emoji",
+    "hugo-reference",
 ]
 +++
 

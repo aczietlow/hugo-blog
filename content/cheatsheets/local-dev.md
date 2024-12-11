@@ -57,6 +57,8 @@ gg || :0 - beginning of the file
 ```
 {{</cheatsheet-section>}}
 
+
+
 {{<cheatsheet-section>}}
 
 ### Text Editing
@@ -129,6 +131,8 @@ space-a   - add to list
 <c-shift-q>     - close tab
 <c-shift-right> - next tab
 <c-shift-left>  - previous tab
+<c-shift-enter> - new window
+<c-shift-n>     - new os window
 ```
 {{</cheatsheet-section>}}
 
