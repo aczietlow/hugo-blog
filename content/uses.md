@@ -29,6 +29,7 @@ comment: false
 - NAS: TrueNas
 - Tabular Data: Google Sheets
 - Passwords: 1Password
+- Keyboard Layout: [oryx config](https://configure.zsa.io/moonlander/layouts/xPpM5/latest/0)
 
 ## Desk Setup 
 
