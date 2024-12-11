@@ -46,7 +46,7 @@ e - end of next word
 {{</cheatsheet-section>}}
 
 {{<cheatsheet-section>}}
-### Navigation
+### Word Navigation
 
 ```
 G - end of file
@@ -58,6 +58,15 @@ gg || :0 - beginning of the file
 {{</cheatsheet-section>}}
 
 
+{{<cheatsheet-section>}}
+### Line Navigation
+
+```
+0 - Move to beginning of line
+^ - First non-blank char of line
+$ - End of the line
+```
+{{</cheatsheet-section>}}
 
 {{<cheatsheet-section>}}
 
@@ -66,9 +75,9 @@ gg || :0 - beginning of the file
 ```
 a   - append
 A   - append from the end of the line
-i   - insert
 o   - insert from new line
 O   - insert from prev line
+x   - delete char under cursor
 s   - delete character & insert
 S   - Delete line and insert
 C   - delete to the end of line and insert
