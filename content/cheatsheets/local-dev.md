@@ -87,6 +87,17 @@ R   - Enter Replace mode
 
 {{</cheatsheet-section>}}
 
+
+{{<cheatsheet-section>}}
+
+### Clipboard
+
+``` 
+u     - undo
+<c-r> - redo
+```
+{{</cheatsheet-section>}}
+
 {{</three-column>}}
 
 ## Neovim Basics

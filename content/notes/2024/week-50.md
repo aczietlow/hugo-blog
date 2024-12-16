@@ -14,8 +14,13 @@ tags:
 - Grieving a death in the family
 - Being extremely reflective on life I want to live
 - Catching up Car maintenace
-- Finishing puttin Christmas up
-
+  - Replaced aging tires
+  - change oil
+  - wash, claybar, and wax
+  - check timing belt
+- Finishing putting Christmas up
+- Updated homelab Truenas to support tailscale and nfs file mounts
+  - promptly spent the next 6 hours looking through family photos
 
 A little late to the party but starting on the [advent of code](https://adventofcode.com/2024) for the year. 
 
@@ -139,4 +144,3 @@ file, err := os.ReadFile("./input.txt")
 	return listA, listB
 }
 ```
-
