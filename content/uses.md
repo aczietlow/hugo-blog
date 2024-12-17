@@ -34,8 +34,8 @@ comment: false
 ## Desk Setup 
 
 - Veri Desk Electric Standing Desk
-- Main Monitor: Samsung 49" G9 VA LCD
-- 2nd Monitor: LG 35" VA LCD
+- Main Monitor: Samsung 49" G9 VA LCD 5120x1440
+- 2nd Monitor: LG 35" VA LCD 3440x1440
 
 ## Homelab
 
