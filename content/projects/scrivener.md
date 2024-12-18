@@ -1,6 +1,6 @@
 ---
 title: Scrivener
-date: 2024.04.19
+date: 2024-04-19
 tags: [
   "docker",
   "jellyfin"

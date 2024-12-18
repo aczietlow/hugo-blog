@@ -11,7 +11,7 @@ codeLineNumbers: false
 
 ## VIM Basics
 
-{{<three-column>}}
+{{<two-column>}}
 
 {{<cheatsheet-section>}}
 ### Movement
@@ -98,7 +98,7 @@ u     - undo
 ```
 {{</cheatsheet-section>}}
 
-{{</three-column>}}
+{{</two-column>}}
 
 ## Neovim Basics
 

@@ -3,12 +3,17 @@ Title = "Zietlow"
 author = "Chris Zietlow"
 copyright = "Copyright © 2008–2024, Chris Zietlow"
 # canonifyurls = true
-paginate = 10
+# paginate = 10
 theme = "hugo-clarity"
 
 disqusShortname = "zietlow"
 
 DefaultContentLanguage = "en"
+
+[pagination]
+disableAliases = false
+pagerSize = 10
+path = 'path'
 
 [taxonomies]
 category = "categories"
