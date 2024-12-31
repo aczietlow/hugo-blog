@@ -106,6 +106,31 @@ u     - undo
 
 
 {{<cheatsheet-section>}}
+### Open New Pane
+
+opens a in-memory file (buffer) and creates a viewport of that buffer (window)
+
+```
+<c-w> v     - split window vertically
+:vsplit :vs - alais for above
+<c-w><c-s>  - split window in 2 horizontally
+:split :sp  - alais for above 
+:sp +term   - opens window and creates new terminal session
+```
+{{</cheatsheet-section>}}
+
+
+{{<cheatsheet-section>}}
+### Navigate between nvim panes
+```
+<c-w-h> - Moves the cursor to the left pane.
+<c-w-j> - Moves the cursor to the lower pane.
+<c-w-k> - Moves the cursor to the upper pane.
+<c-w-l> - Moves the cursor to the right pane.
+```
+{{</cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
 
 ### Fuzzy Finder (Telescope)
 ```
