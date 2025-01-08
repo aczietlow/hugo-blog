@@ -13,6 +13,6 @@ tags:
   - Looking for some low-hanging fruit QoL improvements
 - Spent weekend helping a friend prep for an estate sale
 - Niece came to stay the week with us again
-- Tinkered with homelab - adding new HDDS
+- Tinkered with homelab - adding new HDDs
 - Swapped desktop out to new fractal case, and cleaned home office a fair bit
 - 

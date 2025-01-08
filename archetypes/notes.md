@@ -2,6 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}" # Title of the blog post.
 date: {{ .Date }} # Date of post creation.
 description: "Personal notes description"
+summary: " "
 draft: true
 featureImage: "/images/path/file.jpg" # Sets featured image on blog post.
 thumbnail: "/images/path/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
@@ -15,7 +16,6 @@ categories:
 tags:
   - Tag_name1
   - Tag_name2
-summary: " "
 ---
 
 **Insert Lead paragraph here.**
