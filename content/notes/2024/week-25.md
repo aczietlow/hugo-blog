@@ -2,6 +2,7 @@
 title: "Week 25" # Title of the blog post.
 date: 2024-06-26T18:03:34-04:00 # Date of post creation.
 description: "Taking some time away"
+summary: "Taking some time away"
 tags:
   - weekly-notes
 ---

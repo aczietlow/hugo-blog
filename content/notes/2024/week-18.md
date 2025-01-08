@@ -2,6 +2,7 @@
 title: "Week 18" # Title of the blog post.
 date: 2024-05-05
 description: "Eureka! Sleep deprivation isn't productive"
+summary: "Eureka! Sleep deprivation isn't productive"
 tags:
   - weekly-notes
 ---

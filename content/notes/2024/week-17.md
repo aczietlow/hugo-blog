@@ -2,6 +2,7 @@
 title: "Week 17" # Title of the blog post.
 date: 2024-04-28
 description: "Adjusting to a busy schedule with multifaceted challenges"
+summary: "Adjusting to a busy schedule with multifaceted challenges"
 tags:
   - weekly-notes
 ---

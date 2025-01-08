@@ -2,6 +2,7 @@
 title: "Week 16" # Title of the blog post.
 date: 2024-04-21T18:15:51-04:00 # Date of post creation.
 description: "Weekly blogging"
+summary: "Weekly blogging"
 featureImage: "/images/notes/cooper/cooper.jpg" # Sets featured image on blog post.
 tags:
   - weekly-notes

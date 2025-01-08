@@ -2,6 +2,7 @@
 title: "Week 24" # Title of the blog post.
 date: 2024-06-16T18:03:37-04:00 # Date of post creation.
 draft: true
+summary: "Gritting my teeth and soldiering on"
 description: "Gritting my teeth and soldiering on"
 tags:
   - weekly-notes

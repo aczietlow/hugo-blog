@@ -2,6 +2,7 @@
 title: "Week 21" # Title of the blog post.
 date: 2024-05-26T21:34:14-04:00 # Date of post creation.
 description: "Taking some recharge time"
+summary: "Taking some recharge time"
 tags:
   - weekly-notes
 ---

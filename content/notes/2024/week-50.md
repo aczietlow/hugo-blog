@@ -2,6 +2,7 @@
 title: "Week 50" # Title of the blog post.
 date: 2024-12-15
 description: "Life happens, working through the advent of code"
+summary: "Life happens, working through the advent of code"
 tags:
   - weekly-notes
   - aoc-2024
