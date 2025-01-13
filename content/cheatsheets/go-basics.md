@@ -72,7 +72,7 @@ func main() {
 
 ## Composite Data Types
 
-{{< three-column>}}
+{{< two-column>}}
 {{< cheatsheet-section>}}
 
 ### Arrays
@@ -175,4 +175,42 @@ fmt.Println(realOdd)
 ```
 {{</ cheatsheet-section>}}
 
-{{< /three-column>}}
+{{< cheatsheet-section>}}
+### Maps
+
+hash table data type
+
+MAPS CAN ONLY BE INITIATED USING `make()` or A LITERAL. 
+cannot appent to a zero valued maps!
+```go
+// m = make(map[string]int)
+m["route"] = 66
+
+// receive map value
+i := m["route"]
+
+// if value DNE, types zero value is returned
+j := m["foo"]
+// j == 0
+
+// delete item from map
+delete(m, "route")
+```
+{{</ cheatsheet-section>}}
+
+{{< cheatsheet-section>}}
+### Check if map value exist
+
+the second value `ok` is a bool that is true if key exists in map
+```go
+i, ok := m["route"]
+```
+{{</ cheatsheet-section>}}
+{{< cheatsheet-section>}}
+### Maps Passed by reference
+
+Maps are passed by reference;
+
+i.e. when passed to a function, operations are performed on the underlying map
+{{</ cheatsheet-section>}}
+{{< /two-column>}}
