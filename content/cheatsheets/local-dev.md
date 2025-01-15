@@ -46,7 +46,7 @@ e - end of next word
 {{</cheatsheet-section>}}
 
 {{<cheatsheet-section>}}
-### Word Navigation
+### Screen Navigation
 
 ```
 G - end of file
@@ -66,6 +66,19 @@ gg || :0 - beginning of the file
 ^ - First non-blank char of line
 $ - End of the line
 ```
+{{</cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+### Word Navigation
+
+```
+w   - next word
+b   - prev word
+0   - start of line
+^   - first non-blank char of line
+$   - end of line
+```
+
 {{</cheatsheet-section>}}
 
 {{<cheatsheet-section>}}
@@ -100,10 +113,29 @@ u     - undo
 
 {{</two-column>}}
 
+## More Vim
+
+
+{{<two-column>}}
+
+{{<cheatsheet-section>}}
+### Select within (), \{}
+
+```
+:vi(  - select text within ()
+:vib  - select text within ()
+
+:vi{  - select text within {}
+:viB  - select text within {}
+
+```
+
+{{</cheatsheet-section>}}
+
+{{</two-column>}}
 ## Neovim Basics
 
 {{<three-column>}}
-
 
 {{<cheatsheet-section>}}
 ### Open New Pane
