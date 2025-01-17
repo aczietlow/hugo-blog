@@ -1,12 +1,15 @@
----
-author: Hugo Authors
-title: Math Typesetting
-date: 1999-03-08
-description: A brief guide to setup KaTeX
-math: true
-draft: true
----
-
++++
+author = "Hugo Authors"
+title = "Math Typesetting"
+date = 2020-01-01
+description = "A brief guide to setup KaTeX"
+math = true
+draft = true
+tags = [
+    "emoji",
+    "hugo-reference",
+]
++++
 Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.
 <!--more-->
 
