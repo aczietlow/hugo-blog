@@ -12,6 +12,7 @@
 - [x] add webring
 
 - [ ] Look at microblog
+- [ ] fix date in some posts metadata section in the header. Recent change caused issues
 
 ## Backlog
 
