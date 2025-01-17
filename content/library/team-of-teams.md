@@ -1,9 +1,9 @@
 ---
 title: "Team of Teams"
 date: 2024-04-21
-description: "Book description." # Description used for search engine.
+description: "Explores General McChrystal thoughts on adaptability, and autonomy of decenralized decision making"
 draft: true
-wip: true
+wip: false 
 complete: true
 isbn:  9780756419189
 type: read

@@ -1,9 +1,10 @@
 ---
 title: "Tackling Social Medias Hidden Dangers"
-date: 2025-01-15T19:18:46-05:00
+date: 2025-01-15
 complete: true
 source: https://www.thedeeplife.com/podcasts/episodes/ep-330-tackling-social-medias-hidden-dangers/
 type: listens
+description: "Cal Newport explores both sides of the debate around the dangers of social media"
 ---
 
 ### Recap

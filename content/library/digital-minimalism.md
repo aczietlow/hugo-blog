@@ -1,8 +1,9 @@
 ---
 title: "Digital Minimalism" # Title of the blog post.
 date: 2025-01-16T19:37:34-05:00 # Date of post creation.
-description: "Book description." # Description used for search engine.
+description: "Trade constantly being connected for more meaningful high-value habits"
 complete: true
+wip: true
 isbn: 9780525536512 
 source: https://www.goodreads.com/book/show/40672036-digital-minimalism
 type: reads

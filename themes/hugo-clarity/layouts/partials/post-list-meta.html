@@ -1,35 +1,18 @@
 {{- $showDate := ne (.Param "showdate") false }}
 {{- $showReadTime := ne (.Param "showreadtime") false }}
 {{- $showPostMeta := or ($showDate) ($showReadTime) (isset .Params "tags") }}
-{{- $scratch := newScratch }}
-{{- $scratch.Set "writeSeparator" false }}
+
 {{- if $showPostMeta }}
   <div class="post_meta">
-{{- end }}
   {{- if $showDate }}
-    <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
-    <span class="post_date dt-published">
-      {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
-    </span>
-    {{- $scratch.Set "writeSeparator" true }}
+  <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
+  <span class="post_date dt-published">{{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}</span>
   {{- end }}
-    {{- if $showReadTime }}
-    <span class="post_time">{{ if ($scratch.Get "writeSeparator") }}&nbsp;| {{ end }}{{ T "reading_time" . }}</span>
-  {{- end }}
-    <div>{{ if ($scratch.Get "writeSeparator") }}&nbsp;| {{ end }}{{ partial "h-card" . }}</div>
+  {{- if $showReadTime }}
+  <span class="post_time">&nbsp;| {{ T "reading_time" . }}</span>
+  {{- end }}  
+  <div>&nbsp;| {{ partial "h-card" . }}</div>
 
-<!--  {{- with .Params.tags -}}-->
-<!--    <span>-->
-<!--      {{- if ($scratch.Get "writeSeparator") }}&nbsp;| {{ end }}-->
-<!--      {{- range . }}-->
-<!--        {{- $tag := urlize . -}}-->
-<!--        <a href='{{ absLangURL (printf "tags/%s" $tag) }}' title="{{ . }}" class="post_tag button button_translucent">-->
-<!--          {{- . }}-->
-<!--        </a>-->
-<!--      {{- end }}-->
-<!--    </span>-->
-<!--    {{- $scratch.Set "writeSeparator" true }}-->
-<!--  {{- end }}-->
-{{- if $showPostMeta }}
   </div>
 {{- end }}
+{{- $scratch := newScratch }}
