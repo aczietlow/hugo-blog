@@ -194,6 +194,14 @@ space-a   - add to list
 <c-4>     - Select 4 from list
 ```
 {{</cheatsheet-section>}}
+{{<cheatsheet-section>}}
+### Todo
+
+```
+:TodoQuickFix   - list all todos in project
+:TodoTelescope  - list all todos in telescope
+```
+{{</cheatsheet-section>}}
 {{</three-column>}}
 
 ## Local Dev Tools
