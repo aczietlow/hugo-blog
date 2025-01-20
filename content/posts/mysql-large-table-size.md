@@ -3,7 +3,8 @@ title: Find mysql Table Size
 date: 2017-09-22
 tags: [
     "mysql",
-    "code"
+    "code",
+    "blogumentation"
 ]
 ---
 
