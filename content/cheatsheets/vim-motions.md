@@ -5,6 +5,7 @@ tags: [
   "neovim",
   "Cheatsheet"
 ]
+codeLineNumbers: false
 teaser: "Cheatsheet of vim motions"
 ---
 
