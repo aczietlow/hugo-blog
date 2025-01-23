@@ -129,6 +129,14 @@ u     - undo
 ```
 
 {{</cheatsheet-section>}}
+{{<cheatsheet-section>}}
+### Visual Modes
+
+```
+v - visual mode
+V - line visual mode
+```
+{{</cheatsheet-section>}}
 
 {{</two-column>}}
 
