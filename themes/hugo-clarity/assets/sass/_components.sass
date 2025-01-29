@@ -412,22 +412,23 @@
         right: 0.45rem
 
 .excerpt
-  &_header, &_footer
+  &_header
     padding: 1rem
   &_footer
     padding: 0 1rem 2.25rem 1rem
+    display: block
+    overflow: hidden
+    &.partition
+      display: grid
+      @media screen and (min-width: 769px)
+        grid-template-columns: 2fr 7fr
+        grid-gap: 1rem
   &_thumbnail
     min-height: 10rem
     display: none
     @media screen and (min-width: 769px)
       display: block
       border-radius: 0.5rem
-  &_footer
-    &.partition
-      display: grid
-      @media screen and (min-width: 769px)
-        grid-template-columns: 2fr 7fr
-        grid-gap: 1rem
 .sidebar
   &_inner
     position: relative

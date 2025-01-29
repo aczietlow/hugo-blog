@@ -41,6 +41,7 @@
 - [ ] Add credit and attribution to Jamie and changelog for really energizing me on this
 - [ ] Update the /project type to contain more info to their project page. Or should the links just go directly to the github page instead?
 - [ ] Add section of books "to read" in library section
+- [ ] fix go theming on fedora. currently not rendering scss
 
 ## Even later backlog
 - [ ] https://indiepass.app/
