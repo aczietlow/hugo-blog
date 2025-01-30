@@ -2,19 +2,15 @@
 title: "Experimenting With Digital Minimalism" # Title of the blog post.
 date: 2025-01-23T18:34:10-05:00 # Date of post creation.
 description: "Experimenting with digital minimalism inorder to find more time in the day and happiness in life" # Description used for search engine.
-# categories:
-#   - Technology
 tags:
   - experiment
 ---
 
 ### Abstract
 
-I invest too much of my time into low value, low reward activities. This can be doom scrolling Twitter, reading the latest drama on reddit, or getting sucked into a rabbit hole on Youtube. Sometimes this can be 
-Plan - For the next 30 days live a life style of digital minimalism 
+I invest too much of my time into low value, low reward activities. This can be doom scrolling Twitter, reading the latest drama on reddit, or getting sucked into a rabbit hole on Youtube. Sometimes this takes the form of playing a mindless game, or getting sucked into binge watching something on Netflix. I've become addicted to technology. In order to optimize my life for satisfaction, joy, and virtue I need to find a more rigid role for media and technology. To start I'll establish a new baseline, or foundation upon which to build upon.  
 
-### Why
-
+Plan: Embark on 30 days of digital detox
 
 ### Rules 
 
@@ -35,6 +31,13 @@ Plan - For the next 30 days live a life style of digital minimalism
 2. Go on long walks without the dogs
   - also with the dogs
 3. Consolidate texting to small windows in the morning and evenings
+  - communication should be intentional, focused, and require real effort
 4. Engage in more higher demanding leisure time activities
   - higher the effort -> the higher the reward
 5. Join "something" new
+6. Embrace hobbies away from the screen
+
+
+### Conclusion
+
+At the conclusion I hope to reevaluate the role of media and technology is going to play within my life going forward.

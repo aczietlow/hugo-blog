@@ -7,7 +7,7 @@ tags:
   - weekly-notes
 ---
 
-This was the big week for our family, the week we finally laid Gumma to rest. It was a month that felt like both a few short days and an enternity. The service was beautiful and I hope will help everyone, myself included in the healing process.
+This was the big week for our family, the week we finally laid Gumma to rest. It was a month that felt like both a few short days and an eternity. The service was beautiful and I hope will help everyone, myself included in the healing process.
 
 - traveled to North Augusta to be with family during the week 
 - prepared a photo slideshow to play during the reception
@@ -29,5 +29,5 @@ This was the big week for our family, the week we finally laid Gumma to rest. It
 - finally bought Panasonic ub820
   - Interstellar looks amazing in HDR10+
   - can really start to appreciate some of my 4KUHD movies
-  - started an addicition, now I want a better TV
+  - started an addiction, now I want a better TV
 
