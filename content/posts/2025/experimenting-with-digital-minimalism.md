@@ -2,16 +2,19 @@
 title: "Experimenting With Digital Minimalism" # Title of the blog post.
 date: 2025-01-23T18:34:10-05:00 # Date of post creation.
 description: "Experimenting with digital minimalism inorder to find more time in the day and happiness in life" # Description used for search engine.
-draft: true
 # categories:
 #   - Technology
 tags:
   - experiment
 ---
 
-**Insert Lead paragraph here.**
+### Abstract
 
+I invest too much of my time into low value, low reward activities. This can be doom scrolling Twitter, reading the latest drama on reddit, or getting sucked into a rabbit hole on Youtube. Sometimes this can be 
 Plan - For the next 30 days live a life style of digital minimalism 
+
+### Why
+
 
 ### Rules 
 
