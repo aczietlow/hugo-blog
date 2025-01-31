@@ -23,7 +23,7 @@ tags:
 
 Search an sorted list by bisecting it after every lookup action. The effeciency of binary search increases directed related to the size of the list (a function of logrithmic time)
 
-**Big O:**
+**Time Complexity:**
 $\log_2 n$
 
 #### Example
@@ -47,6 +47,37 @@ func binarySearch(list []int, item int) int {
 }
 ```
 
+### Selection Sort
+
+Sort a list of []Type by searching for the smallest (or largest) element of the array, removing the found element from the list, and copying it to a new list.
+
+**Time Complexity:**
+$O(n^2)$
+
+#### Example
+
+```go
+func selectionSort(list []int) []int {
+	newList := []int{}
+	for range list {
+		smallest, smallestIndex := findSmallest(list)
+		list = append(list[:smallestIndex], list[smallestIndex+1:]...)
+		newList = append(newList, smallest)
+	}
+	return newList
+}
+
+func findSmallest(list []int) (int, int) {
+	var smallest, smallestIndex int = list[0], 0
+	for i, number := range list {
+		if number < smallest {
+			smallest = number
+			smallestIndex = i
+		}
+	}
+	return smallest, smallestIndex
+}
+```
 
 ## Data Structures
 

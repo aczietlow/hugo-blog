@@ -2,7 +2,6 @@
 title: "Go Mark 2"
 date: 2021-09-12
 tags: [
-  "tag1",
   "Cheatsheet"
 ]
 languages: [
