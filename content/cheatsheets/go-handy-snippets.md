@@ -15,7 +15,6 @@ codeLineNumbers: false
 ## Useful Go-isms
 
 {{< two-column>}}
-
 {{<cheatsheet-section>}}
 ### Popping an element from a slice via cutting
 ```go
@@ -27,4 +26,16 @@ evenNumbers = arrayPop(evenNumbers,4)
 ```
 {{</cheatsheet-section>}}
 
+{{<cheatsheet-section>}}
+### Combining 3 slices
+
+```go
+list1 := []int{1,2,3}
+list2 := []int{4,5,6}
+list3 := []int{7,8,9}
+
+megaList := append(append(list1, list2...), list3...)
+// [1 2 3 4 5 6 7 8 9]
+```
+{{</cheatsheet-section>}}
 {{< /two-column>}}
