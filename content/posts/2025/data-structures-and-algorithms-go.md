@@ -79,6 +79,32 @@ func findSmallest(list []int) (int, int) {
 }
 ```
 
+### Bubble Sort 
+
+[Thanks Obama](https://www.youtube.com/watch?v=koMpGeZpu4Q)
+
+Starts with the last item in the array, comparing it to n-1. If item is smaller than the item before it in the array then the two items are swapped. The sorted values are "bubbled up"
+
+**Time Complexity:**
+$O(n^2)$
+
+#### Example
+```go
+func bSort(list []int) []int {
+	for start := 0; start < len(list)-1; start++ {
+		index := start
+		for end := len(list) - 1; end > index; end-- {
+			if list[end] < list[end-1] {
+				temp := list[end-1]
+				list[end-1] = list[end]
+				list[end] = temp
+			}
+		}
+	}
+	return list
+}
+```
+
 ## Data Structures
 
 ### Arrays, Slices, and LinkedLists
