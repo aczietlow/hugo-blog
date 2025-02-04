@@ -38,4 +38,19 @@ megaList := append(append(list1, list2...), list3...)
 // [1 2 3 4 5 6 7 8 9]
 ```
 {{</cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+### Single line array swaps
+
+```go
+// Traditional swap
+temp := list[0]
+list[0] = list[1]
+list[1] = temp
+
+// Single line swap
+list[0], list[1] = list[1], list[0]
+```
+
+{{</cheatsheet-section>}}
 {{< /two-column>}}

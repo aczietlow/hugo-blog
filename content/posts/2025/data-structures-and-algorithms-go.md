@@ -19,33 +19,6 @@ tags:
 ---
 ## Algorithm
 
-### Binary Search
-
-Search an sorted list by bisecting it after every lookup action. The effeciency of binary search increases directed related to the size of the list (a function of logrithmic time)
-
-**Time Complexity:**
-$\log_2 n$
-
-#### Example
-```go
-func binarySearch(list []int, item int) int {
-	low := 0
-	high := len(list)
-	for low <= high {
-		// go will round here, bc mid is a type int
-		mid := (low + high) / 2
-		if item == list[mid] {
-			return mid
-		} else if item < list[mid] {
-			high = mid - 1
-		} else {
-			low = mid + 1
-		}
-
-	}
-	return -1
-}
-```
 
 ### Selection Sort
 
@@ -102,6 +75,103 @@ func bSort(list []int) []int {
 		}
 	}
 	return list
+}
+```
+
+### Quick Sort
+
+A divide-and-conquer sorting algorithm that uses recursion. To perform a quick sort:
+1. Select a pivot element in the array
+2. iterate through the array, move every element greater than the pivot to a one side, and every element less than to the other side of the pivot
+3. Recursively preform the pivot and moving until the resultant sub-arrays are either empty or contain 1 element
+
+The pivot can effect the time complexity, the best case is that both sub-arrays are of equal size.
+
+Time Complexity: <br />
+average: $O(n\log n)$ <br />
+worst:	 $O(n^2)$
+
+#### Example
+```go
+func quicksort(list []int) []int {
+	if len(list) < 2 {
+		return list
+	} else {
+		pivot := list[len(list)/2]
+		left, right, middle := []int{}, []int{}, []int{}
+		for _, value := range list {
+			if value < pivot {
+				left = append(left, value)
+			} else if value > pivot {
+				right = append(right, value)
+			} else {
+				middle = append(middle, value)
+			}
+		}
+		return append(append(quickSortFunctional(left), middle...), quickSortFunctional(right)...)
+	}
+}
+```
+
+#### Example using in-place quickSort
+
+In place expands upon the quick sort algorithm, by sorting values while scanning for elements less than and greater than the pivot element value. This method of quick sort is less efficient than above (Hoare's method) due to requiring more swaps and comparison.
+```go
+func main() {	
+	list := []int{5, 1, 2, 18, 3}
+	quickSort(list, 0, len(list)-1)
+	fmt.Println(list)
+}
+
+func quickSort(list []int, low, high int) []int {
+	if low < high {
+		var pivot int
+		list, pivot := partition(list, low, high)
+		list = quickSort(list, low, pivot-1)
+		list = quickSort(list, pivot+1, high)
+	}
+	return list
+}
+
+func partition(list []int, low, high int) ([]int, int) {
+	pivot := list[high]
+	i := low
+	for j := low; j < high; j++ {
+		if list[j] < pivot {
+			list[i], list[j] = list[j], list[i]
+			i++
+		}
+	}
+	list[i], list[high] = list[high], list[i]
+	return list, i
+}
+```
+
+### Binary Search
+
+Search an sorted list by bisecting it after every lookup action. The effeciency of binary search increases directed related to the size of the list (a function of logrithmic time)
+
+**Time Complexity:**
+$O(\log n)$ <br />
+
+#### Example
+```go
+func binarySearch(list []int, item int) int {
+	low := 0
+	high := len(list)
+	for low <= high {
+		// go will round here, bc mid is a type int
+		mid := (low + high) / 2
+		if item == list[mid] {
+			return mid
+		} else if item < list[mid] {
+			high = mid - 1
+		} else {
+			low = mid + 1
+		}
+
+	}
+	return -1
 }
 ```
 
