@@ -78,6 +78,25 @@ func bSort(list []int) []int {
 }
 ```
 
+### Insertion Sort
+
+Search each element in the array, _inserting_ each element into its proper place in respect to the other already sorted elements
+
+Time Complexity:
+$O(n^2)$
+
+#### Example
+```go
+func insertionSort(list []int) []int {
+	for i := 1; i < len(list); i++ {
+		for j := i; j > 0 && list[j-1] > list[j]; j-- {
+			list[j], list[j-1] = list[j-1], list[j]
+		}
+	}
+	return list
+}
+```
+
 ### Quick Sort
 
 A divide-and-conquer sorting algorithm that uses recursion. To perform a quick sort:
@@ -146,6 +165,10 @@ func partition(list []int, low, high int) ([]int, int) {
 	return list, i
 }
 ```
+
+### Merge Sort 
+
+
 
 ### Binary Search
 
