@@ -19,15 +19,15 @@ tags:
 ---
 ## Algorithm
 
-
-### Selection Sort
+### Simple Sorts
+#### Selection Sort
 
 Sort a list of []Type by searching for the smallest (or largest) element of the array, removing the found element from the list, and copying it to a new list.
 
 **Time Complexity:**
 $O(n^2)$
 
-#### Example
+##### Example
 
 ```go
 func selectionSort(list []int) []int {
@@ -52,7 +52,7 @@ func findSmallest(list []int) (int, int) {
 }
 ```
 
-### Bubble Sort 
+#### Bubble Sort 
 
 [Thanks Obama](https://www.youtube.com/watch?v=koMpGeZpu4Q)
 
@@ -61,7 +61,7 @@ Starts with the last item in the array, comparing it to n-1. If item is smaller 
 **Time Complexity:**
 $O(n^2)$
 
-#### Example
+##### Example
 ```go
 func bSort(list []int) []int {
 	for start := 0; start < len(list)-1; start++ {
@@ -78,14 +78,14 @@ func bSort(list []int) []int {
 }
 ```
 
-### Insertion Sort
+#### Insertion Sort
 
 Search each element in the array, _inserting_ each element into its proper place in respect to the other already sorted elements
 
 Time Complexity:
 $O(n^2)$
 
-#### Example
+##### Example
 ```go
 func insertionSort(list []int) []int {
 	for i := 1; i < len(list); i++ {
@@ -96,8 +96,9 @@ func insertionSort(list []int) []int {
 	return list
 }
 ```
+### $O(n\log n)$ Sorts
 
-### Quick Sort
+#### Quick Sort
 
 A divide-and-conquer sorting algorithm that uses recursion. To perform a quick sort:
 1. Select a pivot element in the array
@@ -110,7 +111,7 @@ Time Complexity: <br />
 average: $O(n\log n)$ <br />
 worst:	 $O(n^2)$
 
-#### Example
+##### Example
 ```go
 func quicksort(list []int) []int {
 	if len(list) < 2 {
@@ -132,7 +133,7 @@ func quicksort(list []int) []int {
 }
 ```
 
-#### Example using in-place quickSort
+##### Example using in-place quickSort
 
 In place expands upon the quick sort algorithm, by sorting values while scanning for elements less than and greater than the pivot element value. This method of quick sort is less efficient than above (Hoare's method) due to requiring more swaps and comparison.
 ```go
@@ -166,11 +167,55 @@ func partition(list []int, low, high int) ([]int, int) {
 }
 ```
 
-### Merge Sort 
+#### Merge Sort 
 
+Merge search is another divide and conquer sorting method like quicksort. In order to sort, cut the array into 2 subarray, recursively call mergeSort method, until the sub-arrays have a length less than 2, then combine and sort the final 2 resulting arrays.
 
+Time Complexity: 
+$O(n\log n)$
 
-### Binary Search
+##### Example
+
+```go
+func mergeSort(list []int) []int {
+	if len(list) < 2 {
+		return list
+	}
+
+	mid := len(list) / 2
+	left := mergeSort(list[:mid])
+	right := mergeSort(list[mid:])
+	return merge(left, right)
+
+}
+
+func merge(leftArray []int, rightArray []int) []int {
+	tempArray := []int{}
+	i, j := 0, 0
+	for i < len(leftArray) && j < len(rightArray) {
+		if leftArray[i] < rightArray[j] {
+			tempArray = append(tempArray, leftArray[i])
+			i++
+		} else {
+			tempArray = append(tempArray, rightArray[j])
+			j++
+		}
+	}
+
+	// if one array was longer than the other
+	for ; i < len(leftArray); i++ {
+		tempArray = append(tempArray, leftArray[i])
+	}
+	for ; j < len(rightArray); j++ {
+		tempArray = append(tempArray, rightArray[j])
+	}
+	return tempArray
+}
+```
+
+### Searching
+
+#### Binary Search
 
 Search an sorted list by bisecting it after every lookup action. The effeciency of binary search increases directed related to the size of the list (a function of logrithmic time)
 

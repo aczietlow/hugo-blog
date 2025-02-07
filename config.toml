@@ -40,6 +40,10 @@ languages = "languages"
     noClasses = false
     # style = "monokai"
     tabWidth = 2
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2
 
 [params]
 author = "Chris"
