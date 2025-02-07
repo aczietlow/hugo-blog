@@ -1,8 +1,8 @@
 ---
-title: "{{ replace .Name "-" " " | title }}" # Title of the blog post.
-date: {{ .Date }} # Date of post creation.
-description: "Personal notes description"
-summary: " "
+title: "Week 6" # Title of the blog post.
+date: 2025-02-07T16:00:03-05:00 # Date of post creation.
+description: "Week 1 of digital detox"
+summary: "Week 1 of digital detox"
 draft: true
 # featureImage: "/images/path/file.jpg" # Sets featured image on blog post.
 # thumbnail: "/images/path/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
@@ -11,10 +11,13 @@ draft: true
 # codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 # codeLineNumbers: false # Override global value for showing of line numbers within code block.
 # figurePositionShow: true # Override global value for showing the figure label.
-categories:
-  - Technology
 tags:
   - weekly_notes
 ---
 
 **Insert Lead paragraph here.**
+
+- started reading The Dark Forest
+- watched The Last Star Fighter Remaster
+  - learned via the special features that it was one of the first movies to use CGI
+  - such a classic 80s sci-fi movie
