@@ -16,7 +16,6 @@
     {{- $scratch.Set "writeSeparator" true }}
   {{- end }}
   {{- if $showAuthor }}
-    {{ if ($scratch.Get "writeSeparator") }} |&nbsp;{{ end }}
     <span class="p-author h-card">
       <a rel="author" class="p-name u-url" href="{{ .Site.BaseURL }}">Chris Zietlow</a>
       <img class="u-photo" src='{{ absURL "images/me.jpg" }}' alt="Chris Zietlow Profile Image">
