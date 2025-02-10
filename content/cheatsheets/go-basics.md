@@ -181,7 +181,7 @@ fmt.Println(realOdd)
 hash table data type
 
 MAPS CAN ONLY BE INITIATED USING `make()` or A LITERAL. 
-cannot appent to a zero valued maps!
+cannot append to a zero valued maps!
 ```go
 // m = make(map[string]int)
 m["route"] = 66
