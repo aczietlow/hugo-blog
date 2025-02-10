@@ -3,7 +3,7 @@ title: "Data Structures and Algorithms Go" # Title of the blog post.
 date: 2025-01-29 # Date of post creation.
 description: "Basic data structure and algorithms implemented within go" # Description used for search engine.
 featured: true # Sets if post is a featured post, making appear on the home page side bar.
-draft: true
+draft: false
 toc: true 
 math: true
 # featureImage: "/images/path/file.jpg" # Sets featured image on blog post.
