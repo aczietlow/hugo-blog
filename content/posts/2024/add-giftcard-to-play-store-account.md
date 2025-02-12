@@ -2,11 +2,13 @@
 title: "Add Gift Card to Play Store Account" # Title of the blog post.
 date: 2024-05-13T22:01:51-04:00 # Date of post creation.
 description: "How to add Google Play Store to your Google account" # Description used for search engine.
+summary: "Step by steps instructions on how to add Google Play gift cards to a google account."
 featureImage: "../../../images/blogs/tech-support/play-store.png"
 thumbnail: "images/blogs/tech-support/play-store.png"
 shareImage: "images/blogs/tech-support/play-store.png"
 tags:
   - tech support
+  - gumma
 ---
 
 In order to add a Google Play Store gift card to you account, follow the below steps:
