@@ -1,5 +1,5 @@
 ---
-title: "2024 Charleston Foodie List"
+title: "Charleston Foodie List"
 date: 2024-03-23
 draft: false
 tags : [
@@ -47,6 +47,13 @@ Circa 1886 $$$$ [reviews](https://g.co/kgs/sPdG2Ek)
 
 The Obstinate Daughter $$ [reviews](https://g.co/kgs/HfE2bzP)
 : Low Country comfort food
+: Great atmosphere, great location
+: Interrior feels a little cramped
+: sells ice cream downstairs
+
+Tattooed Moose $$ [reviews](https://g.co/kgs/gXHDcxr)
+: American Food
+: Recommendation based on duck sandwhich and duck fat fries
 
 ### French
 
