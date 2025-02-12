@@ -269,6 +269,36 @@ The trade-offs between these two structures should become apparent quickly;
 - Linked lists more easily allow for insertions and deletions of data in the middle of lists as only one element has to be updated
 - Arrays require more memory in reserve, as they cannot be resized after initialize, where linkedlists only require additional memory available to store additional values 
 
+### Hash Tables
+
+Hash tables, sometimes called hash maps, maps, dictionaries, and associative arrays, is array of key value pairs, that uses a hash function to consistantly map values to an index in a deterministic way. Hash functions accept byte data and should return an index. Hash functions allow data look ups in O(1) time complexity making them one of the most powerful data structures in computer science.
+
+Good hash functions will determine the effectiveness of the underlying data structure.
+- They should consistently map data to the same index
+- should map different data to different indexes
+- should be aware of the underlying array structure and only return valid array indexes
+- should minimize the number of collisions (returning the same index for multiple values)
+
+Because of these capabilities hash tables are extremely effective at
+- preforming lookups
+- modeling relationships from one thing to another
+- checking for duplicative entries in a given set of data
+- acting as a cache
+
+#### Collisions
+
+As mentioned above hash tables should avoid collisions as much as possible. But what if the set of data is greater than the length of the underlying array, or by its nature the hashing function must return duplicative indexes. One such example would be if you were sorting names in an employee directory, and wanted a hash table where the first letter in the last name was the hash. Of course there would be multiple entries for each letter.
+
+To accomidate this, while still maintaining some of the benefits of hash tables, a linked list can be created to allow multiple entries to be added to a single hash index. This is not the only solution, but a common pattern.
+
+A comparison of the above data structures and their average time complexity
+
+| | Hash Maps (Worst) | Hash Maps (Average) | Arrays | Linked Lists |
+| -- | --- | --- | --- | --- |
+| Search | $O(n)$ | $O(1)$ | $O(1)$ | $O(n)$ | 
+| Insert | $O(n)$ | $O(1)$ | $O(n)$ | $O(1)$ |
+| Delete | $O(n)$ | $O(1)$ | $O(n)$ | $O(1)$ |
+
 ### Tree data structures
 
 a tree is a nonlinear structure (e.g. a list, or queue) in which each node is cdapable of having many successor nodes, called children.

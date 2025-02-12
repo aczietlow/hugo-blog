@@ -15,8 +15,23 @@ tags:
   - weekly_notes
 ---
 
-**Insert Lead paragraph here.**
+This was the first week of trying the experiment with digital minimalism. It was truly a mixed bag of an experience. In short I failed, but think I did manage to fail upward. Some successes were that I did manage to drastically reduce my screen time, start rebuilding the habit of a falling asleep with out digital stimulant, and managed to spend more times on productive hobbies like reading and movies. The downside was that I still managed to find my phone and get a fair bit of doom scrolling and youtube in throughout the week. If anything this was a coping mechanism as I encountered a little bit of stress from work and life. I'm going to adjust, and try a week 1 approach all over.
 
+Along with this, I'm starting to hit a point in my studies that I'm getting bored. Maybe not so much bored, but fighting the itch to build something, rather than continuing to focus entirely on academics. I'm considering defining a stopping point in DAS, to allow me the time to shift my attention towards building... something.
+
+- Continued to progress through my side quest of brushing up on my datastructures and algorithm skills
+  - Makes me really miss college
+  - some of this is forgotten knowledge
+- Got 13 miles of running in throughout the week
+  - finally slowing down a little in order to focus on improving my run time
+- Enjoyed coffee Saturday at CuppaMana
+- Read [Leadership That Gets Results](library/leadership-that-gets-results/)
+  - Am grateful for my Aunt on recommending that to me
+- Going to add "fake commutes" to my monthly experiments
+  - moments of distraction free solitude will help in mentally preparing me for the day
+  - and for unwinding
+- Ate at the new biscuits place that opened in Summerville
+- Applied pre-emergent to the yard
 - started reading The Dark Forest
 - watched The Last Star Fighter Remaster
   - learned via the special features that it was one of the first movies to use CGI

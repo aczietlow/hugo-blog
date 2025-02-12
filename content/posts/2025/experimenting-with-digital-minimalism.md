@@ -36,6 +36,7 @@ Plan: Embark on 30 days of digital detox
   - higher the effort -> the higher the reward
 5. Join "something" new
 6. Embrace hobbies away from the screen
+7. Fake commutes to the office
 
 
 ### Conclusion
