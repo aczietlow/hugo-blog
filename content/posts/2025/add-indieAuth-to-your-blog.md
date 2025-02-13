@@ -1,7 +1,7 @@
 ---
-title: "Add IndieAuth to Your Blog" # Title of the blog post.
+title: "Add IndieAuth to Your Website" # Title of the blog post.
 date: 2025-02-12T17:51:48-05:00 # Date of post creation.
-description: "Enabling IndieAuth to your blog" # Description used for search engine.
+description: "Enabling IndieAuth to your website" # Description used for search engine.
 # featureImage: "/images/path/file.jpg" # Sets featured image on blog post.
 # thumbnail: "/images/path/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -12,7 +12,6 @@ tags:
   - authentication
   - IndieAuth
 ---
-
 
 ## IndieAuth
 
