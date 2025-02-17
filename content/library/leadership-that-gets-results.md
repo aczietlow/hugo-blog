@@ -1,6 +1,6 @@
 ---
 title: "Leadership That Gets Results"
-date: 2025-02-08
+date: 2025-02-17
 description: "Research on effectiveness on different leadership styles"
 complete: true
 source: https://hbr.org/2003/05/it-doesnt-matter 
