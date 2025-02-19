@@ -21,6 +21,11 @@ tags:
 - struggled at basic math
   - needed to fully adjust my entire schedule to offset 3 hours, not just the start of my workday
   - really need to hit 7-8 hours of sleep per week
+- launched publicly accessible sandbox [website](https://orangeotter.io/)
+  - successfully tested indieauth with email challenge
+- completed another leetcode problem
+- continue to want to code/build more - rather than continuing with studying data structures
+  - will have to find a balance here 
 - ran 3.5 miles
   - had a head cold through most of the week
 - really getting absorbed into The Dark Forest
