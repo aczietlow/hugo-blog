@@ -6,9 +6,15 @@ description: "Book description." # Description used for search engine.
 draft: true
 wip: false 
 complete: true
-isbn: 1591847486 # use isbn-13
 source: https://hbr.org/2003/05/it-doesnt-matter # Source of article
 type: reads
+# # book
+# summary: "synapsis of the book"
+# isbn: 1591847486 # use isbn-13
+# genre: 
+#   - business
+#   - management
+# cover: https://covers.openlibrary.org/b/id/10354937-L.jpg
 ---
 
 **Insert Lead paragraph here.**

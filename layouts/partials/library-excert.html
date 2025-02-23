@@ -8,7 +8,11 @@
                         <i>{{ .Type }}</i>
                     </div>
                     <div class="card__content__description">
-                        {{ if .Params.description }}
+                        {{ if .Params.cover }}
+                            <img class="cover-thumbnail"
+                                src='{{ if (hasPrefix .Params.cover "http") }}{{ .Params.cover }}{{ else }}{{ absURL .Params.cover }}{{ end }}'
+                                alt="Book cover for {{ $.Title }}">
+                        {{ else if .Params.description }}
                         <p class="card__text">{{ truncate 120 .Params.description  }}</p>
                         {{ end }}
                     </div>

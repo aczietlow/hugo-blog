@@ -7,6 +7,20 @@ wip: false
 isbn: 9780525536512 
 source: https://www.goodreads.com/book/show/40672036-digital-minimalism
 type: reads
+# # book
+# isbn: 1591847486 # use isbn-13
+authors:
+  - Cal Newport
+genre: 
+  - information technology
+  - internet
+  - producitivity
+  - self help
+  - psychology
+subtitle: On Living Better with Less Technology
+cover: https://covers.openlibrary.org/b/id/8507540-L.jpg
+summary: "The key to living well in a high tech world is to spend much less time using technology. In recent years, our culture's relationship with personal technology has transformed from something exciting into something darker. Innovations like smartphones and social media are useful, but many of us are increasingly troubled by how much control these tools seem to exert over our daily experiences – including how we spend our free time and how we feel about ourselves. In Digital Minimalism, Newport proposes a bold solution: a minimalist approach to technology use in which you radically reduce the time you spend online, focusing on a small set of carefully-selected activities while happily ignoring the rest."
+
 ---
 
 ### Recap

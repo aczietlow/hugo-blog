@@ -15,7 +15,7 @@
     </div>
     <h2>Complete</h2>
     <div class="library">
-        {{ range .Pages }}
+        {{ range $pages }}
         {{- partial "library-excert" . }}
         {{ end }}
     </div>
