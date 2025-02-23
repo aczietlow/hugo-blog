@@ -52,3 +52,4 @@
 - [ ] https://indiepass.app/
 - [ ] Finish uses page
 - [ ] Add my site to [uses.tech](https://github.com/wesbos/awesome-uses/)
+- [ ] Stats page like [lanre](https://lanre.wtf/stats)
