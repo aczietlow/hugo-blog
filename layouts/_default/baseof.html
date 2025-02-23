@@ -5,9 +5,17 @@
   <head>
     {{- partial "head" . }}
     <!-- styles definition-->
-    {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
+    <!--old-->
+    {{- $options := (dict 
+      "targetPath" "css/styles.css" 
+      "outputStyle" "compressed" 
+      "enableSourceMap" "true"
+      "transpiler" "dartsass") -}}
+
     {{ $mainSassFile :=  "sass/main.sass" }}
     {{- $styles := resources.Get $mainSassFile | resources.ExecuteAsTemplate $mainSassFile . | css.Sass $options | resources.Fingerprint "sha512" }}
+
+    <!--new (post 1.28)-->
 
     <!-- scripts definition -->
     <script
