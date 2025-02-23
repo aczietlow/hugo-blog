@@ -1,0 +1,17 @@
+{{- define "main" }}
+<div class="wrap content">
+  <article class="post_content">
+    {{ if .Params.isbn }}
+      {{ partial "book" . }}
+    {{ else }}  
+      {{ partial "article" . }}
+    {{ end }}
+    <div>
+      {{- .Content }}
+      {{ if and ( ne .Site.Params.comment false ) ( ne .Params.comment false ) }}
+        {{ partial "comments" . }}
+      {{ end }}
+    </div>
+  </article>
+</div>
+{{- end }}

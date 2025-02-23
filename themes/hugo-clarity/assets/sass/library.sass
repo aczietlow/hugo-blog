@@ -1,0 +1,69 @@
+$post-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$post-padding: 20px;
+
+.book
+  display: flex;
+  align-items: flex-start;
+  padding: $post-padding
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+
+  .left 
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 20px;
+    text-align: center;
+
+    img.cover-thumbnail 
+        max-width: 100%;
+        border: 1px solid #ddd;
+
+    .img_alt 
+      display: none;
+
+    // span.u-uid 
+    //   font-weight: bold;
+    //   display: block;
+    //   margin-top: 10px;
+
+    .h-author 
+      margin-top: 10px;
+      font-size: 0.9em;
+
+      .p-author 
+        display: block;
+        margin-bottom: 2px;
+
+  .right 
+    flex: 1;
+
+    .book-title 
+      margin: 10px 0 0; 
+      padding: 0;
+
+    .book-subtitle 
+      margin: 0;
+      padding: 0;
+
+
+    // Styling for the category paragraph (using an attribute selector)
+    .p-category 
+      font-style: italic;
+      color: #888;
+
+// Responsive adjustments
+@media (max-width: 600px) 
+  .post_content 
+    .h-item.book 
+      flex-direction: column;
+      align-items: center;
+
+      .left 
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: auto;
+
+      .right 
+        text-align: center;
+  
+

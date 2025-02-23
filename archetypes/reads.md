@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}" # Title of the blog post.
+subtitle: "book subtile"
 date: {{ .Date }} # Date of post creation.
 description: "Book description." # Description used for search engine.
 draft: true

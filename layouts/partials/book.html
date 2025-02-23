@@ -1,0 +1,41 @@
+<div class="h-item book">
+    <div class="left">
+        <!--if book, then add this as a partial-->
+        <!--https://microformats.org/wiki/book-info-formats-->
+        {{ if .Params.cover }}
+        <img class="cover-thumbnail"
+             src='{{ if (hasPrefix .Params.cover "http") }}{{ .Params.cover }}{{ else }}{{ absURL .Params.cover }}{{ end }}'
+             alt="Book cover for {{ $.Title }}">
+        {{ end }}
+
+        {{ if .Params.isbn }}
+        <span class="u-uid p-isbn">ISBN: {{ .Params.isbn }}</span>
+        {{ end }}
+
+    </div>
+    <div class="right">
+        <h1 class="p-name book-title">{{ .Params.Title }}</h1>
+        {{ if .Params.subtitle }}
+        <h2 class="book-subtitle">{{ .Params.subtitle }}</h2>
+        {{ end }}
+
+        {{ if .Params.authors}}
+        <div class="h-author">
+            {{ range .Params.authors }}
+            <span class="p-author h-card">{{ . }}</span>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        {{ if .Params.genre}}
+        <p class="p-category">
+            {{ range .Params.genre }}
+            {{ . }}
+            {{ end }}
+        </p>
+        {{ end }}
+        {{ if .Params.summary }}
+        <p class="book-description">{{ .Params.summary }}</p>
+        {{ end }}
+    </div>
+</div>
