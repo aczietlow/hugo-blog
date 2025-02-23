@@ -14,6 +14,8 @@ tags:
   - weekly_notes
 ---
 
+This was suppose to be the new week of digital minimalism and the start 
+
 - visited a good friend in the hospital
 - went to a 1yr old birthday party of some good friends
 - had dinner with Mom while I was in town
