@@ -9,11 +9,21 @@
                     </div>
                     <div class="card__content__description">
                         {{ if .Params.cover }}
-                            <img class="cover-thumbnail"
-                                src='{{ if (hasPrefix .Params.cover "http") }}{{ .Params.cover }}{{ else }}{{ absURL .Params.cover }}{{ end }}'
-                                alt="Book cover for {{ $.Title }}">
+                            <a href="{{ .Permalink }}">
+                                <img class="cover-thumbnail"
+                                    src='{{ if (hasPrefix .Params.cover "http") }}{{ .Params.cover }}{{ else }}{{ absURL .Params.cover }}{{ end }}'
+                                    alt="Book cover for {{ $.Title }}">
+                            </a>
                         {{ else if .Params.description }}
-                        <p class="card__text">{{ truncate 120 .Params.description  }}</p>
+                            <a href="{{ .Permalink }}">
+                                <div class="cover-placeholder blankBook">
+                                    <div class="blankBook__cover">
+                                        <div class="blankBook__cover__inner">
+                                            <div class="blankBook__cover__inner__title">{{ .Title }}</div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </a>
                         {{ end }}
                     </div>
                 </section>

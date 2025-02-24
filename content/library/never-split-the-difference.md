@@ -1,5 +1,6 @@
 ---
-title: "Never Split the Difference: Negotiating as if Your Life Depending on It"
+title: "Never Split the Difference" 
+subtitle: "Negotiating as if Your Life Depending on It"
 date: 2025-01-28T08:36:01-05:00 # Date of post creation.
 description: "Advice on how to negotiate from a former hostage negotiator" 
 wip: false 
