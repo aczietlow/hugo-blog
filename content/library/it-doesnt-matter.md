@@ -2,7 +2,7 @@
 title: "IT Doesn't Matter"
 date: 2024-04-22
 description: "IT's perceived value diminishes as it becomes commoditized"
-wip: true
+wip: false
 complete: true
 source: https://hbr.org/2003/05/it-doesnt-matter
 type: reads
