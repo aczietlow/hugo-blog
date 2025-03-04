@@ -53,4 +53,24 @@ list[0], list[1] = list[1], list[0]
 ```
 
 {{</cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+### Maps must be initialized 
+
+
+Map types are reference types, like pointers or slices, and so the value of m above is nil; it doesn’t point to an initialized map. A nil map behaves like an empty map when reading, but attempts to write to a nil map will cause a runtime panic; don’t do that. To initialize a map, use the built in make function
+
+[docs](https://go.dev/blog/maps)
+```go
+// go will panic
+// error: assignment to entry in nil map
+var data map[string]any
+data["foo"] = "bar"
+```
+
+```go
+data := make(map[string]any)
+data["foo"] = "bar"
+```
+{{</cheatsheet-section>}}
 {{< /two-column>}}
