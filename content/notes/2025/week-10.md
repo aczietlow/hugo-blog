@@ -17,4 +17,6 @@ tags:
   - weekly_notes
 ---
 
-**Insert Lead paragraph here.**
+- Discover [json-to-go](https://mholt.github.io/json-to-go/)
+  - converts json into structs with the appropriate json tags applied
+  - As appropriate as an automated tool can
