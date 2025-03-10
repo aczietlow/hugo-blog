@@ -87,6 +87,7 @@ $   - end of line
 ```
 a   - append
 A   - append from the end of the line
+I   - insert at the beginning of line
 o   - insert from new line
 O   - insert from prev line
 x   - delete char under cursor
