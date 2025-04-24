@@ -33,4 +33,5 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 
 ## Vimeo Simple Shortcode
 
-{{< vimeo_simple 48912912 >}}
+Commented this out, inorder to build without relying on resolving vimeo URL
+{{#< vimeo_simple 48912912 >}}

@@ -16,7 +16,7 @@ Plan: Embark on 30 days of digital detox
 
 1. No television/video streaming
 2. No social media
-3. No music streaming outside of work
+3. No music streaming outside of work/running
 4. No Android Auto while drive 
   - look up directions before hand
   - use in cases of actual emergency
