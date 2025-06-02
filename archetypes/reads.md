@@ -11,6 +11,7 @@ type: reads
 # # book
 # summary: "synapsis of the book"
 # isbn: 1591847486 # use isbn-13
+# author: this may conflict with another tag
 # genre: 
 #   - business
 #   - management
