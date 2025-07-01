@@ -11,9 +11,9 @@ tags:
 
 Working from neovim and writing go code I find myself often cycling through multiple terminal windows while working on projects. This cycles between iterm and ghostty terminal and splits within neovim itself depending on my environment. Often resulting in a cacophony of windows, panes, and red yarn connecting the dots... There has to be a better way. Or moreover I'm tried of relying on a different set of applicaiton keybindinds, alt-tab, and my mouse. The overall design of my workflow is to keep laser focus by keeping everything within a single window, and reducing the amount of time switching between different programs or reaching of my mouse. [Tmux](https://github.com/tmux/tmux) has always been the obvious answer for improvement.
 
-[insert paragraph here about tmux in general]
+Tmux is a terminal multiplexer, or a program run from within a terminal that allows for running multiple terminals, all accessed from a single terminal. While tmux maybe is most traditionally used a for long running processes that can't suffer a connection drop, I'm interested in using it as a Window Manager.
 
-## My Tmux workflow
+## My Tmux newborn Workflow
 
 @todo - finish reading the [tmux getting started guide](https://github.com/tmux/tmux/wiki/Getting-Started) 
 
@@ -22,6 +22,7 @@ Working from neovim and writing go code I find myself often cycling through mult
 - `tmux` - makes a new tmux session and drops you into the session. Session will be giving a numeric, autoincrementing name, starting with 0
 - `tmux new -s <session-name>` - Creates a new session with the provided name 
 - `tmux a -t <session-name>` - Reattaches to a session by name 
+- `prefix + d` - detach from a tmux session, and keep it running for later
 
 Note: I've remapped my tmux prefix from c-b to c-a
 
