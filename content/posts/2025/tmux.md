@@ -2,7 +2,6 @@
 title: "Tmux" # Title of the blog post.
 date: 2025-06-29T17:42:18-04:00 # Date of post creation.
 description: "Experimenting with tmux" # Description used for search engine.
-draft: true
 categories:
   - development workflow
 tags:
