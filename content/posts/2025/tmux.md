@@ -6,20 +6,25 @@ categories:
   - development workflow
 tags:
   - tmux
+  - developer tools
+  - terminal
+  - productivity
 ---
 
 
 Working from neovim and writing go code I find myself often cycling through multiple terminal windows while working on projects. This cycles between iterm and ghostty terminal and splits within neovim itself depending on my environment. Often resulting in a cacophony of windows, panes, and red yarn connecting the dots... There has to be a better way. Or moreover I'm tired of relying on a different set of application keybindings, alt-tab, and my mouse. The overall design of my workflow is to keep laser focus by keeping everything within a single window, and reducing the amount of time switching between different programs or reaching for the mouse. [Tmux](https://github.com/tmux/tmux) has always been the obvious answer for improvement.
 
+## What is Tmux
+
 Tmux is a terminal multiplexer, or a program run from within a terminal that allows for running multiple terminals, all accessed from a single terminal. Tmux is also useful for running detached commands. Detached commands are particularly useful for long running commands, or commands running over SSH, where a break in connection could terminate the running command.
 
-## My Tmux newborn Workflow
+## My Tmux Newborn Workflow
 
 Goals
 > - quickly navigate between writing, executing, and testing code
 > - group projects together by context (e.g. leave side project Bookworm and main work projects in a state where I can easily jump between them)
 
-### Tmux sessions 
+### Tmux Sessions 
 
 - `tmux` - makes a new tmux session and drops you into the session. Session will be giving a numeric, autoincrementing name, starting with 0
 - `tmux new -s <session-name>` - Creates a new session with the provided name 
@@ -34,7 +39,7 @@ Note: I've remapped my tmux prefix from c-b to c-a
 - `prefix + [0-9]` - jump to specific window
 - `prefix + w` - a select list of all windows
 
-### My Custom tmux config
+### My Custom Tmux Config
 
 ```
 # My brain does better with base index 1 when pressing `prefix [0-9]
@@ -64,6 +69,6 @@ bind -r ^ last-window
   {{< gallery-item src="/images/blogs/2025/tmux-session/tmux-test.png" alt="testing code in tmux window" >}}
 {{< /gallery >}}
 
-## What's next
+## What's Next
 
 Look more into [tmux sessionizer](https://github.com/ThePrimeagen/tmux-sessionizer) and continue to improve my local tmux config.
