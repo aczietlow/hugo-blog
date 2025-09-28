@@ -13,6 +13,8 @@ tags:
 
 ## Systems Thinking
 
+More than ever software cannot be thought of in a linear, one-off environment way. It really never could, and continues to become more clear as software continues to grow in complexity, interconnectivity, and functionality. Systems thinking offers an school of thinking to model these systems in a way that captures how different parts interact and influence one another with the system as a whole. It shifts focus deeper behind how they work in isolation, and focuses on the relationships and interdepencies among components. It reminds me of why I appreciate the studying the field of marco economics. Where the outcome on a macro scale is so far beyond a simple relationship of supply and demand. Something like inflation is the result of thousans of inputs, outcomes of hundres of components of an economy, and millions of mirco decisions that all have an impact on the system as a whole.
+
 ## Working notes
 
 Chapter 3: shifting perspective
