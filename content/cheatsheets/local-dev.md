@@ -27,7 +27,6 @@ opens a in-memory file (buffer) and creates a viewport of that buffer (window)
 ```
 {{</cheatsheet-section>}}
 
-
 {{<cheatsheet-section>}}
 ### Navigate between nvim panes
 ```
@@ -49,7 +48,6 @@ opens a in-memory file (buffer) and creates a viewport of that buffer (window)
 ```
 
 {{</cheatsheet-section>}}
-
 
 {{<cheatsheet-section>}}
 ### Keymaps for Telescope
@@ -76,6 +74,38 @@ space-a   - add to list
 ```
 :TodoQuickFix   - list all todos in project
 :TodoTelescope  - list all todos in telescope
+```
+{{</cheatsheet-section>}}
+
+{{<cheatsheet-section>}}
+### Coding
+
+```
+<shift-k>     - show function definiton in tooltip
+```
+{{</cheatsheet-section>}}
+
+
+{{<cheatsheet-section>}}
+### Diagnostic
+
+```
+space-q       - show all diagnostic messages
+space-sd      - search diagnostics
+<c-W>d         - show diagnostic under cursor
+
+```
+{{</cheatsheet-section>}}
+### Coding
+
+```
+<shift-k>     - show function definiton in tooltip
+```
+{{</cheatsheet-section>}}
+### Coding
+
+```
+<shift-k>     - show function definiton in tooltip
 ```
 {{</cheatsheet-section>}}
 {{</three-column>}}
