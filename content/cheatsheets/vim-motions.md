@@ -136,6 +136,7 @@ u     - undo
 ```
 v - visual mode
 V - line visual mode
+<c-v> - visual block mode
 ```
 {{</cheatsheet-section>}}
 
