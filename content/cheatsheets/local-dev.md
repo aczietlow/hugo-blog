@@ -101,7 +101,7 @@ space-sd      - search diagnostics
 ```
 <shift-k>     - show function definiton in tooltip
 ```
-{{</cheatsheet-section>}}
+{{<cheatsheet-section>}}
 ### Coding
 
 ```

@@ -207,10 +207,196 @@ i, ok := m["route"]
 ```
 {{</ cheatsheet-section>}}
 {{< cheatsheet-section>}}
+
 ### Maps Passed by reference
 
 Maps are passed by reference;
 
 i.e. when passed to a function, operations are performed on the underlying map
+
 {{</ cheatsheet-section>}}
 {{< /two-column>}}
+
+{{< two-column>}}
+
+{{<cheatsheet-section>}}
+### Basic Struct 
+
+collections of fields
+
+```go
+type person struct {
+  first string
+  last string
+}
+```
+
+```go
+humanPersona := person{
+  first: "James",
+  last: "Bond",
+}
+
+lName := humanPerson.last
+```
+{{</ cheatsheet-section>}}
+{{< cheatsheet-section>}}
+### Nested Struct
+
+Structs can be nested
+
+```go
+type car struct {
+  brand string
+  model string
+  doors int
+  frontWheel wheel
+  readWheel wheel
+}
+type wheel struct {
+  radius int
+  material string
+}
+myCar := car{}
+myCar.frontWheel.radius = 5
+```
+
+{{</ cheatsheet-section>}}
+
+{{< cheatsheet-section>}}
+### Embed Struct
+
+Fake (data-only) inheritence 
+```go
+type car struct {
+  brand string
+  model string
+}
+
+type truck struct {
+  car
+  bedSize int
+}
+
+// embedded struct fields are accessed at top lvl
+redTruck := truck {
+  bedSize: 10,
+  car: car{
+    brand: "dodge",
+    model: "ram",
+  },
+}
+redTruck.brand
+redTruck.bedSize
+```
+
+{{</ cheatsheet-section>}}
+
+{{< cheatsheet-section>}}
+### Struct Methods
+
+structs can have methods. methods are funcs that have a receiver
+```go
+type rect struct {
+  width int
+  height int
+}
+
+func (r rect) area() int {
+  return r.width * r.height
+}
+
+var r = rect {
+  width: 5,
+  height: 10,
+}
+r.area()
+
+```
+{{</ cheatsheet-section>}}
+
+{{< cheatsheet-section>}}
+### Interfaces
+
+A set of method signatures. A type "implements" an interface just by having those methods
+```go
+type shape interface {
+  area() float64
+}
+
+type rect struct{
+  width, height float64
+}
+
+func (r rect)area() float64 {
+  return r.width * r.height
+}
+
+func printShape(s shape) {
+  fmt.Printf("Area: %v", s.area())
+}
+```
+{{</ cheatsheet-section>}}
+{{</ two-column>}}
+
+## Concurrency
+
+{{< two-column>}}
+{{< cheatsheet-section>}}
+### Fatal errors and defer
+
+When relying on defer to close open connections, close waitgroups, or clear buffered channels be careful with how error handling is approached. For example:
+
+```go
+defer func() {
+    fmt.Println("defer was triggered")
+    // Resolve open connections.
+}()
+
+fmt.Println("biz logic")
+
+check := 1
+if check == 1 {
+    log.Fatalf("something went wrong, will now call os.Exit()")
+}
+```
+log.Fatalf() calls os.Exit() which exits the current program and returns a status code 0-125. This will skip `defer`, `panic()`, and any other resource cleanup.
+{{</ cheatsheet-section>}}
+
+{{< cheatsheet-section>}}
+### Maps
+
+Obviously writing to maps isn't safe for conncurrency and a mutex lock should be used in this case. Reading can be thread safe, but only if it assured that no modifications could be performed while a thread is attempting to read. If thread is attempting to read a map while it is updated by another thread, this will result in a panic().
+
+In a purely "hypothetical" example
+
+```
+fatal error: concurrent map read and map write
+
+goroutine 181 [running]:
+internal/runtime/maps.fatal({0x759767?, 0xc000481808?})
+	/usr/lib/golang/src/runtime/panic.go:1058 +0x18
+main.(*config).crawlPage(0xc0000d33b0, {0xc0002091c0, 0x1e})
+	/home/aczietlow/Projects/scrael/crawler.go:55 +0x5d3
+created by main.(*config).crawlPage in goroutine 7
+	/home/aczietlow/Projects/scrael/crawler.go:57 +0x677
+```
+
+This can be solved by implementing logic to ensure that reading is a thread safe operation. e.g.
+
+```go
+// Unsafe
+if _, exists := cfg.pages[urlNormalized]; !exists {}
+
+// Safe
+if cfg.hasPageAlreadyBeenCrawled(urlNormalized) {}
+
+func (cfg *config) hasPageAlreadyBeenCrawled(url string) bool {
+	cfg.mu.Lock()
+	defer cfg.mu.Unlock()
+	_, exists := cfg.pages[url]
+	return exists
+}
+```
+{{</ cheatsheet-section>}}
+{{</ two-column>}}

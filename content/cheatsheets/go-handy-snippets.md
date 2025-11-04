@@ -89,4 +89,23 @@ if value, ok := m["two"]; ok {}
 ```
 {{</cheatsheet-section>}}
 
+{{<cheatsheet-section>}}
+### Incrementing int values in map
+
+When adding values to a map, go has built in safe guards to ensure the key exists. e.g. 
+```go
+pages := make(map[string]int)
+
+// This is the same as... 
+if _, exists := pages[urlRef]; exists {
+    pages[urlRef]++
+} else {
+    pages[urlRef] = 1
+}
+
+// is the same as 
+pages[urlRef]++
+```
+{{</cheatsheet-section>}}
+
 {{< /two-column>}}
