@@ -14,6 +14,10 @@
 - [ ] Look at microblog
 - [ ] fix date in some posts metadata section in the header. Recent change caused issues
 
+## Bugs 
+
+- [ ] Fix line numbers appearing on code blocks
+
 ## Books
 
 - [ ] Setup micropub
