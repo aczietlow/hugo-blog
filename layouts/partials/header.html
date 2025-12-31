@@ -1,0 +1,17 @@
+{{- $params := .Site.Params }}
+{{ $logo := $params.logo }}
+<header class="nav_header" >
+  <nav class="nav">
+    {{- partialCached "logo" (dict "logo" $logo) }}
+    <div class='nav_body nav_body_{{ default "left" $params.mobileNavigation }}'>
+      {{ $context := . }}
+      {{ $menuData := .Site.Data.menu }}
+      {{ with $menuData }}
+        {{ partial "nav" (dict "context" $context "menu" $menuData) }}
+      {{- else }}
+        {{ partial "nav" (dict "context" . "menu" .Site.Menus.main) }}
+      {{- end }}
+      {{- partialCached "follow" . }}
+    </div>
+  </nav>
+</header>

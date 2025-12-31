@@ -1,87 +1,21 @@
 {{- $s := .Site.Params }}
 {{- $p := .Params }}
+
 <!DOCTYPE html>
-<html lang="{{ .Lang }}" data-figures="{{ $p.figurePositionShow }}"{{ if .IsPage }} class="page"{{ end }}{{ with $s.enforceLightMode }} data-mode="lit"{{ end }}{{ with $s.enforceDarkMode }} data-mode="dim"{{ end }}>
+<html lang="{{ .Lang }}" 
+  data-figures="{{ $p.figurePositionShow }}"
+  {{ if .IsPage }} 
+    class="page"
+  {{ end }}
+  {{ with $s.enforceLightMode }} 
+    data-mode="lit"
+  {{ end }}
+  {{ with $s.enforceDarkMode }} 
+    data-mode="dim"
+  {{ end }}>
+
   <head>
     {{- partial "head" . }}
-    <!-- styles definition-->
-    <!--old-->
-    {{- $options := (dict 
-      "targetPath" "css/styles.css" 
-      "outputStyle" "compressed" 
-      "enableSourceMap" "true"
-      "transpiler" "dartsass") -}}
-
-    {{ $mainSassFile :=  "sass/main.sass" }}
-    {{- $styles := resources.Get $mainSassFile | resources.ExecuteAsTemplate $mainSassFile . | css.Sass $options | resources.Fingerprint "sha512" }}
-
-    <!--new (post 1.28)-->
-
-    <!-- scripts definition -->
-    <script
-            src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous">
-    </script>
-
-    {{- $highlightPath := "js/highlight.js" }}
-    {{- $highlight := resources.Get $highlightPath | resources.ExecuteAsTemplate $highlightPath . }}
-
-    {{- $functionsScriptPath := "js/functions.js" }}
-    {{- $functions := resources.Get $functionsScriptPath | resources.ExecuteAsTemplate $functionsScriptPath . }}
-
-    {{- $codeScriptPath := "js/code.js" }}
-    {{- $code := resources.Get $codeScriptPath | resources.ExecuteAsTemplate $codeScriptPath . }}
-
-    {{- $galleryPath := "js/gallery.js" }}
-    {{- $gallery := resources.Get $galleryPath | resources.ExecuteAsTemplate $galleryPath . }}
-
-    {{- $customScriptPath := "js/custom.js" }}
-    {{ if (fileExists "../../assets/js/custom.js") }}
-      {{ $customScriptPath := "../../assets/js/custom.js" }}
-    {{ end }}
-    {{- $custom := resources.Get $customScriptPath | resources.ExecuteAsTemplate $customScriptPath . }}
-
-    {{- $mainScriptPath := "js/index.js" }}
-    {{- $main := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . }}
-
-    {{- $bundle := slice $highlight $functions $code $main $custom $gallery | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" -}}
-
-    <!-- preload assets declaration -->
-    <link rel="preload" href="{{ $styles.Permalink }}" integrity = "{{ $styles.Data.Integrity }}" as="style" crossorigin="anonymous">
-    <link rel="preload" href="{{ $bundle.Permalink }}" as="script" integrity=
-    "{{ $bundle.Data.Integrity }}" crossorigin="anonymous">
-
-    <!-- styles file -->
-    <link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous">
-    {{- with $s.customCSS }}
-    {{- range . -}}
-	  <link rel="stylesheet" href="{{ relURL . }}">
-    {{- end }}
-    {{- end }}
-    {{ partial "hooks/head-end.html" . }}
-
-    {{ if .Store.Get "hasMermaid" }}
-    <script type="module">
-      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({
-        startOnLoad: true,
-        theme: 'dark',
-        htmlLabels: true,
-        securityLevel: 'loose',
-        sequence: {
-          showSequenceNumbers: true,
-          diagramMarginX: 50,
-          diagramMarginY: 10,
-          boxTextMargin: 5,
-          noteMargin: 10,
-          messageMargin: 35,
-          mirrorActors: false,
-        }
-      });
-    </script>
-    {{ end }}
-
   </head>
   {{- $maxCodeLines := 100 }}
   {{- with $s.codeMaxLines }}
@@ -108,12 +42,7 @@
     </main>
     {{- partial "icons" }}
     {{- partial "footer" . }}
-    <script type="text/javascript" src="{{ $bundle.Permalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous"></script>
-    {{- with $s.customJS }}
-    {{- range . -}}
-    <script type="text/javascript" src="{{ relURL . }}" ></script>
-    {{- end }}
-    {{- end }}
+    {{- partialCached "scripts/index" . }}
     {{ partial "hooks/body-end.html" . }}
   </body>
 </html>

@@ -1,0 +1,11 @@
+<!-- scripts definition -->
+{{ $opts := dict
+  "minify" hugo.IsProduction
+  "sourceMap" (cond hugo.IsProduction "" "inline")
+  "targetPath" "js/main.js"
+}}
+
+{{ $js := resources.Get "js/main.js" | js.Build $opts}}
+{{ $bundle := $js | fingerprint "sha512" }}
+
+{{ return $bundle }}

@@ -22,7 +22,6 @@
 
 - [ ] Setup micropub
 
-
 ## Backlog
 
 - [x] Make cheatsheet for hugo
@@ -35,6 +34,7 @@
     - https://blog.zmh.org/bookshelf/
     - https://www.jvt.me/kind/reads/
     - https://www.jvt.me/kind/listens/
+    - https://joelchrono.xyz/ 
 - [ ] Refactor theme to separate site structure markup from theming logic
   - Have ability to switch themes at some point in the future
 - [ ] switch to a more open analytics and tracking tool
