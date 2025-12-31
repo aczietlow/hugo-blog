@@ -4,7 +4,7 @@ author = "Chris Zietlow"
 copyright = "Copyright © 2008–2025, Chris Zietlow"
 # canonifyurls = true
 # paginate = 10
-theme = "hugo-clarity"
+# theme = "hugo-clarity"
 
 disqusShortname = "zietlow"
 
@@ -74,9 +74,6 @@ enableMathNotation = true
 # directory(s) where your articles are located
 # see config details here https://gohugo.io/functions/where/#mainsectionss
 mainSections = ["posts", "listens", "reads"]
-
-# center logo on navbar
-centerLogo = false # Set to "true" for centering or "false" for left aligned.
 
 # TODO: Create logo.
 # logo = "logos/logo.png"

@@ -1,4 +1,3 @@
-const pageHasLoaded = 'DOMContentLoaded';
 (function toggleColorModes(){
   const light = 'lit';
   const dark = 'dim';
