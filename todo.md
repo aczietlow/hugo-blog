@@ -1,3 +1,13 @@
+## Theme refactor
+
+- [x] fix build errors from broken templates
+- [T] rewrite sass to scss
+- [ ] style single blog post first
+- [ ] print post tags at bottom of post meta data section
+- [ ] get libsass installed locally
+  - [ ] switch transpiler to "dartsass" in head.html
+  - [ ] update vulcan to include dartsass
+
 ## 
 
 - [x] implement h-card
@@ -35,6 +45,7 @@
     - https://www.jvt.me/kind/reads/
     - https://www.jvt.me/kind/listens/
     - https://joelchrono.xyz/ 
+    - https://mtwb.blog/
 - [ ] Refactor theme to separate site structure markup from theming logic
   - Have ability to switch themes at some point in the future
 - [ ] switch to a more open analytics and tracking tool

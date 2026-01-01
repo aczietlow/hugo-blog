@@ -1,0 +1,232 @@
+$font-path: "../fonts";
+$images: "../images/";
+
+// TokyoNight Day (light)
+$tn-day-bg: #e1e2e7;
+$tn-day-fg: #3760bf;
+$tn-day-blue: #2e7de9;
+$tn-day-cyan: #007197;
+$tn-day-green: #587539;
+$tn-day-yellow: #8c6c3e;
+$tn-day-red: #f52a65;
+$tn-day-magenta: #9854f1;
+
+// TokyoNight (dark)
+$tn-storm-bg: #24283b;
+$tn-storm-fg: #c0caf5;
+$tn-storm-blue: #7aa2f7;
+$tn-storm-cyan: #7dcfff;
+$tn-storm-green: #9ece6a;
+$tn-storm-yellow: #e0af68;
+$tn-storm-red: #f7768e;
+$tn-storm-magenta: #bb9af7;
+$tn-storm-black: #1d202f;
+$tn-storm-gray: #414868;
+$tn-storm-white: #a9b1d6;
+
+
+$light: #fff;
+$bg: $tn-day-bg;
+$theme:$tn-day-blue;
+
+$haze: lighten($tn-day-bg, 6%);
+$xhaze: darken($haze, 11%);
+
+$mobile-menu-breakpoint: 769px;
+$single-column-breakpoint: 42rem;
+
+@mixin content() {
+  --maxWidth: 1440px;
+  max-width: var(--maxWidth);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin viewport($width: 1024px, $margin: 25px) {
+  max-width: $width;
+  margin: $margin auto;
+  @content;
+}
+
+@mixin shadow($opacity: 0.17) {
+  box-shadow: 0 0 3rem rgba(0, 0, 0, $opacity);
+
+  &:hover {
+    box-shadow: 0 0 5rem rgba(0, 0, 0, (1.5 * $opacity));
+  }
+}
+
+@mixin darkmode {
+  --color-mode: "dim";
+
+  --bg: #{$tn-storm-bg};
+  --light: #{$tn-storm-fg}; // “light” in your theme behaves like readable fg
+  --dark: #{$tn-storm-black};
+
+  --text: #{$tn-storm-fg};
+  --header-text: #{$tn-storm-fg};
+
+  --theme: #{$tn-storm-blue};
+  --accent: #{$tn-storm-blue};
+
+  --haze: #{$tn-storm-gray};
+  --choice-bg: #{$tn-storm-bg};
+
+  --translucent: rgba(0, 0, 0, 0.25);
+  --translucent-light: rgba(255, 255, 255, 0.06);
+
+  --code-bg: rgba(255, 255, 255, 0.06);
+  --table-bg: rgba(255, 255, 255, 0.06);
+  --table-haze: rgba(255, 255, 255, 0.08);
+  --table-border: rgba(255, 255, 255, 0.10);
+
+  --footer-bg: #{$tn-storm-black};
+  --post-bg: rgba(255, 255, 255, 0.06);
+
+  // Notices (map to scheme hues)
+  --notice-code-bg: rgba(255, 255, 255, 0.06);
+  --notice-info-border-color: #{$tn-storm-blue};
+  --notice-info-background: rgba(122, 162, 247, 0.12);
+  --notice-note-border-color: #{$tn-storm-yellow};
+  --notice-note-background: rgba(224, 175, 104, 0.12);
+  --notice-tip-border-color: #{$tn-storm-green};
+  --notice-tip-background: rgba(158, 206, 106, 0.12);
+  --notice-warning-border-color: #{$tn-storm-red};
+  --notice-warning-background: rgba(247, 118, 142, 0.12);
+
+  * {
+    box-shadow: none !important;
+  }
+}
+
+html {
+  --color-mode: "lit";
+
+  --bg: #{$tn-day-bg};
+  --light: #{$light};
+  --dark: #{$tn-day-fg};
+
+  --haze: #{lighten($tn-day-bg, 6%)};
+  --gray: #{darken($tn-day-bg, 35%)};
+
+  --accent: #{$tn-day-blue};
+  --text: #{$tn-day-fg};
+  --header-text: #{$tn-day-fg};
+
+  --font: Metropolis, sans-serif;
+
+  --theme: #{$tn-day-blue};
+
+  --ease: cubic-bezier(0.39, 0.575, 0.565, 1);
+  --easing: cubic-bezier(0.19, 1, 0.22, 1);
+
+  --translucent: rgba(0, 0, 0, 0.05);
+  --translucent-light: rgba(255, 255, 255, 0.05);
+
+  --choice-bg: var(--haze);
+  --code-bg: var(--bg);
+
+  --table-bg: var(--light);
+  --table-haze: var(--haze);
+  --table-border: rgba(55, 96, 191, 0.18);
+
+  --footer-bg: var(--haze);
+  --post-bg: var(--light);
+
+  // Notices (Day hues)
+  --notice-code-bg: var(--bg);
+  --notice-info-border-color: #{$tn-day-blue};
+  --notice-info-background: rgba(46, 125, 233, 0.10);
+  --notice-note-border-color: #{$tn-day-yellow};
+  --notice-note-background: rgba(140, 108, 62, 0.10);
+  --notice-tip-border-color: #{$tn-day-green};
+  --notice-tip-background: rgba(88, 117, 57, 0.10);
+  --notice-warning-border-color: #{$tn-day-red};
+  --notice-warning-background: rgba(245, 42, 101, 0.10);
+
+  &.page {
+    --choice-bg: var(--light);
+  }
+
+  &[data-mode="dim"] {
+    @include darkmode;
+
+    blockquote {
+      background: var(--translucent-light);
+      color: var(--text);
+    }
+
+    svg.icon {
+      fill: var(--light);
+    }
+
+    .icon {
+      img {
+        background: none;
+      }
+
+      svg {
+        fill: var(--light);
+      }
+    }
+
+    .sidebar {
+      &_inner {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .color {
+      &_choice {
+        &::after {
+          background-image: url("#{$images}night-moon.jpg");
+          transform: translateX(1.4rem);
+        }
+      }
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:not([data-mode="lit"]) {
+      @include darkmode;
+
+      blockquote {
+        background: var(--translucent-light);
+        color: var(--text);
+      }
+
+      svg.icon {
+        fill: var(--light);
+      }
+
+      .icon {
+        img {
+          background: none;
+        }
+
+        svg {
+          fill: var(--light);
+        }
+      }
+
+      .sidebar {
+        &_inner {
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+      .color {
+        &_choice {
+          &::after {
+            background-image: url("#{$images}night-moon.jpg");
+            transform: translateX(1.4rem);
+          }
+        }
+      }
+    }
+  }
+}

@@ -36,14 +36,31 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
-{{- $options := (dict 
+{{- $options := dict 
   "targetPath" "css/styles.css" 
-  "outputStyle" "compressed" 
-  "enableSourceMap" "true"
-  "transpiler" "dartsass") -}}
+  "outputStyle" (cond hugo.IsProduction "compressed" "expanded")
+  "enableSourceMap" (not hugo.IsProduction)
+  "transpiler" "libsass" 
+-}}
 
-{{ $mainSassFile :=  "sass/main.sass" }}
-{{- $styles := resources.Get $mainSassFile | resources.ExecuteAsTemplate $mainSassFile . | css.Sass $options | resources.Fingerprint "sha512" }}
+{{- $mainScssFile :=  "scss/main.scss" -}}
+{{- $styles := resources.Get $mainScssFile | css.Sass $options -}}
+
+{{- if hugo.IsProduction -}}
+  {{- $styles = $styles | resources.Fingerprint "sha512" -}}
+{{- end -}}
+
+<!-- preload assets declaration -->
+<link 
+  rel="preload" 
+  href="{{ $styles.Permalink }}" 
+  {{ with $styles.Data.Integrity }}integrity="{{ . }}" crossorigin="anonymous"{{ end }}>
+
+<!-- styles file -->
+<link rel="stylesheet" 
+  type="text/css" 
+  href="{{ $styles.Permalink }}" 
+  {{ with $styles.Data.Integrity }}integrity="{{ . }}" crossorigin="anonymous"{{ end }}>
 
 <!-- scripts definition -->
 <script
@@ -52,20 +69,10 @@
         crossorigin="anonymous">
 </script>
 
-<!-- preload assets declaration -->
-<link rel="preload" href="{{ $styles.Permalink }}" integrity = "{{ $styles.Data.Integrity }}" as="style" crossorigin="anonymous">
 
 {{- $bundle := partialCached "func/getJavascriptBundle" . }}
 <link rel="preload" href="{{ $bundle.Permalink }}" as="script" integrity=
 "{{ $bundle.Data.Integrity }}" crossorigin="anonymous">
-
-<!-- styles file -->
-<link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous">
-{{- with $params.customCSS }}
-{{- range . -}}
-  <link rel="stylesheet" href="{{ relURL . }}">
-{{- end }}
-{{- end }}
 
 {{ if .Store.Get "hasMermaid" }}
 <script type="module">
