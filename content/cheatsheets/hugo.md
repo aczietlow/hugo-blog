@@ -100,5 +100,14 @@ hugo server -D -F
 {{ end}
 ```
 {{</ cheatsheet-section>}}
+### Trim whtie space
+{{< cheatsheet-section>}}
+```gohtml
+{{ Prints "as-is" }}
+{{- Trims white space before }}
+{{ Trims white space after -}}
+{{- Trims white space before and after -}}
+```
+{{</ cheatsheet-section>}}
 
 {{< /three-column>}}
