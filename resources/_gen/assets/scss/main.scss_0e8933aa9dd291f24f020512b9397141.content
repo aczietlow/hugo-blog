@@ -1,15 +1,378 @@
+/* Generated using: hugo gen chromastyles --style=monokai */
+/* Background */
+.bg {
+  color: #f8f8f2;
+  background-color: #272822;
+}
+
+/* PreWrapper */
+.chroma {
+  color: #f8f8f2;
+  background-color: #272822;
+}
+
+/* Other */
+/* Error */
+.chroma .err {
+  color: #960050;
+  background-color: #1e0010;
+}
+
+/* CodeLine */
+/* LineLink */
+.chroma .lnlinks {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* LineTableTD */
+.chroma .lntd {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* LineTable */
+.chroma .lntable {
+  border-spacing: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* LineHighlight */
+.chroma .hl {
+  background-color: #3c3d38;
+}
+
+/* LineNumbersTable */
+.chroma .lnt {
+  white-space: pre;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em;
+  color: #7f7f7f;
+}
+
+/* LineNumbers */
+.chroma .ln {
+  white-space: pre;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em;
+  color: #7f7f7f;
+}
+
+/* Line */
+.chroma .line {
+  display: flex;
+}
+
+/* Keyword */
+.chroma .k {
+  color: #66d9ef;
+}
+
+/* KeywordConstant */
+.chroma .kc {
+  color: #66d9ef;
+}
+
+/* KeywordDeclaration */
+.chroma .kd {
+  color: #66d9ef;
+}
+
+/* KeywordNamespace */
+.chroma .kn {
+  color: #f92672;
+}
+
+/* KeywordPseudo */
+.chroma .kp {
+  color: #66d9ef;
+}
+
+/* KeywordReserved */
+.chroma .kr {
+  color: #66d9ef;
+}
+
+/* KeywordType */
+.chroma .kt {
+  color: #66d9ef;
+}
+
+/* Name */
+/* NameAttribute */
+.chroma .na {
+  color: #a6e22e;
+}
+
+/* NameBuiltin */
+/* NameBuiltinPseudo */
+/* NameClass */
+.chroma .nc {
+  color: #a6e22e;
+}
+
+/* NameConstant */
+.chroma .no {
+  color: #66d9ef;
+}
+
+/* NameDecorator */
+.chroma .nd {
+  color: #a6e22e;
+}
+
+/* NameEntity */
+/* NameException */
+.chroma .ne {
+  color: #a6e22e;
+}
+
+/* NameFunction */
+.chroma .nf {
+  color: #a6e22e;
+}
+
+/* NameFunctionMagic */
+/* NameLabel */
+/* NameNamespace */
+/* NameOther */
+.chroma .nx {
+  color: #a6e22e;
+}
+
+/* NameProperty */
+/* NameTag */
+.chroma .nt {
+  color: #f92672;
+}
+
+/* NameVariable */
+/* NameVariableClass */
+/* NameVariableGlobal */
+/* NameVariableInstance */
+/* NameVariableMagic */
+/* Literal */
+.chroma .l {
+  color: #ae81ff;
+}
+
+/* LiteralDate */
+.chroma .ld {
+  color: #e6db74;
+}
+
+/* LiteralString */
+.chroma .s {
+  color: #e6db74;
+}
+
+/* LiteralStringAffix */
+.chroma .sa {
+  color: #e6db74;
+}
+
+/* LiteralStringBacktick */
+.chroma .sb {
+  color: #e6db74;
+}
+
+/* LiteralStringChar */
+.chroma .sc {
+  color: #e6db74;
+}
+
+/* LiteralStringDelimiter */
+.chroma .dl {
+  color: #e6db74;
+}
+
+/* LiteralStringDoc */
+.chroma .sd {
+  color: #e6db74;
+}
+
+/* LiteralStringDouble */
+.chroma .s2 {
+  color: #e6db74;
+}
+
+/* LiteralStringEscape */
+.chroma .se {
+  color: #ae81ff;
+}
+
+/* LiteralStringHeredoc */
+.chroma .sh {
+  color: #e6db74;
+}
+
+/* LiteralStringInterpol */
+.chroma .si {
+  color: #e6db74;
+}
+
+/* LiteralStringOther */
+.chroma .sx {
+  color: #e6db74;
+}
+
+/* LiteralStringRegex */
+.chroma .sr {
+  color: #e6db74;
+}
+
+/* LiteralStringSingle */
+.chroma .s1 {
+  color: #e6db74;
+}
+
+/* LiteralStringSymbol */
+.chroma .ss {
+  color: #e6db74;
+}
+
+/* LiteralNumber */
+.chroma .m {
+  color: #ae81ff;
+}
+
+/* LiteralNumberBin */
+.chroma .mb {
+  color: #ae81ff;
+}
+
+/* LiteralNumberFloat */
+.chroma .mf {
+  color: #ae81ff;
+}
+
+/* LiteralNumberHex */
+.chroma .mh {
+  color: #ae81ff;
+}
+
+/* LiteralNumberInteger */
+.chroma .mi {
+  color: #ae81ff;
+}
+
+/* LiteralNumberIntegerLong */
+.chroma .il {
+  color: #ae81ff;
+}
+
+/* LiteralNumberOct */
+.chroma .mo {
+  color: #ae81ff;
+}
+
+/* Operator */
+.chroma .o {
+  color: #f92672;
+}
+
+/* OperatorWord */
+.chroma .ow {
+  color: #f92672;
+}
+
+/* Punctuation */
+/* Comment */
+.chroma .c {
+  color: #75715e;
+}
+
+/* CommentHashbang */
+.chroma .ch {
+  color: #75715e;
+}
+
+/* CommentMultiline */
+.chroma .cm {
+  color: #75715e;
+}
+
+/* CommentSingle */
+.chroma .c1 {
+  color: #75715e;
+}
+
+/* CommentSpecial */
+.chroma .cs {
+  color: #75715e;
+}
+
+/* CommentPreproc */
+.chroma .cp {
+  color: #75715e;
+}
+
+/* CommentPreprocFile */
+.chroma .cpf {
+  color: #75715e;
+}
+
+/* Generic */
+/* GenericDeleted */
+.chroma .gd {
+  color: #f92672;
+}
+
+/* GenericEmph */
+.chroma .ge {
+  font-style: italic;
+}
+
+/* GenericError */
+/* GenericHeading */
+/* GenericInserted */
+.chroma .gi {
+  color: #a6e22e;
+}
+
+/* GenericOutput */
+/* GenericPrompt */
+/* GenericStrong */
+.chroma .gs {
+  font-weight: bold;
+}
+
+/* GenericSubheading */
+.chroma .gu {
+  color: #75715e;
+}
+
+/* GenericTraceback */
+/* GenericUnderline */
+/* TextWhitespace */
 html {
   --color-mode: "lit";
   --bg: #e1e2e7;
+  --bd-dark: #d5d6db;
+  --bd-highlight: #ececf0;
+  --bd-card: #dcdde2;
+  --fg: #3760bf;
   --light: #fff;
   --dark: #3760bf;
   --haze: #f2f2f5;
+  --haze-darker: #d3d4dc;
   --gray: #7e8298;
   --accent: #2e7de9;
   --text: #3760bf;
   --header-text: #3760bf;
   --font: Metropolis, sans-serif;
+  --blue: #2e7de9;
   --theme: #2e7de9;
+  --theme-strong: #3760bf;
   --ease: cubic-bezier(0.39, 0.575, 0.565, 1);
   --easing: cubic-bezier(0.19, 1, 0.22, 1);
   --translucent: rgba(0, 0, 0, 0.05);
@@ -21,6 +384,7 @@ html {
   --table-border: rgba(55, 96, 191, 0.18);
   --footer-bg: var(--haze);
   --post-bg: var(--light);
+  --shadow-strong: rgba(0, 0, 0, 0.25);
   --notice-code-bg: var(--bg);
   --notice-info-border-color: #2e7de9;
   --notice-info-background: rgba(46, 125, 233, 0.10);
@@ -38,17 +402,25 @@ html.page {
 
 html[data-mode="dim"] {
   --color-mode: "dim";
-  --bg: #24283b;
+  --bg: #1a1b26;
+  --bg-dark: #16161e;
+  --bg-highlight: #292e42;
+  --bg-card: #1f2335;
+  --fg: #c0caf5;
   --light: #c0caf5;
   --dark: #1d202f;
   --text: #c0caf5;
   --header-text: #c0caf5;
+  --blue: #7aa2f7;
   --theme: #7aa2f7;
+  --theme-strong: #bb9af7;
   --accent: #7aa2f7;
   --haze: #414868;
-  --choice-bg: #24283b;
+  --haze-darker: rgba(255, 255, 255, 0.10);
+  --choice-bg: #1a1b26;
   --translucent: rgba(0, 0, 0, 0.25);
   --translucent-light: rgba(255, 255, 255, 0.06);
+  --shadow-strong: rgba(0, 0, 0, 0.45);
   --code-bg: rgba(255, 255, 255, 0.06);
   --table-bg: rgba(255, 255, 255, 0.06);
   --table-haze: rgba(255, 255, 255, 0.08);
@@ -99,17 +471,25 @@ html[data-mode="dim"] .color_choice::after {
 @media (prefers-color-scheme: dark) {
   html:not([data-mode="lit"]) {
     --color-mode: "dim";
-    --bg: #24283b;
+    --bg: #1a1b26;
+    --bg-dark: #16161e;
+    --bg-highlight: #292e42;
+    --bg-card: #1f2335;
+    --fg: #c0caf5;
     --light: #c0caf5;
     --dark: #1d202f;
     --text: #c0caf5;
     --header-text: #c0caf5;
+    --blue: #7aa2f7;
     --theme: #7aa2f7;
+    --theme-strong: #bb9af7;
     --accent: #7aa2f7;
     --haze: #414868;
-    --choice-bg: #24283b;
+    --haze-darker: rgba(255, 255, 255, 0.10);
+    --choice-bg: #1a1b26;
     --translucent: rgba(0, 0, 0, 0.25);
     --translucent-light: rgba(255, 255, 255, 0.06);
+    --shadow-strong: rgba(0, 0, 0, 0.45);
     --code-bg: rgba(255, 255, 255, 0.06);
     --table-bg: rgba(255, 255, 255, 0.06);
     --table-haze: rgba(255, 255, 255, 0.08);
@@ -177,7 +557,7 @@ html::-webkit-scrollbar-corner {
 
 body {
   font-family: var(--font);
-  background: var(--choice-bg);
+  background: var(--bg);
   color: var(--text);
   font-size: 1.1rem;
   line-height: 1.5;
@@ -394,7 +774,7 @@ dl dd {
 }
 
 .nav {
-  color: #f2f2f5;
+  color: var(--fg);
   display: flex;
   justify-content: space-between;
   --maxWidth: 1440px;
@@ -404,7 +784,8 @@ dl dd {
 }
 
 .nav_active {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--blue);
+  color: var(--bg);
   border-radius: 0.25rem;
 }
 
@@ -421,7 +802,7 @@ dl dd {
 }
 
 .nav_header {
-  background-color: #e1e2e7;
+  background-color: var(--bg-dark);
   padding: 0 1.5rem;
   position: fixed;
   width: 100%;
@@ -455,6 +836,11 @@ dl dd {
   align-items: center;
   margin: 0.25rem 0;
   border-radius: 0.5rem;
+}
+
+.nav_parent:hover {
+  background-color: var(--bg-highlight);
+  color: var(--text);
 }
 
 .nav_open + .nav_sub .nav_child {
@@ -516,7 +902,7 @@ dl dd {
   bottom: 0;
   background: var(--translucent-light);
   border-radius: 0.5rem;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1rem 3rem var(--shadow-strong);
 }
 
 @media screen and (min-width: 769px) {
@@ -633,12 +1019,12 @@ dl dd {
 }
 
 .button {
-  background-color: #2e7de9;
-  color: #fff;
+  background-color: var(--theme);
+  color: var(--light);
   display: inline-flex;
   padding: 0.5rem 1.5rem;
   text-transform: uppercase;
-  border: 1px solid #2e7de9;
+  border: 1px solid var(--theme);
   border-radius: 1.5rem;
   font-size: 0.9rem;
   align-items: center;
@@ -646,25 +1032,25 @@ dl dd {
 }
 
 .button:hover, .button:focus {
-  background-color: #114da0;
+  background-color: var(--theme);
   color: #fff;
-  border: 1px solid #114da0;
+  border: 1px solid var(--theme);
 }
 
 .button_translucent {
   background-color: rgba(46, 125, 233, 0.15);
-  color: #2e7de9;
+  color: var(--theme);
   border: 1px solid transparent;
 }
 
 .button_tally {
   padding: 0 0.75rem;
   border-radius: 0.5rem;
-  background-color: #2e7de9;
-  display: inline-flex;
+  background-color: var(--theme);
+  display: inlinvar(--light);
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--light);
   margin: 0.1rem 0 0.1rem 0.2rem;
   font-size: 0.7rem;
 }
@@ -680,7 +1066,7 @@ dl dd {
 .post_header {
   height: 50vh;
   max-height: 35rem;
-  background-color: #e1e2e7;
+  background-color: var(--bg);
   background-size: cover;
   background-position: center;
   margin-top: 4.2rem;
@@ -706,7 +1092,7 @@ dl dd {
 .post_item {
   margin-bottom: 3rem;
   border-radius: 0.5rem;
-  background: var(--post-bg);
+  background: var(--bg-card);
 }
 
 .post_item .h-card a.u-url {
@@ -766,7 +1152,7 @@ dl dd {
 }
 
 .post_content a {
-  color: #2e7de9;
+  color: var(--theme);
 }
 
 .post_content ul,
@@ -1082,7 +1468,7 @@ dl dd {
 }
 
 .follow svg {
-  fill: #f2f2f5;
+  fill: var(--text);
   margin-left: 0.75rem;
 }
 
@@ -1263,7 +1649,7 @@ dl dd {
 .card {
   margin-bottom: 2rem;
   border-radius: 0.5rem;
-  background: var(--post-bg);
+  background: var(--bg-card);
   flex: 1 1 200px;
 }
 

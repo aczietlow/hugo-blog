@@ -42,5 +42,8 @@
     </main>
     {{- partial "icons" }}
     {{- partial "footer" . }}
+
+    {{- $bundle := partialCached "func/getJavascriptBundle" . }}
+    <script type="text/javascript" src="{{ $bundle.Permalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous"></script>
   </body>
 </html>

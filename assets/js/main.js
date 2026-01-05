@@ -1,2 +1,2 @@
-import "./lib/highlight.js"
+import "./color.js"
 

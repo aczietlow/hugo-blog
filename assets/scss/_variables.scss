@@ -3,6 +3,9 @@ $images: "../images/";
 
 // TokyoNight Day (light)
 $tn-day-bg: #e1e2e7;
+$tn-day-bg-dark: #d5d6db;
+$tn-day-bg-highlight: #ececf0;
+$tn-day-bg-card: #dcdde2;
 $tn-day-fg: #3760bf;
 $tn-day-blue: #2e7de9;
 $tn-day-cyan: #007197;
@@ -12,7 +15,10 @@ $tn-day-red: #f52a65;
 $tn-day-magenta: #9854f1;
 
 // TokyoNight (dark)
-$tn-storm-bg: #24283b;
+$tn-storm-bg: #1a1b26;
+$tn-storm-bg-dark: #16161e;
+$tn-storm-bg-highlight: #292e42;
+$tn-storm-bg-card: #1f2335;
 $tn-storm-fg: #c0caf5;
 $tn-storm-blue: #7aa2f7;
 $tn-storm-cyan: #7dcfff;
@@ -60,20 +66,30 @@ $single-column-breakpoint: 42rem;
   --color-mode: "dim";
 
   --bg: #{$tn-storm-bg};
-  --light: #{$tn-storm-fg}; // “light” in your theme behaves like readable fg
+  --bg-dark: #{$tn-storm-bg-dark};
+  --bg-highlight: #{$tn-storm-bg-highlight};
+  --bg-card: #{$tn-storm-bg-card};
+
+  --fg: #{$tn-storm-fg};
+  --light: #{$tn-storm-fg};
   --dark: #{$tn-storm-black};
 
   --text: #{$tn-storm-fg};
   --header-text: #{$tn-storm-fg};
 
+  --blue: #{$tn-storm-blue};
   --theme: #{$tn-storm-blue};
+  --theme-strong: #{$tn-storm-magenta}; 
   --accent: #{$tn-storm-blue};
 
   --haze: #{$tn-storm-gray};
+  --haze-darker: rgba(255, 255, 255, 0.10);
   --choice-bg: #{$tn-storm-bg};
 
   --translucent: rgba(0, 0, 0, 0.25);
   --translucent-light: rgba(255, 255, 255, 0.06);
+
+  --shadow-strong: rgba(0, 0, 0, 0.45);
 
   --code-bg: rgba(255, 255, 255, 0.06);
   --table-bg: rgba(255, 255, 255, 0.06);
@@ -103,10 +119,17 @@ html {
   --color-mode: "lit";
 
   --bg: #{$tn-day-bg};
+  --bd-dark: #{$tn-day-bg-dark};
+  --bd-highlight: #{$tn-day-bg-highlight};
+  --bd-card: #{$tn-day-bg-card};
+
+  --fg: #{$tn-day-fg};
+
   --light: #{$light};
   --dark: #{$tn-day-fg};
 
   --haze: #{lighten($tn-day-bg, 6%)};
+  --haze-darker: #{darken(lighten($tn-day-bg, 6%), 11%)};
   --gray: #{darken($tn-day-bg, 35%)};
 
   --accent: #{$tn-day-blue};
@@ -115,7 +138,9 @@ html {
 
   --font: Metropolis, sans-serif;
 
+  --blue: #{$tn-day-blue};
   --theme: #{$tn-day-blue};
+  --theme-strong: #{$tn-day-fg};  
 
   --ease: cubic-bezier(0.39, 0.575, 0.565, 1);
   --easing: cubic-bezier(0.19, 1, 0.22, 1);
@@ -132,6 +157,8 @@ html {
 
   --footer-bg: var(--haze);
   --post-bg: var(--light);
+
+  --shadow-strong: rgba(0, 0, 0, 0.25);
 
   // Notices (Day hues)
   --notice-code-bg: var(--bg);

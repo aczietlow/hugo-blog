@@ -6,8 +6,10 @@ copyright = "Copyright © 2008–2025, Chris Zietlow"
 # paginate = 10
 # theme = "hugo-clarity"
 
-disqusShortname = "zietlow"
+# TODO: 'assets' is the default value, I don't think it's needed
+# assetDir = "assets"
 
+disqusShortname = "zietlow"
 DefaultContentLanguage = "en"
 
 [pagination]
@@ -37,7 +39,7 @@ languages = "languages"
     lineNos = true
     lineNumbersInTable = false
     noClasses = false
-    # style = "monokai"
+    style = "monokai"
     tabWidth = 2
   [markup.tableOfContents]
     endLevel = 4

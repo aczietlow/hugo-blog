@@ -8,18 +8,16 @@
 }
 
 .nav {
-  color: $haze;
+  color: var(--fg);
   display: flex;
   justify-content: space-between;
   @include content;
 
-  &_active {
-    background-color: rgba($light, 0.05);
-    border-radius: 0.25rem;
-  }
 
-  &,
-  &_body {
+  &_active {
+    background-color: var(--blue);
+    color: var(--bg);
+    border-radius: 0.25rem;
   }
 
   &_icon {
@@ -35,7 +33,7 @@
   }
 
   &_header {
-    background-color: $bg;
+    background-color: var(--bg-dark);
     padding: 0 1.5rem;
     position: fixed;
     width: 100%;
@@ -69,6 +67,11 @@
     align-items: center;
     margin: 0.25rem 0;
     border-radius: 0.5rem;
+
+    &:hover{
+      background-color: var(--bg-highlight);
+      color: var(--text);
+    }
   }
 
   &_open + &_sub &_child {
@@ -128,7 +131,7 @@
       bottom: 0;
       background: var(--translucent-light);
       border-radius: 0.5rem;
-      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1rem 3rem var(--shadow-strong);
     }
 
     @media screen and (min-width: 769px) {
@@ -235,12 +238,12 @@
 }
 
 .button {
-  background-color: $theme;
-  color: $light;
+  background-color: var(--theme);
+  color: var(--light);
   display: inline-flex;
   padding: 0.5rem 1.5rem;
   text-transform: uppercase;
-  border: 1px solid $theme;
+  border: 1px solid var(--theme);
   border-radius: 1.5rem;
   font-size: 0.9rem;
   align-items: center;
@@ -248,25 +251,25 @@
 
   &:hover,
   &:focus {
-    background-color: darken($theme, 20%);
+    background-color: var(--theme);
     color: $light;
-    border: 1px solid darken($theme, 20%);
+    border: 1px solid var(--theme);
   }
 
   &_translucent {
     background-color: rgba($theme, 0.15);
-    color: $theme;
+    color: var(--theme);
     border: 1px solid transparent;
   }
 
   &_tally {
     padding: 0 0.75rem;
     border-radius: 0.5rem;
-    background-color: $theme;
-    display: inline-flex;
+    background-color: var(--theme);
+    display: inlinvar(--light);
     justify-content: center;
     align-items: center;
-    color: $light;
+    color: var(--light);
     margin: 0.1rem 0 0.1rem 0.2rem;
     font-size: 0.7rem;
   }
@@ -285,7 +288,7 @@
   &_header {
     height: 50vh;
     max-height: 35rem;
-    background-color: $bg;
+    background-color: var(--bg);
     // background-image: url(/images/island.jpg)
     background-size: cover;
     background-position: center;
@@ -309,7 +312,7 @@
     // box-shadow: 0  2.25rem 1.25rem -1.25rem var(--shadow)
     margin-bottom: 3rem;
     border-radius: 0.5rem;
-    background: var(--post-bg);
+    background: var(--bg-card);
 
     .h-card {
       a.u-url {
@@ -373,7 +376,7 @@
 
   &_content {
     a {
-      color: $theme;
+      color: var(--theme);
     }
 
     ul,
@@ -702,7 +705,7 @@
   justify-content: flex-end;
 
   svg {
-    fill: $haze;
+    fill: var(--text);
     margin-left: 0.75rem;
   }
 }
@@ -887,7 +890,7 @@
 .card {
   margin-bottom: 2rem;
   border-radius: 0.5rem;
-  background: var(--post-bg);
+  background: var(--bg-card);
   flex: 1 1 200px;
 
   &__content {

@@ -1,11 +1,13 @@
 <!-- scripts definition -->
-{{ $opts := dict
+{{ 
+$opts := dict
   "minify" hugo.IsProduction
   "sourceMap" (cond hugo.IsProduction "" "inline")
-  "targetPath" "js/main.js"
 }}
 
 {{ $js := resources.Get "js/main.js" | js.Build $opts}}
-{{ $bundle := $js | fingerprint "sha512" }}
+{{ $highlightjs := resources.Get "js/lib/highlight.js"}}
+
+{{ $bundle := slice $js | resources.Concat "js/main.js" | fingerprint "sha512" }}
 
 {{ return $bundle }}
