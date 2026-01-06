@@ -6,7 +6,6 @@ $opts := dict
 }}
 
 {{ $js := resources.Get "js/main.js" | js.Build $opts}}
-{{ $highlightjs := resources.Get "js/lib/highlight.js"}}
 
 {{ $bundle := slice $js | resources.Concat "js/main.js" | fingerprint "sha512" }}
 

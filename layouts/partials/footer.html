@@ -2,6 +2,7 @@
 {{- if or .Params.enableMathNotation $s.enableMathNotation }}
   {{ partial "math" . }}
 {{- end }}
+
 <footer class="footer">
   <div class="footer_head">
     {{ partial "indieweb-webring.html" . }}
