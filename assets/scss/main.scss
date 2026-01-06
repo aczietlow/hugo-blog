@@ -1,7 +1,7 @@
 // Gen styles for code fences
-@import 'chroma2';
-
-@import 'variables';
-@import 'base';
-@import 'components';
+@use "sass:color" as *;
+@use 'chroma';
+@use 'variables' as *;
+@use 'base';
+@use 'components';
 

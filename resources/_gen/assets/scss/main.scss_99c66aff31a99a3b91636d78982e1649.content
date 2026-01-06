@@ -344,9 +344,9 @@ html {
   --fg: #3760bf;
   --light: #fff;
   --dark: #3760bf;
-  --haze: rgb(242, 242.4333333333, 244.6);
-  --haze-darker: rgb(210.8333333333, 212.3055555556, 219.6666666667);
-  --gray: rgb(125.8333333333, 130.1388888889, 151.6666666667);
+  --haze: rgb(226.8, 227.74, 232.44);
+  --haze-darker: rgb(198.7353333333, 200.6108222222, 209.9882666667);
+  --gray: rgb(136.3333333333, 140.2888888889, 160.0666666667);
   --accent: #2e7de9;
   --text: #3760bf;
   --header-text: #3760bf;
@@ -634,7 +634,7 @@ strong {
 hr {
   border: none;
   padding: 1px;
-  background: rgb(220.75, 221.8916666667, 227.6);
+  background: rgb(207.665, 209.2428333333, 217.132);
   opacity: 0.5;
   margin: 1rem 0;
 }
@@ -1301,7 +1301,7 @@ dl dd {
   display: none;
 }
 .page-item.active a {
-  background-color: rgb(16.8571428571, 77.3896103896, 160.1428571429);
+  background-color: rgb(21.2571428571, 97.5896103896, 201.9428571429);
 }
 .page-link {
   padding: 0.25rem 0.75rem;
