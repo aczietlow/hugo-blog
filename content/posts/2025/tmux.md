@@ -11,7 +11,6 @@ tags:
   - productivity
 ---
 
-
 Working from neovim and writing go code I find myself often cycling through multiple terminal windows while working on projects. This cycles between iterm and ghostty terminal and splits within neovim itself depending on my environment. Often resulting in a cacophony of windows, panes, and red yarn connecting the dots... There has to be a better way. Or moreover I'm tired of relying on a different set of application keybindings, alt-tab, and my mouse. The overall design of my workflow is to keep laser focus by keeping everything within a single window, and reducing the amount of time switching between different programs or reaching for the mouse. [Tmux](https://github.com/tmux/tmux) has always been the obvious answer for improvement.
 
 ## What is Tmux

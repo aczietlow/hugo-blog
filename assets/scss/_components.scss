@@ -1,4 +1,5 @@
 @use "sass:color" as *;
+@use 'variables' as *;
 
 %upcaret {
   width: 0;
@@ -657,7 +658,7 @@
     }
 
     &.active a {
-      background-color: color.scale($theme, $lightness: -20%);
+      background-color: scale($theme, $lightness: -20%);
     }
   }
 
