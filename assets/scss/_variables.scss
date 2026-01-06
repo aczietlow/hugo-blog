@@ -35,8 +35,9 @@ $light: #fff;
 $bg: $tn-day-bg;
 $theme:$tn-day-blue;
 
-$haze: lighten($tn-day-bg, 6%);
-$xhaze: darken($haze, 11%);
+@use "sass:color" as *;
+$haze: color.scale($tn-day-bg, $lightness: 6%);
+$xhaze: color.scale($haze, $lightness: -11%);
 
 $mobile-menu-breakpoint: 769px;
 $single-column-breakpoint: 42rem;
@@ -128,9 +129,9 @@ html {
   --light: #{$light};
   --dark: #{$tn-day-fg};
 
-  --haze: #{lighten($tn-day-bg, 6%)};
-  --haze-darker: #{darken(lighten($tn-day-bg, 6%), 11%)};
-  --gray: #{darken($tn-day-bg, 35%)};
+  --haze: #{color.scale($tn-day-bg, $lightness: 6%)};
+  --haze-darker: #{color.scale(color.scale($tn-day-bg, $lightness: 6%), $lightness: -11%)};
+  --gray: #{color.scale($tn-day-bg, $lightness: -35%)};
 
   --accent: #{$tn-day-blue};
   --text: #{$tn-day-fg};
