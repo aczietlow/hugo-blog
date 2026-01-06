@@ -1,0 +1,19 @@
+{{- define "main" }}
+<div class="grid-inverse wrap content">
+  <div>
+    <h1>{{ .Title }}</h1>
+    {{- if .Content }}
+      <div class="content">
+        {{- .Content }}
+      </div>
+    {{- end }}
+    <ul class="posts">
+      {{- range .Pages }}
+        {{ partial "excerpt" . }}
+      {{- end }}
+    </ul>
+  </div>
+  {{- partial "sidebar" . }}
+</div>
+{{- end }}
+

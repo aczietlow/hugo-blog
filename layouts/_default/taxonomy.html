@@ -1,0 +1,16 @@
+{{- define "main" }}
+<div class="grid-inverse wrap content">
+  <div>
+    <h1>{{ .Title }}</h1>
+    <ul class="posts">
+      {{- range .Pages }}
+        <li>
+          <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+        </li>
+      {{- end }}
+    </ul>
+  </div>
+  {{- partial "sidebar" . }}
+</div>
+{{- end }}
+
