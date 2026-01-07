@@ -3,6 +3,7 @@
 - [x] fix build errors from broken templates
 - [T] rewrite sass to scss
 - [ ] fix issue with highlighter and code fences
+  - turns out it was just a zen browser thing all along
 - [ ] style single blog post first
 - [ ] print post tags at bottom of post meta data section
 - [ ] get libsass installed locally
