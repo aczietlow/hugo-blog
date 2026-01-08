@@ -9,6 +9,7 @@
 - [x] get libsass installed locally
   - [x] switch transpiler to "dartsass" in head.html
   - [x] update vulcan to include dartsass
+- [ ] Refactor the config.toml global file to the newer more modulular config
 
 ## 
 
