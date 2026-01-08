@@ -5,10 +5,10 @@
 - [ ] fix issue with highlighter and code fences
   - turns out it was just a zen browser thing all along
 - [ ] style single blog post first
-- [ ] print post tags at bottom of post meta data section
-- [ ] get libsass installed locally
-  - [ ] switch transpiler to "dartsass" in head.html
-  - [ ] update vulcan to include dartsass
+- [x] print post tags at bottom of post meta data section
+- [x] get libsass installed locally
+  - [x] switch transpiler to "dartsass" in head.html
+  - [x] update vulcan to include dartsass
 
 ## 
 

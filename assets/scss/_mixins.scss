@@ -1,0 +1,20 @@
+@mixin spacing-utilities($scale) {
+  $directions: (
+    t: top,
+    b: bottom,
+    l: left,
+    r: right
+  );
+
+  @each $key, $size in $scale {
+    @each $short, $long in $directions {
+      .p#{$short}-#{$key} {
+        padding-#{$long}: $size;
+      }
+
+      .m#{$short}-#{$key} {
+        margin-#{$long}: $size;
+      }
+    }
+  }
+}

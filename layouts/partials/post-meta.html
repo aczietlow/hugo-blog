@@ -1,3 +1,4 @@
+{{- $scratch := newScratch }}
 <div class="post_meta">
   <!-- post date -->
   <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
@@ -16,4 +17,19 @@
 
   <!-- share -->
   <span class="page_only">&nbsp;| {{ partial "share" . }}</span>
+</div>
+
+<div class="post_tags">
+  {{- with .Params.tags -}}
+    <span>
+      {{- if ($scratch.Get "writeSeparator") }}&nbsp;| {{ end }}
+      {{- range . }}
+        {{- $tag := urlize . -}}
+        <a href='{{ absLangURL (printf "tags/%s" $tag) }}' title="{{ . }}" class="post_tag button button_translucent">
+          <span class="p-category">{{- . }}</span>
+        </a>
+      {{- end }}
+    </span>
+    {{- $scratch.Set "writeSeparator" true }}
+  {{- end }}
 </div>
