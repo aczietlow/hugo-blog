@@ -40,7 +40,7 @@ Note: I've remapped my tmux prefix from c-b to c-a
 
 ### My Custom Tmux Config
 
-```{file="~/.config/tmux/tmux.conf"}
+```{file="tmux.conf"}
 # My brain does better with base index 1 when pressing `prefix [0-9]
 set -g base-index 1
 
