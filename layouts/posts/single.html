@@ -12,20 +12,30 @@
 
 <div class="{{ if ne $p.singleColumn true }}grid-inverse {{ end }}wrap content">
   <article class="post_content h-entry">
-    {{- $t := .Title }}
-    <h1 class="post_title p-name">{{ $t }}</h1>
-    {{- partial "post-meta" . }}
+    <header class="h-entry__header">
+      {{- $t := .Title }}
+      <h1 class="post_title p-name">{{ $t }}</h1>
+      {{- partial "post-meta" . }}
+    </header>
+    
     {{ with $p.featureImage }}
-      <img src="{{ . }}" class="image_featured u-featured" alt="{{ $t }}">
+      <figure class="h-entry__featured">
+        <img src="{{ . }}" 
+             class="image_featured u-featured" 
+             alt="{{ $t }}"
+             loading="lazy">
+      </figure>
     {{ end }}
 
     {{ if $p.toc }}
-      <h2>{{ T "overview" }}</h2>
-      {{ .TableOfContents }}
+      <nav class="toc" aria-label="Table of contents">
+        <h2>{{ T "overview" }}</h2>
+        {{ .TableOfContents }}
+      </nav>
     {{ end }}
 
     <div class="e-content">
-    {{- .Content }}
+      {{- .Content }}
     </div>
 
     <!-- comments -->

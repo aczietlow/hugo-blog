@@ -3,13 +3,20 @@
   {{ partial "math" . }}
 {{- end }}
 
-<footer class="footer">
+<footer class="footer" role="contentinfo">
   <div class="footer_head">
     {{ partial "indieweb-webring.html" . }}
   </div>
   <div class="footer_inner">
-    <img src='{{ absURL (default "icons/apple-touch-icon.png" $s.footerLogo) }}' class="icon icon_2 transparent">
-    <p>{{ T "copyright" }}{{ with $s.since }} {{ . }}-{{ end }}<span class="year"></span> {{upper .Site.Title }} {{ T "all_rights" }}</p>
+    <img src='{{ absURL (default "icons/apple-touch-icon.png" $s.footerLogo) }}' 
+         class="icon icon_2 transparent" 
+         alt="Site icon"
+         loading="lazy">
+    <p>
+      <small>
+        {{ T "copyright" }}{{ with $s.since }} {{ . }}-{{ end }}<span class="year"></span> {{upper .Site.Title }} {{ T "all_rights" }}
+      </small>
+    </p>
     {{- partial "top" .}}
   </div>
 </footer>
