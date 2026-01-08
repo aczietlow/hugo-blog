@@ -24,23 +24,6 @@ series = "series"
 languages = "languages"
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      hardWraps = false
-      unsafe = true # change to false to disable inclusion of rawHTML and math functions
-      xhtml = false
-    [markup.goldmark.extensions]
-      typographer = false
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    hl_Lines = "--"
-    lineNoStart = 1
-    lineNos = true
-    lineNumbersInTable = false
-    noClasses = false
-    style = "monokai"
-    tabWidth = 2
   [markup.tableOfContents]
     endLevel = 4
     ordered = false
