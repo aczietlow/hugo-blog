@@ -400,7 +400,7 @@ html[data-mode=dim] {
   --translucent: rgba(0, 0, 0, 0.25);
   --translucent-light: rgba(255, 255, 255, 0.06);
   --shadow-strong: rgba(0, 0, 0, 0.45);
-  --code-bg: rgba(255, 255, 255, 0.06);
+  --code-bg: #272822;
   --table-bg: rgba(255, 255, 255, 0.06);
   --table-haze: rgba(255, 255, 255, 0.08);
   --table-border: rgba(255, 255, 255, 0.10);
@@ -461,7 +461,7 @@ html[data-mode=dim] .color_choice::after {
     --translucent: rgba(0, 0, 0, 0.25);
     --translucent-light: rgba(255, 255, 255, 0.06);
     --shadow-strong: rgba(0, 0, 0, 0.45);
-    --code-bg: rgba(255, 255, 255, 0.06);
+    --code-bg: #272822;
     --table-bg: rgba(255, 255, 255, 0.06);
     --table-haze: rgba(255, 255, 255, 0.08);
     --table-border: rgba(255, 255, 255, 0.10);
@@ -1804,6 +1804,137 @@ dl dd {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+code {
+  font-size: 15px;
+  font-weight: 400;
+  overflow-y: hidden;
+  font-family: "Monaco", monospace;
+  --inlineColor: rgb(194, 29, 0);
+  color: var(--inlineColor);
+  display: inline;
+  line-break: anywhere;
+}
+
+.pre > code {
+  display: block;
+  word-break: break-all;
+  line-break: auto;
+}
+
+.windows .highlight {
+  overflow-x: hidden;
+}
+.windows .highlight:hover {
+  overflow-x: auto;
+}
+
+.highlight {
+  display: grid;
+  width: 100%;
+  border-radius: 0 0.2rem 0.2rem 0;
+  overflow-x: auto;
+  position: relative;
+}
+.highlight_wrap {
+  background: var(--code-bg) !important;
+  border-radius: 0.5rem;
+  position: relative;
+  padding: 0 1rem;
+  margin: 1.5rem auto 1rem auto;
+}
+.highlight_wrap + .highlight_wrap {
+  margin-top: 2.25rem;
+}
+.highlight_wrap:hover > div {
+  opacity: 1;
+}
+.highlight_wrap .lang {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  width: 7.5rem;
+  padding: 0.5rem 1rem;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 67%;
+  opacity: 0.5;
+  color: var(--light);
+}
+.highlight_wrap:hover .lang {
+  opacity: 0.1;
+}
+.highlight .highlight {
+  margin: 0;
+}
+.highlight pre {
+  color: var(--light) !important;
+  border-radius: 4px;
+  font-family: "Monaco", monospace;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+.highlight table {
+  display: grid;
+  max-width: 100%;
+  margin-bottom: 0;
+  background: transparent;
+}
+.highlight td,
+.highlight th {
+  padding: 0;
+}
+.highlight .lntd {
+  width: 100%;
+  border: none;
+}
+.highlight .lntd:first-child,
+.highlight .lntd:first-child pre {
+  width: 2.5rem !important;
+  padding-left: 0;
+  padding-right: 0;
+  color: rgba(255, 255, 255, 0.5);
+  user-select: none;
+}
+.highlight .lntd:first-child pre {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.highlight_meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.highlight_meta .highlight_title {
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.highlight_meta .highlight_copy {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.highlight_meta .highlight_copy::after {
+  content: "Copied";
+  position: absolute;
+  right: 100%;
+  margin-right: 0.5rem;
+  font-size: 0.7rem;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  pointer-events: none;
+}
+.highlight_meta .highlight_copy.copied::after {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
