@@ -1,35 +1,48 @@
 {{- $scratch := newScratch }}
-<div class="post_meta">
+<header class="post_meta h-entry__meta">
   <!-- post date -->
-  <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
-  <span class="post_date dt-published">
-    {{ .Date.Format ($.Site.Params.dateFormat) -}}
-  </span>
+  <time class="post_date dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+    {{ partial "sprite" (dict "icon" "calendar") }}
+    <span class="visually-hidden">Published on </span>
+    {{ .Date.Format ($.Site.Params.dateFormat) }}
+  </time>
   
-  <!-- Author card; hidden -->
-  <span class="p-author h-card">
-    <a rel="author" class="p-name u-url" href="{{ .Site.BaseURL }}">Chris Zietlow</a>
-    <img class="u-photo" src='{{ absURL "images/me.jpg" }}' alt="Chris Zietlow Profile Image">
-  </span>
+  <!-- Author card -->
+  <address class="p-author h-card">
+    <a rel="author" class="p-name u-url" href="{{ .Site.BaseURL }}">
+      <span class="visually-hidden">Author: </span>Chris Zietlow
+    </a>
+    <img class="u-photo" src='{{ absURL "images/me.jpg" }}' alt="Chris Zietlow Profile Image" loading="lazy">
+  </address>
 
   <!-- read time -->
-  <span class="post_time">&nbsp;| {{ .ReadingTime }} min read</span>
+  <span class="post_time" aria-label="Estimated reading time">
+    <span aria-hidden="true">&nbsp;|</span>
+    <time datetime="PT{{ .ReadingTime }}M">{{ .ReadingTime }} min read</time>
+  </span>
 
   <!-- share -->
-  <span class="page_only">&nbsp;| {{ partial "share" . }}</span>
-</div>
+  <nav class="page_only post_share" aria-label="Share this post">
+    <span aria-hidden="true">&nbsp;|</span>
+    {{ partial "share" . }}
+  </nav>
+</header>
 
-<div class="post_tags">
-  {{- with .Params.tags -}}
-    <span>
-      {{- if ($scratch.Get "writeSeparator") }}&nbsp;| {{ end }}
-      {{- range . }}
-        {{- $tag := urlize . -}}
-        <a href='{{ absLangURL (printf "tags/%s" $tag) }}' title="{{ . }}" class="post_tag button button_translucent">
-          <span class="p-category">{{- . }}</span>
+<!-- Tags section -->
+{{- with .Params.tags -}}
+<nav class="post_tags" aria-label="Post tags">
+  <ul class="tag-list">
+    {{- range . }}
+      {{- $tag := urlize . -}}
+      <li>
+        <a href='{{ absLangURL (printf "tags/%s" $tag) }}' 
+           title="Posts tagged {{ . }}" 
+           class="post_tag button button_translucent p-category"
+           rel="tag">
+          {{- . }}
         </a>
-      {{- end }}
-    </span>
-    {{- $scratch.Set "writeSeparator" true }}
-  {{- end }}
-</div>
+      </li>
+    {{- end }}
+  </ul>
+</nav>
+{{- end }}

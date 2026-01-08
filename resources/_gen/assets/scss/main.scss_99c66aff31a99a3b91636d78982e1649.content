@@ -755,6 +755,14 @@ dl dd {
   display: flex;
   flex: 1;
 }
+.nav_list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .nav_header {
   background-color: var(--bg-dark);
   padding: 0 1.5rem;
@@ -780,6 +788,9 @@ dl dd {
   overflow: hidden;
   padding: 0.96rem 0 0;
   background: transparent;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 .nav_parent {
   position: relative;
@@ -1023,6 +1034,22 @@ dl dd {
 }
 .post_share {
   display: inline-flex;
+  align-items: center;
+}
+.post_share > span {
+  display: inline;
+}
+.post_share ul.share-list {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.post_share ul.share-list li {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
 }
 .post_meta {
   display: inline-flex;
@@ -1050,6 +1077,37 @@ dl dd {
 }
 .post_content ol {
   list-style: decimal;
+}
+
+.post_share .share-list,
+.post_meta .share-list {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.post_share .share-list li,
+.post_meta .share-list li {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+.post_tags .tag-list,
+.post_meta .tag-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.post_tags .tag-list li,
+.post_meta .tag-list li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .scrollable {
@@ -1317,6 +1375,18 @@ dl dd {
   align-items: center;
   flex: 1;
   justify-content: flex-end;
+}
+.follow ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 0.5rem;
+}
+.follow li {
+  margin: 0;
+  padding: 0;
 }
 .follow svg {
   fill: var(--text);
@@ -1608,6 +1678,18 @@ dl dd {
 
 .hidden {
   display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

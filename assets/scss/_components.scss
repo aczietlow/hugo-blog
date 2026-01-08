@@ -35,6 +35,15 @@
     flex: 1;
   }
 
+  &_list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
   &_header {
     background-color: var(--bg-dark);
     padding: 0 1.5rem;
@@ -62,6 +71,9 @@
     overflow: hidden;
     padding: 0.96rem 0 0;
     background: transparent;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
   }
 
   &_parent {
@@ -336,6 +348,25 @@
 
   &_share {
     display: inline-flex;
+    align-items: center;
+    
+    > span {
+      display: inline;
+    }
+    
+    ul.share-list {
+      display: inline-flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+    
+    ul.share-list li {
+      display: inline-flex;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   &_meta {
@@ -371,6 +402,39 @@
     ol {
       list-style: decimal;
     }
+  }
+}
+
+// Share list styles - using specific selectors to override default list styles
+.post_share .share-list,
+.post_meta .share-list {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+
+  li {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// Tag list styles - using specific selectors to override default list styles
+.post_tags .tag-list,
+.post_meta .tag-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 }
 
@@ -682,6 +746,20 @@
   align-items: center;
   flex: 1;
   justify-content: flex-end;
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
 
   svg {
     fill: var(--text);

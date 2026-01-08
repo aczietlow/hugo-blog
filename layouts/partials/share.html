@@ -1,17 +1,50 @@
   {{- $s := T "share_on" }}
-  <div class="post_share">
-    {{ $s }}
-    <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}&tw_p=tweetbutton" class="twitter" title="{{ $s }} Twitter" target="_blank" rel="nofollow">
-      {{ partial "sprite" (dict "icon" "twitter") }}
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u={{ .Permalink }}&t={{ .Title }}" class="facebook" title="{{ $s }} Facebook" target="_blank" rel="nofollow">
-      {{ partial "sprite" (dict "icon" "facebook") }}
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="{{ $s }} LinkedIn" rel="nofollow">
-      {{ partial "sprite" (dict "icon" "linkedin") }}
-    </a>
-    <a href="{{ .Permalink }}" title="Copy Link" class="link link_yank">
-      {{ partial "sprite" (dict "icon" "copy") }}
-    </a>
-  </div>
+  <nav class="post_share" aria-label="Share this post">
+    <span class="visually-hidden">{{ $s }}</span>
+    <ul class="share-list">
+      <li>
+        <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}&tw_p=tweetbutton" 
+           class="twitter u-syndication" 
+           title="Share on Twitter" 
+           target="_blank" 
+           rel="nofollow noopener">
+          <span class="visually-hidden">Share on </span>
+          {{ partial "sprite" (dict "icon" "twitter") }}
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u={{ .Permalink }}&t={{ .Title }}" 
+           class="facebook u-syndication" 
+           title="Share on Facebook" 
+           target="_blank" 
+           rel="nofollow noopener">
+          <span class="visually-hidden">Share on </span>
+          {{ partial "sprite" (dict "icon" "facebook") }}
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a href="#linkedinshare" 
+           id="linkedinshare" 
+           class="linkedin u-syndication" 
+           title="Share on LinkedIn" 
+           rel="nofollow">
+          <span class="visually-hidden">Share on </span>
+          {{ partial "sprite" (dict "icon" "linkedin") }}
+          <span class="visually-hidden">LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ .Permalink }}" 
+           title="Copy link to clipboard" 
+           class="link link_yank u-url"
+           aria-label="Copy post URL to clipboard">
+          <span class="visually-hidden">Copy </span>
+          {{ partial "sprite" (dict "icon" "copy") }}
+          <span class="visually-hidden">link</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
   

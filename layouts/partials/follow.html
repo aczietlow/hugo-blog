@@ -5,26 +5,42 @@
   {{- $items = . }}
 {{- end }}
 <div class='follow'>
-  {{- range $items }}
-    {{- $url := .URL }}
-    {{- $label := lower .Name }}
-    {{- if eq $social nil }}
-      {{ $url = .url }}
-      {{ $label = lower .item }}
-    {{- end }}
-    {{- if and (eq (hasPrefix $url $base) false) (eq (hasPrefix $url "http") false) }}
-      {{ $url = absLangURL $url }}
-    {{- end }}
+  <nav aria-label="Social links">
+    <ul>
+      {{- range $items }}
+        {{- $url := .URL }}
+        {{- $label := lower .Name }}
+        {{- if eq $social nil }}
+          {{ $url = .url }}
+          {{ $label = lower .item }}
+        {{- end }}
+        {{- if and (eq (hasPrefix $url $base) false) (eq (hasPrefix $url "http") false) }}
+          {{ $url = absLangURL $url }}
+        {{- end }}
 
-    {{- if eq .Params.indieAuth true  }}
-      <a href="{{ $url }}" rel="noopener me">
-        {{ partial "sprite" (dict "icon" $label) }}
-      </a>
-    {{- else }}
-      <a href="{{ $url }}">
-        {{ partial "sprite" (dict "icon" $label) }}
-      </a>
-    {{- end }}
-  {{- end }}
+        <li>
+          {{- if eq .Params.indieAuth true  }}
+            <a href="{{ $url }}" 
+               rel="noopener me" 
+               class="u-url"
+               title="{{ $label }} profile">
+              <span class="visually-hidden">{{ $label }}: </span>
+              {{ partial "sprite" (dict "icon" $label) }}
+              <span class="visually-hidden">profile</span>
+            </a>
+          {{- else }}
+            <a href="{{ $url }}" 
+               class="u-url"
+               title="{{ $label }} profile"
+               rel="noopener">
+              <span class="visually-hidden">{{ $label }}: </span>
+              {{ partial "sprite" (dict "icon" $label) }}
+              <span class="visually-hidden">profile</span>
+            </a>
+          {{- end }}
+        </li>
+      {{- end }}
+    </ul>
+  </nav>
   {{- partial "mode" . }}
 </div>
