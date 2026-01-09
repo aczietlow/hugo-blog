@@ -1,31 +1,31 @@
-        <div class="library__post">
-            <article class="card">
-                <section class="card__content">
-                    <div class="card__content__top">
-                        <h2 class="card__title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h2>
-                    </div>
-                    <div>
-                        <i>{{ .Type }}</i>
-                    </div>
-                    <div class="card__content__description">
-                        {{ if .Params.cover }}
-                            <a href="{{ .Permalink }}">
-                                <img class="cover-thumbnail"
-                                    src='{{ if (hasPrefix .Params.cover "http") }}{{ .Params.cover }}{{ else }}{{ absURL .Params.cover }}{{ end }}'
-                                    alt="Book cover for {{ $.Title }}">
-                            </a>
-                        {{ else if .Params.description }}
-                            <a href="{{ .Permalink }}">
-                                <div class="cover-placeholder blankBook">
-                                    <div class="blankBook__cover">
-                                        <div class="blankBook__cover__inner">
-                                            <div class="blankBook__cover__inner__title">{{ .Title }}</div>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </a>
-                        {{ end }}
-                    </div>
-                </section>
-            </article>
-        </div>
+<div class="library__post">
+    <article class="card">
+        <section class="card__content">
+            <div class="card__content__top">
+                <h2 class="card__title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h2>
+            </div>
+            <div>
+                <i>{{ .Type }}</i>
+            </div>
+            <div class="card__content__description">
+                {{ if .Params.cover }}
+                    <a href="{{ .Permalink }}">
+                        <img class="cover-thumbnail"
+                            src='{{ if (hasPrefix .Params.cover "http") }}{{ .Params.cover }}{{ else }}{{ absURL .Params.cover }}{{ end }}'
+                            alt="Book cover for {{ $.Title }}">
+                    </a>
+                {{ else if .Params.description }}
+                    <a href="{{ .Permalink }}">
+                        <div class="cover-placeholder blankBook">
+                            <div class="blankBook__cover">
+                                <div class="blankBook__cover__inner">
+                                    <div class="blankBook__cover__inner__title">{{ .Title }}</div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>
+                {{ end }}
+            </div>
+        </section>
+    </article>
+</div>

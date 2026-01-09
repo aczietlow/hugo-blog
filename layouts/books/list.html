@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<div class="content">
+    <article>
+        <h1>{{ .Title }}</h1>
+
+        {{ range .Pages -}}
+          <div class="h-item book">
+              <div class="left">
+                  {{ if .Params.cover }}
+                  <img class="cover-thumbnail"
+                       src='{{ if (hasPrefix .Params.cover "http") }}{{ .Params.cover }}{{ else }}{{ absURL .Params.cover }}{{ end }}'
+                       alt="Book cover for {{ $.Title }}">
+                  {{ end }}
+
+                  {{ if .Params.isbn }}
+                  <span class="u-uid p-isbn">ISBN: {{ .Params.isbn }}</span>
+                  {{ end }}
+
+              </div>
+              <div class="right">
+                  <h3 class="p-name book-title">{{ .Params.Title }}</h1>
+
+                  {{ with .Params.bookAuthors }}
+                    <ul class="p-author h-card-list">
+                      {{ range . }}
+                        <li class="h-card">
+                          <span class="p-name">{{ . }}</span>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+
+                  {{ with .Params.genre }}
+                    <ul class="p-category">
+                    {{ range . }}
+                      <li>{{ . }}</li>
+                    {{ end }}
+                    </ul>
+                  {{ end}}
+              </div>
+          </div>
+        {{- end}}
+
+
+    </article>
+</div>
+{{ end }}
