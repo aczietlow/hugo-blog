@@ -5,37 +5,19 @@
       {{- partial "h-card" . }}
     {{ end }}
     {{- if $s.IntroDescription }}
-      {{- $author := $s.Author  }}
-      {{- $showAuthorPhoto := false }}
-      {{- $fullAuthor := reflect.IsMap $author }}
-      {{- if $fullAuthor }}
-        {{-  if $author.photo }}
-          {{- $showAuthorPhoto = true }}
-        {{- end }}
-      {{- end }}
-      {{- if $showAuthorPhoto }}
-        <header class="author_header">
-          <img src="{{ absURL $author.photo }}" 
-               alt="{{ $author.name }} photo"
-               loading="lazy">
-          <h2>{{  $author.name }}</h2>
-        </header>
-      {{- else }}
-        <h2>{{  if $fullAuthor }}{{ $author.name }}{{ else }}{{ $author }}{{ end }}</h2>
-      {{- end }}
+      <h2>{{ $s.Author }}</h2>
       <div class="author_bio p-note">
         {{ markdownify $s.IntroDescription }}
       </div>
       {{- if ( ne $s.introURL false ) }}
-      {{- $r := T "read_more" }}
-      <a href='{{ absLangURL (default "about/" $s.introURL) }}' class="button mt-1" role="button" title='{{ $r }}'>{{ $r }}</a>
+      <a href='{{ absLangURL (default "about/" $s.introURL) }}' class="button mt-1" role="button" title="Read More">Read More</a>
       {{- end }}
     {{- end }}
     {{- $posts := where (where .Site.RegularPages "Permalink" "!=" .Permalink) "Type" "in" $s.mainSections }}
     {{- $featured := default 8 $s.numberOfFeaturedPosts }}
     {{- with first $featured (where $posts "Params.featured" true)}}
     <section>
-      <h2 class="mt-4">{{ T "featured_posts" }}</h2>
+      <h2>Featured Posts</h2>
       <nav aria-label="Featured posts">
         <ul>
           {{- range . }}
@@ -52,7 +34,7 @@
     </section>
     {{- end }}
     <section>
-      <h2 class="mt-4">Weekly Journal</h2>
+      <h2 >Journal</h2>
       <nav aria-label="Weekly journal entries">
         <ul class="flex-column">
           {{- $journals := where .Site.RegularPages "Section" "notes" }}
@@ -69,7 +51,7 @@
       </nav>
     </section>
     <section>
-      <h2 class="mt-4">{{ T "recent_posts" }}</h2>
+      <h2 >Recent Posts</h2>
       <nav aria-label="Recent posts">
         <ul class="flex-column">
           {{- $recent := default 8 $s.numberOfRecentPosts }}
@@ -85,44 +67,27 @@
         </ul>
       </nav>
     </section>
-    {{- $tagsLimit := (default 100 $s.numberOfTagsShown) }}
+    {{- $tagsLimit := 14 }}
     {{- range $key, $value := .Site.Taxonomies }}
-    {{- if gt $value 0 }}
-    <section>
-      <h2 class="mt-4 taxonomy" id="{{ $key }}-section">{{ T $key }}</h2>
-      <nav class="tags_nav" aria-label="{{ T $key }}">
-        {{- $onPageTags := $.Page.Params.tags }}
-        {{- $slicedTags := ($value.ByCount | first $tagsLimit) }}
-        {{- range $slicedTags }}
-        <a href='{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/' class="post_tag button button_translucent" title="{{ .Name }}">
-          {{ upper .Name }}
-          <span class="button_tally">{{ .Count }}</span>
-        </a>
-        {{ end }}
-        {{ if gt (len $value.ByCount) $tagsLimit }}
-        <br>
-        <div class="post_tags_toggle button">{{ T (printf "all_%s" (lower $key)) }}</div>
-        {{- $tagsInfo := newScratch }}
-        <div class="post_tags">
-          <div class="tags_list">
-            {{- range $value.Alphabetical }}
-            {{ $tagsInfo.Add "tagsInfo" (slice .Name .Count)}}
-            <a href='{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/' class=" post_tag button button_translucent" data-position={{ .Count }} title="{{ .Name }}">
-              {{- upper .Name -}}
-              <span class="button_tally">{{ .Count }}</span>
-            </a>
+      {{- if gt $value 0 }}
+        <section>
+          <h2 class="taxonomy" id="{{ $key }}-section">{{ $key }}</h2>
+          <nav class="tags_nav" aria-label="{{ $key }}">
+            {{- $onPageTags := $.Page.Params.tags }}
+            {{- $slicedTags := ($value.ByCount | first $tagsLimit) }}
+            {{- range $slicedTags }}
+              <a href='{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/' class="post_tag button button_translucent" title="{{ .Name }}">
+                {{ upper .Name }}
+                <span class="button_tally">{{ .Count }}</span>
+              </a>
             {{ end }}
-            <div class="tags_sort"><span title="sort alphabetically">[A~Z]</span><span title="sort by count">[0~9]</span>
-            </div>
-            <span class="tags_hide"><svg class="icon">
-            <use xlink:href="#closeme"></use>
-          </svg></span>
-          </div>
-        </div>
-        {{- end }}
-      </nav>
-    </section>
-    {{- end }}
+            {{ if gt (len $value.ByCount) $tagsLimit }}
+              <br>
+              <div class="post_tags_toggle button">{{ (printf "all %s" (lower $key)) }}</div>
+            {{- end }}
+          </nav>
+        </section>
+      {{- end }}
     {{- end }}
   </section>
 </aside>

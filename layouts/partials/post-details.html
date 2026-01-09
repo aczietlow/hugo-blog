@@ -13,7 +13,7 @@
         {{ else if .Params.abstract }}
           {{ .Params.abstract }}
         {{ else if .Summary }}
-          {{ truncate 320 .Summary }}
+          {{ .Summary | plainify | truncate 320 }}
         {{ end }}
       </blockquote>
     </dd>
