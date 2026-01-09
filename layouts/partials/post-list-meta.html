@@ -6,13 +6,12 @@
   <div class="post_meta">
   {{- if $showDate }}
   <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
-  <span class="post_date dt-published">{{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}</span>
+  <span class="post_date dt-published">{{- .Date.Format ($.Site.Params.dateFormat) -}}</span>
   {{- end }}
   {{- if $showReadTime }}
-  <span class="post_time">&nbsp;| {{ T "reading_time" . }}</span>
+  <span class="post_time">&nbsp;| {{ .ReadingTime }} min read</span>
   {{- end }}  
   <div>&nbsp;| {{ partial "h-card" . }}</div>
 
   </div>
 {{- end }}
-{{- $scratch := newScratch }}

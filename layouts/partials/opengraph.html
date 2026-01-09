@@ -1,4 +1,4 @@
-{{- $summary := truncate 160 .Summary }}
+{{- $summary := .Summary | plainify | truncate 160 }}
 {{- $s := .Site.Params }}
 {{- $p := .Params }}
 {{- with $p.description }}
