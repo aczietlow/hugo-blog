@@ -4,6 +4,7 @@ date: {{ .Date }} # Date of post creation.
 draft: true
 start-date: {{ time.Now.Format "2006-01-02" }}
 end-date: 
+isbn: ""
 # subtile: book subtitle
 # book-summary: "synapsis of the book"
 # book-author: this may conflict with another tag

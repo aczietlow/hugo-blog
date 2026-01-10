@@ -1,0 +1,50 @@
+{
+  "9780547928210": {
+    "title": "The Fellowship of the Ring",
+    "series": "The Lord of the Rings",
+    "series_index": 1,
+    "authors": ["J. R. R. Tolkien"],
+    "published_year": 1954,
+    "publisher": "Houghton Mifflin Harcourt",
+    "isbn_13": "9780547928210",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780547928210-L.jpg",
+    "description": "The first volume of J. R. R. Tolkien’s epic adventure The Lord of the Rings, in which Frodo Baggins begins his perilous journey to destroy the One Ring.",
+    "subjects": ["Fantasy", "Epic Fantasy", "Middle-earth"],
+    "source": "openlibrary",
+    "external_ids": {
+      "openlibrary": "OL26331930M"
+    }
+  },
+  "9780547928203": {
+    "title": "The Two Towers",
+    "series": "The Lord of the Rings",
+    "series_index": 2,
+    "authors": ["J. R. R. Tolkien"],
+    "published_year": 1954,
+    "publisher": "Houghton Mifflin Harcourt",
+    "isbn_13": "9780547928203",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780547928203-L.jpg",
+    "description": "The second volume of The Lord of the Rings, following the breaking of the Fellowship and the separate paths taken by its members.",
+    "subjects": ["Fantasy", "Epic Fantasy", "Middle-earth"],
+    "source": "openlibrary",
+    "external_ids": {
+      "openlibrary": "OL26331929M"
+    }
+  },
+  "9780547928197": {
+    "title": "The Return of the King",
+    "series": "The Lord of the Rings",
+    "series_index": 3,
+    "authors": ["J. R. R. Tolkien"],
+    "published_year": 1955,
+    "publisher": "Houghton Mifflin Harcourt",
+    "isbn_13": "9780547928197",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780547928197-L.jpg",
+    "description": "The final volume of The Lord of the Rings, concluding the quest to destroy the One Ring and the fate of Middle-earth.",
+    "subjects": ["Fantasy", "Epic Fantasy", "Middle-earth"],
+    "source": "openlibrary",
+    "external_ids": {
+      "openlibrary": "OL26331928M"
+    }
+  }
+}

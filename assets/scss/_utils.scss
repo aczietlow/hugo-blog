@@ -118,3 +118,9 @@ $sites: (
   border-width: 0;
 }
 
+.responsive-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+} 

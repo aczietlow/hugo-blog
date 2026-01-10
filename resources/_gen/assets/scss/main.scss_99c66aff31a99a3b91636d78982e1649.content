@@ -1663,6 +1663,51 @@ dl dd {
   }
 }
 
+.responsive-grid .book {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  padding: 0;
+  flex-direction: row;
+}
+@media screen and (max-width: 769px) {
+  .responsive-grid .book {
+    flex-basis: 100%;
+  }
+}
+
+.book__cover {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  height: 220px;
+  min-width: 130px;
+}
+.book__cover__img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  height: 220px;
+  min-width: 130px;
+  margin: 0;
+}
+
+.book__content {
+  display: flex;
+  flex-grow: 1;
+  padding: 0 0.8rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
 .pt-1 {
   padding-top: 1.5rem;
 }
@@ -1804,6 +1849,13 @@ dl dd {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.responsive-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 code {
