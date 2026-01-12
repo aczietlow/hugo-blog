@@ -3,47 +3,15 @@
 
 <div class="content">
     <article>
-        <h1>{{ .Title }}</h1>
-
-    <div class="responsive-grid">
-
-
+      <h1>{{ .Title }}</h1>
+      <div class="responsive-grid">
         {{ range .Pages -}}
-        
-          {{ $isbn := .Params.isbn }}
-          {{ with index $books $isbn }}
-            <div class="h-item book card">
-                <div class="book__cover">
-                    <img class="book__cover__img"
-                      src="{{ .cover }}"
-                      alt="Cover of {{ .title }}">
-                </div>
-                <div class="book__content">
-                  <div class="book__content__info">
-                    <span class="visually-hidden u-uid p-isbn">ISBN: {{ $isbn }}</span>
-                    <h3 class="p-name book-title">{{ .title }}</h3>
-
-                      <ul class="p-author h-card-list">
-                        {{ range .authors }}
-                          <li class="h-card">
-                            <span class="p-name">{{ . }}</span>
-                          </li>
-                        {{ end }}
-                      </ul>
-
-                    <ul class="p-category">
-                    {{ range .subjects }}
-                      <li>{{ . }}</li>
-                    {{ end }}
-                    </ul>
-                  </div>
-                </div>
-            </div>
-          {{ end }}
+          {{ partial "book-excert.html" (dict 
+            "page" .
+            "books" $books
+          )}}
         {{- end}}
-
-    </div>
-
+      </div>
     </article>
 </div>
 {{ end }}

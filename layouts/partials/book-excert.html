@@ -1,0 +1,43 @@
+{{ $page := .page }}
+{{ $books := .books }}
+
+{{ $isbn := $page.Params.isbn }}
+{{ with index $books $isbn }}
+  <div class="h-item book card">
+      <div class="book__cover">
+          <img class="book__cover__img"
+            src="{{ .cover }}"
+            alt="Cover of {{ .title }}">
+      </div>
+      <div class="book__content">
+        <div class="book__content__info">
+          <span class="visually-hidden u-uid p-isbn">ISBN: {{ $isbn }}</span>
+          <h3 class="p-name book-title">{{ .title }}</h3>
+          <ul class="p-author h-card-list">
+            {{ range .authors }}
+              <li class="h-card">
+                <span class="p-name">{{ . }}</span>
+              </li>
+            {{ end }}
+          </ul>
+
+          {{ with $page.Params.startDate }}
+          <div>
+            <span>Start: {{ (time .).Format "2006, Jan 02" }}</span>
+          </div>
+          {{ end }} 
+
+          {{ with $page.Params.endDate }}
+          <div>
+            <span>Finish: {{ (time .).Format "2006, Jan 02" }}</span>
+          </div>
+          {{ end }}
+          <div class="book__content_notes">
+            {{ if $page.Content }}
+              <a href="{{ $page.RelPermalink }}">Notes on book</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+{{ end }}
