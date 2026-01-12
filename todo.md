@@ -25,11 +25,11 @@
 - [x] add webring
 
 - [ ] Look at microblog
-- [ ] fix date in some posts metadata section in the header. Recent change caused issues
+- [x] fix date in some posts metadata section in the header. Recent change caused issues
 
 ## Bugs 
 
-- [ ] Fix line numbers appearing on code blocks
+- [x] Fix line numbers appearing on code blocks
 
 ## Books
 
@@ -49,7 +49,7 @@
     - https://www.jvt.me/kind/listens/
     - https://joelchrono.xyz/ 
     - https://mtwb.blog/
-- [ ] Refactor theme to separate site structure markup from theming logic
+- [x] Refactor theme to separate site structure markup from theming logic
   - Have ability to switch themes at some point in the future
 - [ ] switch to a more open analytics and tracking tool
 - [ ] Replace "zietlow.io" in main menu with home icon
