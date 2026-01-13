@@ -2,7 +2,7 @@
 {{ $logo := $params.logo }}
 <header class="nav_header" role="banner">
   <nav class="nav" aria-label="Main navigation">
-    <!-- {{- partialCached "logo" (dict "logo" $logo) }} -->
+    {{- partialCached "logo" (dict "logo" $logo) }}
     <div class='nav_body nav_body_{{ default "left" $params.mobileNavigation }}'>
       {{ $context := . }}
       {{ $menuData := .Site.Data.menu }}

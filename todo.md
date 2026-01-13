@@ -1,10 +1,10 @@
 ## Theme refactor
 
 - [x] fix build errors from broken templates
-- [T] rewrite sass to scss
-- [ ] fix issue with highlighter and code fences
+- [x] rewrite sass to scss
+- [x] fix issue with highlighter and code fences
   - turns out it was just a zen browser thing all along
-- [ ] style single blog post first
+- [x] style single blog post first
 - [x] print post tags at bottom of post meta data section
 - [x] get libsass installed locally
   - [x] switch transpiler to "dartsass" in head.html
