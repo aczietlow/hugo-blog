@@ -14,7 +14,7 @@
          loading="lazy">
     <p>
       <small>
-        {{ T "copyright" }}{{ with $s.since }} {{ . }}-{{ end }}<span class="year"></span> {{upper .Site.Title }} {{ T "all_rights" }}
+        Copyright {{ $s.since }}-{{ now.Format "2006" }} {{upper .Site.Title }} All Rights Reserved
       </small>
     </p>
     {{- partial "top" .}}
