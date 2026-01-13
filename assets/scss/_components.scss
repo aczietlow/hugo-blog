@@ -451,7 +451,7 @@
   right: 1.5rem;
   height: 2.25rem;
   width: 2.25rem;
-  background-color: $theme;
+  background-color: var(--theme);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -699,13 +699,13 @@
     }
 
     &.active a {
-      background-color: scale($theme, $lightness: -20%);
+      background-color: var(--haze);
     }
   }
 
   &-link {
     padding: 0.25rem 0.75rem;
-    background-color: $theme;
+    background-color: var(--theme);
     color: $light;
     border-radius: 1rem;
   }
@@ -779,7 +779,7 @@
 
 .to {
   &_top {
-    background-color: $theme;
+    background-color: var(--theme);
     width: 2.75rem;
     height: 2.75rem;
     display: flex;
