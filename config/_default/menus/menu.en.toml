@@ -17,6 +17,11 @@ weight = -108
   name = "Library"
   url = "library/"
   weight = -101
+ 
+[[main]]
+  name = "Books"
+  url = "books/"
+  weight = -100
 
 [[main]]
   name = "About"
