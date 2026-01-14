@@ -1,18 +1,11 @@
 {{- define "main" }}
 <div class="wrap content">
   <article class="post_content">
-    {{ if .Params.isbn }}
-      {{ partial "book" . }}
-    {{ else }}  
-      {{ partial "article" . }}
+    <h1 class="post_title">{{ .Title }}</h1>
+    {{- .Content }}
+    {{ if and ( ne .Site.Params.comment false ) ( ne .Params.comment false ) }}
+      {{ partial "comments" . }}
     {{ end }}
-    <div>
-      {{- .Content }}
-      {{ if and ( ne .Site.Params.comment false ) ( ne .Params.comment false ) }}
-        {{ partial "comments" . }}
-      {{ end }}
-    </div>
   </article>
 </div>
-
 {{- end }}
