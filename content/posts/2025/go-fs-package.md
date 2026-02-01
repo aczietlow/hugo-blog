@@ -35,7 +35,7 @@ func main() {
 }
 
 func LoadConfig(filepath string) (*Config, error) {
-	configFile, err := osReadFile(filepath)
+	configFile, err := os.ReadFile(filepath)
 
 	if err != nil {
 		return nil, err
