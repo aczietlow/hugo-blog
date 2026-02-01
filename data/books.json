@@ -1,50 +1,310 @@
 {
-  "9780547928210": {
-    "title": "The Fellowship of the Ring",
-    "series": "The Lord of the Rings",
-    "series_index": 1,
-    "authors": ["J. R. R. Tolkien"],
-    "published_year": 1954,
-    "publisher": "Houghton Mifflin Harcourt",
-    "isbn_13": "9780547928210",
-    "cover": "https://covers.openlibrary.org/b/isbn/9780547928210-L.jpg",
-    "description": "The first volume of J. R. R. Tolkien’s epic adventure The Lord of the Rings, in which Frodo Baggins begins his perilous journey to destroy the One Ring.",
-    "subjects": ["Fantasy", "Epic Fantasy", "Middle-earth"],
-    "source": "openlibrary",
-    "external_ids": {
-      "openlibrary": "OL26331930M"
-    }
+  "9780060920432": {
+    "Title": "Flow",
+    "Subtitle": "The Psychology of Optimal Experience",
+    "Series": "",
+    "Authors": [
+      "Mihaly Csikszentmihalyi"
+    ],
+    "Description": "Psychologist Mihaly Csikszentmihalyi's famous investigations of \"optimal experience\" have revealed that what makes an experience genuinely satisfying is a state called *flow*. During flow, people typically experience deep enjoyment, creativity, and a total involvement with life. In this new edition of his groundbreaking classic work, Csikszentmihalyi demonstrates the ways this positive state can be controlled, not just left to chance. *Flow: The Psychology of Optimal Experience* teaches how, by ordering the information that enters our consciousness, we can discover true happiness and greatly improve the quality of our lives.",
+    "PublishedDate": "November 1, 2007",
+    "Publishers": "Harper Perennial",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/11041932.jpg",
+    "Genre": [
+      "Nonfiction",
+      "Psychology",
+      "Lebensfreude",
+      "Flow-Erlebnis",
+      "Attention"
+    ],
+    "ISBN10": "0060920432",
+    "ISBN13": "9780060920432",
+    "Source": "openlibrary"
   },
-  "9780547928203": {
-    "title": "The Two Towers",
-    "series": "The Lord of the Rings",
-    "series_index": 2,
-    "authors": ["J. R. R. Tolkien"],
-    "published_year": 1954,
-    "publisher": "Houghton Mifflin Harcourt",
-    "isbn_13": "9780547928203",
-    "cover": "https://covers.openlibrary.org/b/isbn/9780547928203-L.jpg",
-    "description": "The second volume of The Lord of the Rings, following the breaking of the Fellowship and the separate paths taken by its members.",
-    "subjects": ["Fantasy", "Epic Fantasy", "Middle-earth"],
-    "source": "openlibrary",
-    "external_ids": {
-      "openlibrary": "OL26331929M"
-    }
+  "9780465097609": {
+    "Title": "The Book of Why",
+    "Subtitle": "The New Science of Cause and Effect",
+    "Series": "",
+    "Authors": [
+      "Judea Pearl",
+      "Dana Mackenzie",
+      "Dana Mackenzie Judea Pearl",
+      "Mel Foster"
+    ],
+    "Description": "A Turing Award-winning computer scientist and statistician shows how understanding causality has revolutionized science and will revolutionize artificial intelligence\r\n\r\n“Correlation is not causation.” This mantra, chanted by scientists for more than a century, has led to a virtual prohibition on causal talk. Today, that taboo is dead. The causal revolution, instigated by Judea Pearl and his colleagues, has cut through a century of confusion and established causality–the study of cause and effect–on a firm scientific basis. His work explains how we can know easy things, like whether it was rain or a sprinkler that made a sidewalk wet; and how to answer hard questions, like whether a drug cured an illness. Pearl’s work enables us to know not just whether one thing causes another: it lets us explore the world that is and the worlds that could have been. It shows us the essence of human thought and key to artificial intelligence. Anyone who wants to understand either needs The Book of Why.",
+    "PublishedDate": "",
+    "Publishers": "Basic Books",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/8179733.jpg",
+    "Genre": [
+      "Nonfiction",
+      "Computers",
+      "Computer Science",
+      "Causation",
+      "Inference"
+    ],
+    "ISBN10": "",
+    "ISBN13": "9780465097609",
+    "Source": "openlibrary"
+  },
+  "9780525536512": {
+    "Title": "Digital Minimalism",
+    "Subtitle": "Choosing a Focused Life in a Noisy World",
+    "Series": "",
+    "Authors": [
+      "Cal Newport"
+    ],
+    "Description": "The key to living well in a high tech world is to spend much less time using technology.\r\n\r\nIn recent years, our culture's relationship with personal technology has transformed from something exciting into something darker. Innovations like smartphones and social media are useful, but many of us are increasingly troubled by how much control these tools seem to exert over our daily experiences – including how we spend our free time and how we feel about ourselves.\r\n\r\nIn Digital Minimalism, Newport proposes a bold solution: a minimalist approach to technology use in which you radically reduce the time you spend online, focusing on a small set of carefully-selected activities while happily ignoring the rest.",
+    "PublishedDate": "",
+    "Publishers": "Penguin Group,Portfolio/Penguin",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/8507540.jpg",
+    "Genre": [
+      "Information technology",
+      "Internet addiction",
+      "Technological innovations",
+      "Internet, social aspects",
+      "Technology, social aspects"
+    ],
+    "ISBN10": "0525536515",
+    "ISBN13": "9780525536512",
+    "Source": "openlibrary"
   },
   "9780547928197": {
-    "title": "The Return of the King",
-    "series": "The Lord of the Rings",
-    "series_index": 3,
-    "authors": ["J. R. R. Tolkien"],
-    "published_year": 1955,
-    "publisher": "Houghton Mifflin Harcourt",
-    "isbn_13": "9780547928197",
-    "cover": "https://covers.openlibrary.org/b/isbn/9780547928197-L.jpg",
-    "description": "The final volume of The Lord of the Rings, concluding the quest to destroy the One Ring and the fate of Middle-earth.",
-    "subjects": ["Fantasy", "Epic Fantasy", "Middle-earth"],
-    "source": "openlibrary",
-    "external_ids": {
-      "openlibrary": "OL26331928M"
-    }
+    "Title": "The Return of the King",
+    "Subtitle": "",
+    "Series": "",
+    "Authors": [
+      "J.R.R. Tolkien"
+    ],
+    "Description": "THE RETURN OF THE KING, which brings to a close the great epic of war and adventure begun in The Fellowship of the Ring and continued in The Two Towers, is the third and final part of J. R. R. Tolkien's masterpiece, \"The Lord of the Rings.\"\r\n\r\nIn these three books, which form one continuous narrative, Tolkien created the saga of the Hobbits of Middle-earth and the great War of the Rings. Praised by such writers and poets as W. H. Auden, Richard Hughes and C. S. Lewis, \"The Lord of the Rings\" - that special world of beauty and terror and meaning - holds a secure place among the books that will live.\r\n\r\n----------\r\n**Also contained in:**\r\n\r\n - [The Lord of the Rings][1]\r\n\r\n\r\n  [1]: https://openlibrary.org/works/OL27448W/The_Lord_of_the_Rings",
+    "PublishedDate": "December 1967",
+    "Publishers": "Mariner Books",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/14627062.jpg",
+    "Genre": [
+      "Elves",
+      "Hobbits",
+      "The Lord of the Rings",
+      "hope",
+      "fear"
+    ],
+    "ISBN10": "054792819X",
+    "ISBN13": "9780547928197",
+    "Source": "openlibrary"
   },
+  "9780547928203": {
+    "Title": "The Two Towers",
+    "Subtitle": "",
+    "Series": "The Lord of the Rings, #2",
+    "Authors": [
+      "J.R.R. Tolkien"
+    ],
+    "Description": "The Lord of the Rings, J.R.R. Tolkien's three-volume epic, is set in the imaginary world of Middle-earth -- home to many strange beings, and most notably hobbits, a peace-loving \"little people,\" cheerful and shy. Since its original British publication in 1954-55, the saga has entranced readers of all ages. It is at once a classic myth and a modern fairy tale. Critic Michael Straight has hailed it as one of the \"very few works of genius in recent literature.\" Middle-earth is a world receptive to poets, scholars, children, and all other people of good will. Donald Barr has described it as \"a scrubbed morning world, and a ringing nightmare world...especially sunlit, and shadowed by perils very fundamental, of a peculiarly uncompounded darkness.\" The story of this world is one of high and heroic adventure. Barr compared it to Beowulf, C.S. Lewis to Orlando Furioso, W.H. Auden to The Thirty-nine Steps. In fact the saga is sui generis -- a triumph of imagination which springs to life within its own framework and on its own terms. - Jacket flap.\r\n\r\nFrodo and the Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in the battle with an evil spirit in the Mines of Moria; and at the Falls of Rauros, Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape the rest of the company were attacked by Orcs. Now they continue their journey alone down the great River Anduin – alone, that is, save for the mysterious creeping figure that follows wherever they go. J.R.R. Tolkien’s great work of imaginative fiction has been labelled both a heroic romance and a classic fantasy fiction. By turns comic and homely, epic and diabolic, the narrative moves through countless changes of scene and character in an imaginary world which is totally convincing in its detail.\r\n\r\n----------\r\n**Also contained in:**\r\n\r\n - [The Lord of the Rings][1]\r\n\r\n\r\n  [1]: https://openlibrary.org/works/OL27448W/The_Lord_of_the_Rings",
+    "PublishedDate": "October 1999",
+    "Publishers": "Mariner Books / Houghton Mifflin Harcourt",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/14627564.jpg",
+    "Genre": [
+      "Ents",
+      "Orcs",
+      "hobbits",
+      "magic",
+      "Ficción fantástica inglesa"
+    ],
+    "ISBN10": "0547928203",
+    "ISBN13": "9780547928203",
+    "Source": "openlibrary"
+  },
+  "9780547928210": {
+    "Title": "The Fellowship of the Ring",
+    "Subtitle": "Being the First Part of The Lord of the Rings",
+    "Series": "The Lord of the Rings, #1",
+    "Authors": [
+      "J.R.R. Tolkien"
+    ],
+    "Description": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.\r\n\r\n“A unique, wholly realized other world, evoked from deep in the well of Time, massively detailed, absorbingly entertaining, profound in meaning.”—The New York Times\r\n\r\nIn ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit. In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.",
+    "PublishedDate": "November 12, 1972",
+    "Publishers": "Mariner Books",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/14627060.jpg",
+    "Genre": [
+      "Elves",
+      "Dwarves",
+      "evil",
+      "fear",
+      "hope"
+    ],
+    "ISBN10": "0547928211",
+    "ISBN13": "9780547928210",
+    "Source": "openlibrary"
+  },
+  "9780593243916": {
+    "Title": "Supercommunicators",
+    "Subtitle": "How to Unlock the Secret Language of Connection",
+    "Series": "",
+    "Authors": [
+      "Charles Duhigg"
+    ],
+    "Description": "",
+    "PublishedDate": "",
+    "Publishers": "Random House Publishing Group",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/14591638.jpg",
+    "Genre": null,
+    "ISBN10": "",
+    "ISBN13": "9780593243916",
+    "Source": "openlibrary"
+  },
+  "9780593655030": {
+    "Title": "The Anxious Generation",
+    "Subtitle": "How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness",
+    "Series": "",
+    "Authors": [
+      "Jonathan Haidt"
+    ],
+    "Description": "After more than a decade of stability or improvement, the mental health of adolescents plunged in the early 2010s. Rates of depression, anxiety, self-harm, and suicide rose sharply, more than doubling on many measures. Why?\r\n\r\nIn The Anxious Generation, social psychologist Jonathan Haidt (pronounced \"height\") lays out the facts about the epidemic of teen mental illness that hit many countries at the same time. He then investigates the nature of childhood, including why children need play and independent exploration to mature into competent, thriving adults. Haidt shows how the “play-based childhood” began to decline in the 1980s, and how it was finally wiped out by the arrival of the “phone-based childhood” in the early 2010s. He presents more than a dozen mechanisms by which this “great rewiring of childhood” has interfered with children’s social and neurological development, covering everything from sleep deprivation to attention fragmentation, addiction, loneliness, social contagion, social comparison, and perfectionism. He explains why social media damages girls more than boys and why boys have been withdrawing from the real world into the virtual world, with disastrous consequences for themselves, their families, and their societies.\r\n\r\nMost important, Haidt issues a clear call to action. He diagnoses the “collective action problems” that trap us, and then proposes four simple rules that might set us free. He describes steps that parents, teachers, schools, tech companies, and governments can take to end the epidemic of mental illness and restore a more humane childhood.\r\n\r\nHaidt has spent his career speaking truth backed by data in the most difficult landscapes—communities polarized by politics and religion, campuses battling culture wars, and now the public health emergency faced by Gen Z. We cannot afford to ignore his findings about protecting our children—and ourselves—from the psychological damage of a phone-based life.",
+    "PublishedDate": "",
+    "Publishers": "Penguin Publishing Group",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/15104803.jpg",
+    "Genre": null,
+    "ISBN10": "",
+    "ISBN13": "9780593655030",
+    "Source": "openlibrary"
+  },
+  "9780756419189": {
+    "Title": "Narrow Road Between Desires",
+    "Subtitle": "",
+    "Series": "",
+    "Authors": [
+      "Patrick Rothfuss",
+      "Nate Taylor"
+    ],
+    "Description": "",
+    "PublishedDate": "",
+    "Publishers": "DAW",
+    "CoverId": 0,
+    "CoverUrl": "",
+    "Genre": null,
+    "ISBN10": "",
+    "ISBN13": "9780756419189",
+    "Source": "openlibrary"
+  },
+  "9780765377081": {
+    "Title": "The Dark Forest (The Three-Body Problem Series Book 2)",
+    "Subtitle": "",
+    "Series": "Remembrance of Earth's Past #2",
+    "Authors": [
+      "刘慈欣"
+    ],
+    "Description": "Soon to be a Netflix Original Series!\r\n\r\n\"Wildly imaginative.\" —President Barack Obama on The Three-Body Problem trilogy\r\n\r\nThis near-future trilogy is the first chance for English-speaking readers to experience this multiple-award-winning phenomenon from Cixin Liu, China's most beloved science fiction author.\r\n\r\nIn The Dark Forest, Earth is reeling from the revelation of a coming alien invasion-in just four centuries' time. The aliens' human collaborators may have been defeated, but the presence of the sophons, the subatomic particles that allow Trisolaris instant access to all human information, means that Earth's defense plans are totally exposed to the enemy. Only the human mind remains a secret. This is the motivation for the Wallfacer Project, a daring plan that grants four men enormous resources to design secret strategies, hidden through deceit and misdirection from Earth and Trisolaris alike. Three of the Wallfacers are influential statesmen and scientists, but the fourth is a total unknown. Luo Ji, an unambitious Chinese astronomer and sociologist, is baffled by his new status. All he knows is that he's the one Wallfacer that Trisolaris wants dead.",
+    "PublishedDate": "",
+    "Publishers": "Tor, A Tom Doherty Associates Book",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/10526598.jpg",
+    "Genre": [
+      "Chinese Science fiction",
+      "Fiction",
+      "Science Fiction",
+      "Fiction, science fiction, general",
+      "Human-alien encounters"
+    ],
+    "ISBN10": "076537708X",
+    "ISBN13": "9780765377081",
+    "Source": "openlibrary"
+  },
+  "9780765377104": {
+    "Title": "Death's End (The Three-Body Problem Series Book 3)",
+    "Subtitle": "",
+    "Series": "Three-body trilogy -- Book III",
+    "Authors": [
+      "刘慈欣"
+    ],
+    "Description": "Soon to be a Netflix Original Series!\r\n\r\n“The War of the Worlds for the 21st century… packed with a sense of wonder.” – Wall Street Journal\r\n\r\nThe New York Times bestselling conclusion to a tour de force near-future adventure trilogy from China's bestselling and beloved science fiction writer.\r\n\r\nWith The Three-Body Problem, English-speaking readers got their first chance to read China's most beloved science fiction author, Cixin Liu. The Three-Body Problem was released to great acclaim including coverage in The New York Times and The Wall Street Journal and reading list picks by Barack Obama and Mark Zuckerberg. It was also won the Hugo and Nebula Awards, making it the first translated novel to win a major SF award.\r\n\r\nNow this epic trilogy concludes with Death's End. Half a century after the Doomsday Battle, the uneasy balance of Dark Forest Deterrence keeps the Trisolaran invaders at bay. Earth enjoys unprecedented prosperity due to the infusion of Trisolaran knowledge. With human science advancing daily and the Trisolarans adopting Earth culture, it seems that the two civilizations will soon be able to co-exist peacefully as equals without the terrible threat of mutually assured annihilation. But the peace has also made humanity complacent.\r\n\r\nCheng Xin, an aerospace engineer from the early twenty-first century, awakens from hibernation in this new age. She brings with her knowledge of a long-forgotten program dating from the beginning of the Trisolar Crisis, and her very presence may upset the delicate balance between two worlds. Will humanity reach for the stars or die in its cradle?",
+    "PublishedDate": "",
+    "Publishers": "TOR",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/7893958.jpg",
+    "Genre": [
+      "Fiction",
+      "Science Fiction",
+      "Fiction, science fiction, general",
+      "Human-alien encounters",
+      "Imaginary wars and battles"
+    ],
+    "ISBN10": "0765377101",
+    "ISBN13": "9780765377104",
+    "Source": "openlibrary"
+  },
+  "9780765382030": {
+    "Title": "三体",
+    "Subtitle": "",
+    "Series": "Remembrance of Earth's Past, Book 1",
+    "Authors": [
+      "刘慈欣",
+      "Vincent Schmitt",
+      "Gwennaël Gaffric",
+      "Marc Simonetti"
+    ],
+    "Description": "Cixin Liu's trilogy-opening novel about first contact with aliens and the clandestine struggle with them over Earth's future, and its scientific progress in particular.\r\n\r\nSet against the backdrop of China's Cultural Revolution, a secret military prject sends signals into space in an attempt to make contact with aliens—and they succeed. An alien civilization on the brink of descruction captures the signal and plans to invade Earth. Now, on Earth, different camps start forming, planning to either welcome the superior beings and help them take over a world seen as corrupt, or fight against the invasion. The result is a science fiction masterpiece of enormous scope and vision.",
+    "PublishedDate": "",
+    "Publishers": "A Tor Book / Tom Doherty Associates",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/9157544.jpg",
+    "Genre": [
+      "Hugo Award Winner",
+      "award:hugo_award=2015",
+      "award:hugo_award=novel",
+      "Human-alien encounters",
+      "Imaginary wars and battles"
+    ],
+    "ISBN10": "0765382032",
+    "ISBN13": "9780765382030",
+    "Source": "openlibrary"
+  },
+  "9781847941497": {
+    "Title": "Never Split the Difference",
+    "Subtitle": "Negotiating as if Your Life Depended on It",
+    "Series": "",
+    "Authors": [
+      "Chris Voss",
+      "Tahl Raz"
+    ],
+    "Description": "",
+    "PublishedDate": "",
+    "Publishers": "Random House Uk",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/8365942.jpg",
+    "Genre": [
+      "Negotiation",
+      "Negotiation in business",
+      "Business communication",
+      "Business",
+      "Communication"
+    ],
+    "ISBN10": "1847941494",
+    "ISBN13": "9781847941497",
+    "Source": "openlibrary"
+  },
+  "9781942788812": {
+    "Title": "Team Topologies",
+    "Subtitle": "Organizing Business and Technology Teams for Fast Flow",
+    "Series": "",
+    "Authors": [
+      "Matthew Skelton",
+      "Manuel Pais",
+      "Ruth Malan"
+    ],
+    "Description": "Effective software teams are essential for any organization to deliver value continuously and sustainably. But how do you build the best team organization for your specific goals, culture, and needs?\r\n\r\n*Team Topologies* is a practical, step-by-step, adaptive model for organizational design and team interaction based on four fundamental team types and three team interaction patterns. It is a model that treats teams as the fundamental means of delivery, where team structures and communication pathways are able to evolve with technological and organizational maturity.\r\n\r\nIn *Team Topologies*, IT consultants Matthew Skelton and Manuel Pais share secrets of successful team patterns and interactions to help readers choose and evolve the right team patterns for their organization, making sure to keep the software healthy and optimize value streams.\r\n\r\n*Team Topologies* is a major step forward in organizational design for software, presenting a well-defined way for teams to interact and interrelate that helps make the resulting software architecture clearer and more sustainable, turning inter-team problems into valuable signals for the self-steering organization.",
+    "PublishedDate": "",
+    "Publishers": "IT Revolution Press",
+    "CoverId": 0,
+    "CoverUrl": "https://covers.openlibrary.org/b/id/10354937.jpg",
+    "Genre": null,
+    "ISBN10": "1942788819",
+    "ISBN13": "9781942788812",
+    "Source": "openlibrary"
+  }
 }
