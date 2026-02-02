@@ -5,9 +5,11 @@
 {{ with index $books $isbn }}
   <div class="h-item book card">
       <div class="book__cover">
+        {{ if .CoverId }}
           <img class="book__cover__img"
-            src="{{ .cover }}"
-            alt="Cover of {{ .title }}">
+            src="/images/books/{{ .CoverId }}.jpg"
+            alt="Cover of {{ .Title }}">
+        {{ end }}
       </div>
       <div class="book__content">
         <div class="book__content__info">
