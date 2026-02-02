@@ -14,9 +14,9 @@
       <div class="book__content">
         <div class="book__content__info">
           <span class="visually-hidden u-uid p-isbn">ISBN: {{ $isbn }}</span>
-          <h3 class="p-name book-title">{{ .title }}</h3>
+          <h3 class="p-name book-title">{{ .Title }}</h3>
           <ul class="p-author h-card-list">
-            {{ range .authors }}
+            {{ range .Authors }}
               <li class="h-card">
                 <span class="p-name">{{ . }}</span>
               </li>
