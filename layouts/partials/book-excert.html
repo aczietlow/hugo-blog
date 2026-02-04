@@ -1,7 +1,8 @@
 {{ $page := .page }}
 {{ $books := .books }}
 
-{{ $isbn := $page.Params.isbn }}
+{{ $isbn := replace $page.Params.isbn "-" "" }}
+
 {{ with index $books $isbn }}
   <div class="h-item book card">
       <div class="book__cover">
