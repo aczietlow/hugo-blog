@@ -22,6 +22,71 @@
     "ISBN13": "9780060920432",
     "Source": "openlibrary"
   },
+  "9780316452465": {
+    "Title": "The Last Wish",
+    "Subtitle": "Introducing the Witcher",
+    "Series": "",
+    "Authors": [
+      "Andrzej Sapkowski",
+      "Danusia Stok"
+    ],
+    "Description": "Pozycja, która przedstawia początki historii słynnego Geralta z Rivii. Sięgnij po tę lekturę i zanurz się w świecie, pełnym niebezpiecznych stworzeń, nierzadko napadających na ludzkie osady.\r\n\r\n\"Ostatnie życzenie\" to jeden ze zbiorów opowiadań z cyklu wiedźmińskiego, który zdobył ogromną popularność nie tylko w Polsce, ale i na całym świecie, między innymi za sprawą gry komputerowej, a następnie dzięki serialowi, wyprodukowanemu przez platformę Netflix.\r\n\r\nGłówny bohater, Geralt z Rivii, jest wiedźminem, czyli osobą, która w zamian za wynagrodzenie, pozbywa się rozlicznych potworów. Działa według ściśle określonego systemu moralnego, dzieląc wszystko na to, co dobre i na to, co złe, nie uznając natomiast niczego pośrodku. Nie zabija, jeśli nie musi tego robić. Woli stawiać na uroki, które czasem też mogą rozwiązać problem. W trakcie swoich przygód poznaje piękną czarodziejkę, Yennefer, która wzbudza w nim fascynację. Jakie zlecenia czekają na niego w najbliższej przyszłości?",
+    "PublishedDate": "Jul 05, 2022",
+    "Publishers": "Orbit",
+    "CoverId": "7360819",
+    "CoverUrl": "https://covers.openlibrary.org/b/id/7360819.jpg",
+    "Genre": [
+      "Fantasy",
+      "Fiction",
+      "Translations into English",
+      "Polish fiction",
+      "Fiction, fantasy, general"
+    ],
+    "ISBN10": "0316452467",
+    "ISBN13": "9780316452465",
+    "Source": "openlibrary"
+  },
+  "9780316452564": {
+    "Title": "Sword of Destiny",
+    "Subtitle": "",
+    "Series": "",
+    "Authors": [
+      "Andrzej Sapkowski",
+      "David A. French"
+    ],
+    "Description": "",
+    "PublishedDate": "2022",
+    "Publishers": "Orbit",
+    "CoverId": "14648785",
+    "CoverUrl": "",
+    "Genre": [
+      "Fiction, fantasy, collections \u0026 anthologies"
+    ],
+    "ISBN10": "",
+    "ISBN13": "9780316452564",
+    "Source": "openlibrary"
+  },
+  "9780316452663": {
+    "Title": "Blood of Elves",
+    "Subtitle": "",
+    "Series": "",
+    "Authors": [
+      "Andrzej Sapkowski"
+    ],
+    "Description": "",
+    "PublishedDate": "2022",
+    "Publishers": "Orbit",
+    "CoverId": "13245125",
+    "CoverUrl": "https://covers.openlibrary.org/b/id/13245125.jpg",
+    "Genre": [
+      "Fiction, fantasy, epic",
+      "Fiction, fantasy, dragons \u0026 mythical creatures",
+      "Fiction, fantasy, paranormal"
+    ],
+    "ISBN10": "",
+    "ISBN13": "9780316452663",
+    "Source": "openlibrary"
+  },
   "9780465097609": {
     "Title": "The Book of Why",
     "Subtitle": "The New Science of Cause and Effect",
@@ -274,6 +339,32 @@
     ],
     "ISBN10": "0765382032",
     "ISBN13": "9780765382030",
+    "Source": "openlibrary"
+  },
+  "9781591847489": {
+    "Title": "Team of Teams",
+    "Subtitle": "New Rules of Engagement for a Complex World",
+    "Series": "",
+    "Authors": [
+      "Stanley A. McChrystal",
+      "Tantum Collins",
+      "David Silverman",
+      "Chris Fussell"
+    ],
+    "Description": "As commander of Joint Special Operations Command (JSOC), General Stanley McChrystal played a crucial role in the War on Terror. But when he took the helm in 2004, America was losing that war badly: despite vastly inferior resources and technology, Al Qaeda was outmaneuvering America's most elite warriors. McChrystal came to realize that today's faster, more interdependent world had overwhelmed the conventional, top-down hierarchy of the U.S. military. Al Qaeda had seen the future: a decentralized network that could move quickly and strike ruthlessly. To defeat such an enemy, JSOC would have to discard a century of management wisdom, and pivot from a pursuit of mechanical efficiency to organic adaptability. Under McChrystal's leadership, JSOC remade itself, in the midst of a grueling war, into something entirely new: a network that combined robust centralized communication with decentralized managerial authority. As a result, they beat back Al Qaeda. In this book, McChrystal shows not only how the military made that transition, but also how similar shifts are possible in all organizations, from large companies to startups to charities to governments. In a turbulent world, the best organizations think and act like a team of teams, embracing small groups that combine the freedom to experiment with a relentless drive to share what they've learned. Drawing on a wealth of evidence from his military career, the private sector, and sources as diverse as hospital emergency rooms and NASA's space program, McChrystal frames the existential challenge facing today's organizations, and proposes a compelling, effective solution.",
+    "PublishedDate": "2015",
+    "Publishers": "Portfolio/Penguin",
+    "CoverId": "10522497",
+    "CoverUrl": "https://covers.openlibrary.org/b/id/10522497.jpg",
+    "Genre": [
+      "United States",
+      "Reorganization",
+      "Biography",
+      "Organizational behavior",
+      "Teams in the workplace"
+    ],
+    "ISBN10": "1591847486",
+    "ISBN13": "9781591847489",
     "Source": "openlibrary"
   },
   "9781847941497": {

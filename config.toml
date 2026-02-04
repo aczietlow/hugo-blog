@@ -14,7 +14,6 @@ path = 'path'
 category = "categories"
 tag = "tags"
 
-
 [params]
 author = "Chris"
 twitter = "@aczietlow"
