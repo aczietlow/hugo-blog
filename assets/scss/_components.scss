@@ -254,7 +254,7 @@
 
 .button {
   background-color: var(--theme);
-  color: var(--light);
+  color: var(--bg);
   display: inline-flex;
   padding: 0.5rem 1.5rem;
   text-transform: uppercase;
@@ -266,9 +266,9 @@
 
   &:hover,
   &:focus {
-    background-color: var(--theme);
-    color: $light;
-    border: 1px solid var(--theme);
+    background-color: var(--bg-highlight);
+    color: var(--text);
+    border: 1px solid var(--bg-highlight);
   }
 
   &_translucent {
@@ -280,13 +280,10 @@
   &_tally {
     padding: 0 0.75rem;
     border-radius: 0.5rem;
-    background-color: var(--theme);
-    display: inlinvar(--light);
     justify-content: center;
     align-items: center;
-    color: var(--light);
     margin: 0.1rem 0 0.1rem 0.2rem;
-    font-size: 0.7rem;
+    // font-size: 0.7rem;
   }
 }
 
@@ -445,35 +442,6 @@
   overflow-x: auto;
 }
 
-.to-top {
-  position: fixed;
-  bottom: 2rem;
-  right: 1.5rem;
-  height: 2.25rem;
-  width: 2.25rem;
-  background-color: var(--theme);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 50%;
-  color: $light !important;
-  text-decoration: none !important;
-  font-size: 1.25rem;
-  cursor: pointer;
-
-  @media screen and (max-width: 667px) {
-    bottom: 2.25rem;
-  }
-
-  &,
-  &:focus {
-    outline: none;
-  }
-}
-
 .mb-0 {
   margin-bottom: 0 !important;
 }
@@ -494,67 +462,13 @@
     }
 
     &_nav {
-      position: relative;
-    }
-
-    &_hide {
-      position: absolute;
-      top: 1rem;
-      right: 1.5rem;
-      padding: 0.5rem;
-      border-radius: 50%;
-      cursor: pointer;
-
-      @media screen and (min-width: 992px) {
-        display: none;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
       }
-    }
-
-    &_sort {
-      font-size: 1rem;
-      color: var(--light);
-      background: var(--theme);
-      position: absolute;
-      top: 1.5rem;
-      left: 1.5rem;
-      border-radius: 1.5rem;
-      padding: 0.1rem;
-
-      &,
-      span {
-        user-select: none;
-      }
-
-      span {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        height: 2rem;
-        position: relative;
-        z-index: 5;
-        cursor: pointer;
-        width: 5rem;
-        font-weight: 500;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 4.5rem;
-        top: 0.25rem;
-        bottom: 0.25rem;
-        left: 0.25rem;
-        z-index: 3;
-        background: var(--bg);
-        opacity: 0.5;
-        border-radius: 1.5rem;
-        transition: 0.25s transform var(--ease);
-      }
-
-      &.sorted {
-        &::before {
-          transform: translateX(5rem);
-        }
+      .post_tag {
+        margin-left: 0
       }
     }
   }
@@ -708,6 +622,13 @@
     background-color: var(--theme);
     color: $light;
     border-radius: 1rem;
+
+    &:hover,
+    &:focus {
+      background-color: var(--bg-highlight);
+      color: var(--text);
+      border-color: var(--bg-highlight);
+    }
   }
 }
 
@@ -780,6 +701,7 @@
 .to {
   &_top {
     background-color: var(--theme);
+    color: var(--bg);
     width: 2.75rem;
     height: 2.75rem;
     display: flex;
@@ -799,11 +721,13 @@
     }
 
     &:hover {
-      background-color: $theme;
+      background-color: var(--bg-highlight);
+      color: var(--text);
+      border: 1px solid var(--bg-highlight);
     }
 
+    // See variables.scss for fill color of this svg
     svg {
-      fill: $light;
       opacity: 0.5;
       transition: 0.3s opacity var(--ease);
     }
@@ -1117,3 +1041,5 @@
   text-align: center;
   justify-content: center;
 }
+
+
