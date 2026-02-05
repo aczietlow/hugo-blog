@@ -227,10 +227,7 @@ html {
       }
 
       svg.icon {
-        fill: var(--bg);
-          &:hover {
-            fill: var(--light);
-          }
+        fill: var(--light);
       }
 
       .icon {
