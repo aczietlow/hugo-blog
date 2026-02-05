@@ -485,9 +485,6 @@ html[data-mode=dim] .color_choice::after {
     color: var(--text);
   }
   html:not([data-mode=lit]) svg.icon {
-    fill: var(--bg);
-  }
-  html:not([data-mode=lit]) svg.icon:hover {
     fill: var(--light);
   }
   html:not([data-mode=lit]) .icon img {
