@@ -29,6 +29,11 @@
   align-items: center;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 // Shadow utility
 .shadow {
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.17);
