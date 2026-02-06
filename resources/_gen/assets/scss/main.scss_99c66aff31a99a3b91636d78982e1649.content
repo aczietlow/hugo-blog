@@ -1658,7 +1658,7 @@ dl dd {
   .nav_close {
     width: 3rem;
     position: absolute;
-    right: -4rem;
+    right: 0;
     top: 0;
     bottom: 0;
     height: 100%;
@@ -1696,6 +1696,9 @@ dl dd {
     position: relative;
     top: initial;
     padding-top: 0;
+  }
+  body.jsopen {
+    overflow: hidden;
   }
   .jsopen::after {
     content: "";
