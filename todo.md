@@ -10,6 +10,7 @@
   - [x] switch transpiler to "dartsass" in head.html
   - [x] update vulcan to include dartsass
 - [ ] Refactor the config.toml global file to the newer more modulular config
+- [ ] fix to-top button svg fill to match the rest of the buttons 
 
 ## 
 

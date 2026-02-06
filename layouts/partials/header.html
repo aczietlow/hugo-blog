@@ -11,6 +11,7 @@
       {{- else }}
         {{ partial "nav" (dict "context" . "menu" .Site.Menus.main) }}
       {{- end }}
+      {{- partial "logo" (dict "logo" $logo "class" "nav_center") }}
       {{- partialCached "follow" . }}
     </div>
   </nav>
