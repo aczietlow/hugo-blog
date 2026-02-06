@@ -3,7 +3,7 @@
 <header class="nav_header" role="banner">
   <nav class="nav" aria-label="Main navigation">
     {{- partialCached "logo" (dict "logo" $logo) }}
-    <div class='nav_body nav_body_{{ default "left" $params.mobileNavigation }}'>
+    <div id="nav_menu" class="nav_body nav_body_right">
       {{ $context := . }}
       {{ $menuData := .Site.Data.menu }}
       {{ with $menuData }}
@@ -11,8 +11,11 @@
       {{- else }}
         {{ partial "nav" (dict "context" . "menu" .Site.Menus.main) }}
       {{- end }}
-      {{- partial "logo" (dict "logo" $logo "class" "nav_center") }}
       {{- partialCached "follow" . }}
     </div>
+    <button type="button" class="nav_close" aria-label="Open menu" aria-expanded="false" aria-controls="nav_menu">
+      {{ partial "sprite" (dict "icon" "open-menu") }}
+      {{ partial "sprite" (dict "icon" "closeme") }}
+    </button>
   </nav>
 </header>
