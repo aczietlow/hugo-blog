@@ -1,17 +1,65 @@
 {{ define "main" }}
 {{ $books := site.Data.books }}
 
+{{ $currentReading := slice }}
+{{ $toReadList := slice }}
+{{ $yearPages := slice }}
+{{ $yearSet := slice }}
+
+{{ range .Pages }}
+  {{ if and .Params.startDate (not .Params.endDate) }}
+    {{ $currentReading = $currentReading | append . }}
+  {{ else if and (not .Params.startDate) (not .Params.endDate) }}
+    {{ $toReadList = $toReadList | append . }}
+  {{ else if .Params.endDate }}
+    {{ $y := (time .Params.endDate).Year }}
+    {{ $yearPages = $yearPages | append (dict "Year" $y "Page" .) }}
+    {{ $yearSet = $yearSet | append $y }}
+  {{ end }}
+{{ end }}
+
+{{ $sortedYears := $yearSet | sort | uniq }}
+
 <div class="content">
-    <article>
-      <h1>{{ .Title }}</h1>
+  <article>
+    <h1>{{ .Title }}</h1>
+
+    {{ with $currentReading }}
+    <section class="book-list-section" aria-label="Currently reading">
+      <h2>Currently reading</h2>
       <div class="responsive-grid">
-        {{ range .Pages -}}
-          {{ partial "book-excert.html" (dict 
-            "page" .
-            "books" $books
-          )}}
-        {{- end}}
+        {{ range . }}
+          {{ partial "book-excert.html" (dict "page" . "books" $books) }}
+        {{ end }}
       </div>
-    </article>
+    </section>
+    {{ end }}
+
+    {{ $n := len $sortedYears }}
+    {{ if gt $n 0 }}
+    {{ range $i := seq (sub $n 1) 0 }}
+    {{ $y := index $sortedYears $i }}
+    <section class="book-list-section" aria-label="Books read in {{ $y }}">
+      <h2>{{ $y }}</h2>
+      <div class="responsive-grid">
+        {{ range where $yearPages "Year" $y }}
+          {{ partial "book-excert.html" (dict "page" .Page "books" $books) }}
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+    {{ end }}
+
+    {{ with $toReadList }}
+    <section class="book-list-section" aria-label="To read">
+      <h2>To read</h2>
+      <div class="responsive-grid">
+        {{ range . }}
+          {{ partial "book-excert.html" (dict "page" . "books" $books) }}
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  </article>
 </div>
 {{ end }}
