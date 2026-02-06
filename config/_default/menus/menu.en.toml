@@ -13,10 +13,10 @@ weight = -108
   url = "projects/"
   weight = -105
 
-[[main]]
-  name = "Library"
-  url = "library/"
-  weight = -101
+# [[main]]
+#   name = "Library"
+#   url = "library/"
+#   weight = -101
  
 [[main]]
   name = "Books"
@@ -26,7 +26,7 @@ weight = -108
 [[main]]
   name = "About"
   url = "about/"
-  weight = -100
+  weight = -99
 
 # social menu links
 
