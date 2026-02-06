@@ -3,7 +3,7 @@
 <header class="nav_header" role="banner">
   <nav class="nav" aria-label="Main navigation">
     {{- partialCached "logo" (dict "logo" $logo) }}
-    <div id="nav_menu" class="nav_body nav_body_right">
+    <div id="nav_menu" class="nav_body nav_body_left">
       {{ $context := . }}
       {{ $menuData := .Site.Data.menu }}
       {{ with $menuData }}

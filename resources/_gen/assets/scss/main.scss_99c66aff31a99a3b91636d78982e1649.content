@@ -1638,13 +1638,17 @@ dl dd {
   .nav, .nav_body {
     flex-direction: column;
   }
+  .nav_list, .nav_body_list {
+    flex-direction: column;
+    align-items: normal;
+  }
   .nav_body {
     position: fixed;
     width: 90%;
     max-width: 16.5rem;
     top: 0;
     bottom: 0;
-    background-color: #e1e2e7;
+    background-color: var(--bg);
     transition: transform 0.3s var(--easing);
   }
   .nav_body_right {
@@ -1667,6 +1671,8 @@ dl dd {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    background-color: var(--bg);
   }
   .nav_close svg {
     width: 1.25rem;
