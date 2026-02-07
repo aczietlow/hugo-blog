@@ -11,8 +11,9 @@
   - [x] update vulcan to include dartsass
 - [ ] Refactor the config.toml global file to the newer more modulular config
 - [ ] fix to-top button svg fill to match the rest of the buttons 
+- [ ] fix to-top button svg fill to match the rest of the buttons 
 
-## 
+## Indie Web stuffs
 
 - [x] implement h-card
 - [x] Implement h-entry
@@ -54,7 +55,7 @@
 - [x] Refactor theme to separate site structure markup from theming logic
   - Have ability to switch themes at some point in the future
 - [ ] switch to a more open analytics and tracking tool
-- [ ] Replace "zietlow.io" in main menu with home icon
+- [x] Replace "zietlow.io" in main menu with home icon
 - [ ] Add little user icon before author in post-meta-data
 - [ ] Add little tag like icon before categories in post- single template
 - [ ] Homepage should be feed of all content
@@ -66,10 +67,11 @@
 - [ ] Add credit and attribution to Jamie and changelog for really energizing me on this
 - [ ] Update the /project type to contain more info to their project page. Or should the links just go directly to the github page instead?
 - [ ] Add section of books "to read" in library section
-- [ ] fix go theming on fedora. currently not rendering scss
+- [x] fix go theming on fedora. currently not rendering scss
 
 ## Even later backlog
 - [ ] https://indiepass.app/
 - [ ] Finish uses page
 - [ ] Add my site to [uses.tech](https://github.com/wesbos/awesome-uses/)
 - [ ] Stats page like [lanre](https://lanre.wtf/stats)
+- [ ] find better option for images, they probably shouldn't live in git forever
