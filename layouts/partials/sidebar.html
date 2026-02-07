@@ -86,7 +86,7 @@
             </ul>
             {{ if gt (len $value.ByCount) $tagsLimit }}
               <br>
-              <div class="post_tags_toggle button">{{ (printf "all %s" (lower $key)) }}</div>
+              <a href='{{ absLangURL $key }}' class="button mt-1" role="button" title="{{- printf "all %s" (lower $key) -}}">{{- printf "all %s" (lower $key) -}}</a>
             {{- end }}
           </nav>
         </section>
