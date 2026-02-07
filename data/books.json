@@ -87,6 +87,29 @@
     "ISBN13": "9780316452663",
     "Source": "openlibrary"
   },
+  "9780316452762": {
+    "Title": "Time of Contempt",
+    "Subtitle": "",
+    "Series": "The Witcher, part 2",
+    "Authors": [
+      "Andrzej Sapkowski"
+    ],
+    "Description": "Świat Ciri i wiedźmina ogarniają płomienie. Nastał zapowiadany przez Ithlinne czas miecza i topora - czas pogardy. A w czasach pogardy na powierzchnię wypełzają Szczury, atakujące po szczurzemu, cicho, zdradziecko i okrutnie. To maruderzy z rozbitych armii, zabłąkane dzieciaki, zgwałcone dziewczyny, wieśniacy, których obejścia spalono, a rodziny wymordowano. Wyrzutki, dziwna zbieranina stworzona przez wojnę i na wojennym nieszczęściu żerująca.",
+    "PublishedDate": "August 27th 2013",
+    "Publishers": "Orbit",
+    "CoverId": "8309685",
+    "CoverUrl": "https://covers.openlibrary.org/b/id/8309685.jpg",
+    "Genre": [
+      "Polish Fantasy fiction",
+      "Fiction, fantasy, epic",
+      "Monsters",
+      "Fiction",
+      "Assassins"
+    ],
+    "ISBN10": "",
+    "ISBN13": "9780316452762",
+    "Source": "openlibrary"
+  },
   "9780465097609": {
     "Title": "The Book of Why",
     "Subtitle": "The New Science of Cause and Effect",
@@ -270,7 +293,7 @@
     "Source": "openlibrary"
   },
   "9780765377081": {
-    "Title": "The Dark Forest (The Three-Body Problem Series Book 2)",
+    "Title": "The Dark Forest",
     "Subtitle": "",
     "Series": "Remembrance of Earth's Past #2",
     "Authors": [
@@ -293,7 +316,7 @@
     "Source": "openlibrary"
   },
   "9780765377104": {
-    "Title": "Death's End (The Three-Body Problem Series Book 3)",
+    "Title": "Death's End",
     "Subtitle": "",
     "Series": "Three-body trilogy -- Book III",
     "Authors": [
@@ -316,7 +339,7 @@
     "Source": "openlibrary"
   },
   "9780765382030": {
-    "Title": "三体",
+    "Title": "The Three-Body Problem",
     "Subtitle": "",
     "Series": "Remembrance of Earth's Past, Book 1",
     "Authors": [
@@ -339,6 +362,23 @@
     ],
     "ISBN10": "0765382032",
     "ISBN13": "9780765382030",
+    "Source": "openlibrary"
+  },
+  "9781098151331": {
+    "Title": "Learning Systems Thinking",
+    "Subtitle": "Essential Nonlinear Skills and Practices for Software Professionals",
+    "Series": "",
+    "Authors": [
+      "Diana Montalion"
+    ],
+    "Description": "",
+    "PublishedDate": "2024-07-11",
+    "Publishers": "O'Reilly Media, Incorporated",
+    "CoverId": "14858008",
+    "CoverUrl": "https://covers.openlibrary.org/b/id/14858008.jpg",
+    "Genre": null,
+    "ISBN10": "",
+    "ISBN13": "9781098151331",
     "Source": "openlibrary"
   },
   "9781591847489": {
