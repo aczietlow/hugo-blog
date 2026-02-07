@@ -3,9 +3,12 @@
   <div>
     <h1>{{ .Title }}</h1>
     <ul class="posts">
-      {{- range .Pages }}
+      {{- range .Data.Terms.ByCount }}
         <li>
-          <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+          <a class="post" href="{{ .Page.RelPermalink }}" title="{{ .Page.LinkTitle }}">
+            <span class="post_title">{{ .Page.LinkTitle }}</span>
+            <span class="post_count">{{ .Count }}</span>
+          </a>
         </li>
       {{- end }}
     </ul>

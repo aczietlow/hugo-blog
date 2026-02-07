@@ -12,6 +12,8 @@
 - [ ] Refactor the config.toml global file to the newer more modulular config
 - [ ] fix to-top button svg fill to match the rest of the buttons 
 - [ ] fix to-top button svg fill to match the rest of the buttons 
+- [ ] make pages for all categories and all tags
+- [ ] update the list view for tags
 
 ## Indie Web stuffs
 
