@@ -4,7 +4,7 @@ date: 2025-09-04T17:51:48-05:00 # Date of post creation.
 description: "Working notes on systems thinking " # Description used for search engine.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
 categories:
-  - Blogumentation
+  - blogumentation
 tags:
   - systems thinking
   - blogumentation
