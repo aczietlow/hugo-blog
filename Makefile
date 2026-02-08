@@ -3,7 +3,7 @@ GIT_USER = aczietlow
 GIT_EMAIL = aczietlow@gmail.com
 
 # This is the branch that should be considered production. (PLEASE DON'T TOUCH THIS)
-GIT_PUBLISH_BRANCH = master
+GIT_PUBLISH_BRANCH = main
 
 # This is the repository and branch to which the generated files will be pushed.
 GIT_LIVE_URL = https://github.com/aczietlow/hugo-blog.git

@@ -1,7 +1,7 @@
 ## Theme refactor
 
 - [x] fix build errors from broken templates
-- [T] rewrite sass to scss
+- [x] rewrite sass to scss
 - [x] fix issue with highlighter and code fences
   - turns out it was just a zen browser thing all along
 - [x] style single blog post first
@@ -9,11 +9,9 @@
 - [x] get libsass installed locally
   - [x] switch transpiler to "dartsass" in head.html
   - [x] update vulcan to include dartsass
-- [ ] Refactor the config.toml global file to the newer more modulular config
-- [ ] fix to-top button svg fill to match the rest of the buttons 
-- [ ] fix to-top button svg fill to match the rest of the buttons 
-- [ ] make pages for all categories and all tags
-- [ ] update the list view for tags
+- [x] Refactor the config.toml global file to the newer more modulular config
+- [x] make pages for all categories and all tags
+- [x] update the list view for tags
 
 ## Indie Web stuffs
 
@@ -70,6 +68,8 @@
 - [ ] Update the /project type to contain more info to their project page. Or should the links just go directly to the github page instead?
 - [ ] Add section of books "to read" in library section
 - [x] fix go theming on fedora. currently not rendering scss
+- [ ] fix to-top button svg fill to match the rest of the buttons 
+- [ ] fix to-top button svg fill to match the rest of the buttons 
 
 ## Even later backlog
 - [ ] https://indiepass.app/

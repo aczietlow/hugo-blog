@@ -7,7 +7,7 @@
         <li>
           <a class="post" href="{{ .Page.RelPermalink }}" title="{{ .Page.LinkTitle }}">
             <span class="post_title">{{ .Page.LinkTitle }}</span>
-            <span class="post_count">{{ .Count }}</span>
+            <span class="post_count">({{ .Count }})</span>
           </a>
         </li>
       {{- end }}
