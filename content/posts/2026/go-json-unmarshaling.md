@@ -10,7 +10,8 @@ tags:
   - api
 ---
  
-## Working with Json
+## TL;DR
+
 
 ## Problem
 
@@ -48,6 +49,54 @@ return b
 }
 ```
 
-Our unmarshaller throws an error when it encounters this.
+The unmarshaller throws an error when it encounters an unexpected json value that doesn't map to a go type. Looking more closely at the encoding/json [documentation](https://pkg.go.dev/encoding/json/v2#Unmarshal)
 
-...
+> The input is decoded into the output according the following rules:
+>  - If any type-specific functions in a WithUnmarshalers option match the value type, then those functions are called to decode the JSON value. If all applicable functions return SkipFunc, then the input is decoded according to subsequent rules.
+> 
+>  - If the value type implements UnmarshalerFrom, then the UnmarshalJSONFrom method is called to decode the JSON value.
+>
+>  - If the value type implements Unmarshaler, then the UnmarshalJSON method is called to decode the JSON value.
+>
+>  - If the value type implements encoding.TextUnmarshaler, then the input is decoded as a JSON string and the UnmarshalText method is called with the decoded string value. This fails with a SemanticError if the input is not a JSON string. 
+
+That third bullet point looks promising. The `book` field Description is currently string type. Let's create a new type, create an unmarshaler, and add checks for both types of JSON.
+
+```go
+type book struct {
+    Title       string `json:"title"`
+    Description descriptionField `json:"description"`
+}
+
+type description struct {
+      Type  string `json:"type"`
+      Value string `json:"value"`
+}
+
+type descriptionField struct {
+      Description *description
+      Value       string
+}
+
+func (d *descriptionField) UnmarshalJSON(data []byte) error {
+	var value string
+	if err := json.Unmarshal(data, &value); err == nil {
+		d.Value = value
+		d.Description = nil
+		return nil
+	}
+	var desc description
+	if err := json.Unmarshal(data, &desc); err == nil {
+		d.Value = desc.Value
+		d.Description = &desc
+		return nil
+	}
+	return fmt.Errorf("description field must be either type string or {type: string, value: string}, got %s", string(data))
+}
+
+var b book
+json.Unmarshal(jsonData, &b)
+return b
+```
+
+Now when the Unmarshaler tries to decode description, the UnmarshalJSON method will get called. This ensures that `book.Description.Value` will always have a value no matter which of the two types is returned.
