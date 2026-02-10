@@ -12,6 +12,7 @@ tags:
  
 ## TL;DR
 
+When working with an api that returned json with inconsistant types, json.Unmarshal would fail because it was mapped to a matching go type via tags in the struct. The solution was to create a new type to support any permutation of data the api might return, and have that type implement `Unmarshaler` or `UnmarshalerFrom` interfaces to add the logic to decode this correctly.
 
 ## Problem
 
@@ -19,8 +20,8 @@ When working writing an api client, I was relying on go's standard library `enco
 
 ```json
 {
-  title: "The Fellowship of the Ring",
-  description: "One Ring to rule them all."
+  "title": "The Fellowship of the Ring",
+  "description": "One Ring to rule them all."
 }
 ```
 
@@ -41,10 +42,10 @@ return b
 
 ```json
 {
-  title: "The Fellowship of the Ring",
-  description: {
-    type: "string",
-    value: "One Ring to rule them all."
+  "title": "The Fellowship of the Ring",
+  "description": {
+    "type": "string",
+    "value": "One Ring to rule them all."
   }
 }
 ```
@@ -93,10 +94,13 @@ func (d *descriptionField) UnmarshalJSON(data []byte) error {
 	}
 	return fmt.Errorf("description field must be either type string or {type: string, value: string}, got %s", string(data))
 }
-
-var b book
-json.Unmarshal(jsonData, &b)
-return b
+func parseJson(jsonData []byte) book {
+  var b book
+  json.Unmarshal(jsonData, &b) // completely ignoring errors
+  return b
+}
 ```
 
-Now when the Unmarshaler tries to decode description, the UnmarshalJSON method will get called. This ensures that `book.Description.Value` will always have a value no matter which of the two types is returned.
+[go playground](https://go.dev/play/p/40jO8VMs3yQ)
+
+Now when the Unmarshaler attemps to decode description, the UnmarshalJSON method will get called. This ensures that `book.Description.Value` will always have a value no matter which of the two types is returned. In the future we could implement `UnmarshalerFrom` instead as it's more flexible and more performant since it deals with the decoder and allows for streaming of data via `*jsontext.Decoder`.
