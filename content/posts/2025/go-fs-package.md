@@ -1,26 +1,20 @@
 ---
-title: "Go Fs Package" # Title of the blog post.
+title: "Go FS Package" # Title of the blog post.
 date: 2025-12-29T09:33:43-05:00 # Date of post creation.
 description: "WTF is Go's FS package" # Description used for search engine.
 draft: true
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
-# menu: main
-# featureImage: "/images/path/file.jpg" # Sets featured image on blog post.
-# thumbnail: "/images/path/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
-# thumbnail_byline: "Byline under thumbnail image" # Sets a byline under the thumbnail image
-# shareImage: "/images/path/share.png" # Designate a separate image for social media sharing.
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
-# figurePositionShow: true # Override global value for showing the figure label.
 tags:
   - blogumentation
   - go
 # comment: false # Disable comment if false.
 ---
 
-In 1.16 Go added the [`io/fs`](https://go.dev/doc/go1.16#fs) package. It was added as a filesystem abraction to between code and the filesystem. What is the "filesystem"? It can be provided by the host operating system, but can also be provided by other packages such as zip archives, in memory, or templates. It separates the logic in such a way that consumer code can specify "I want to read `config.json`" without specifying explicitly where that is located. Why would we ever want to do this? It allows code to be decoupled from the operating system backend, allowing better interoptability as well as testing.
+In 1.16 Go added the [`io/fs`](https://go.dev/doc/go1.16#fs) package. It is a filesystem absraction that sits between code and the underlying filesystem allowing us to write code that is loosely coupled. And what is the "filesystem"? It can be provided by the host operating system, but can also be provided by other packages such as zip archives, in memory, or templates. It separates the logic in such a way that consumer code can specify "I want to read `config.json`" without specifying explicitly where that is located. Why would we ever want to do this? It allows code to be decoupled from the operating system backend, allowing better interoperability as well as testing.
 
-Let's examine a traditional example where we load `config.json` file
+Lets examine a traditional example where we load `config.json` file
 
 ```go
 type Config struct {
@@ -51,7 +45,7 @@ func LoadConfig(filepath string) (*Config, error) {
 
 ```
 
-We could test with the following
+We could test with the following:
 
 ```go 
 func TestLoadConfigValidFile(t *testing.T) {
@@ -82,7 +76,7 @@ func TestLoadConfigValidFile(t *testing.T) {
 }
 ```
 
-This is perfectly fine, and works as intended. Some of the tradeoffs of this approach are that `LoadConfig(path string) (*Config,error)` is loading some bytes specifically from the OS filesystem. By coupling with the filesystem, we're also testing the file system, file bytes, path issues, etc. What would this look like if we wanted to provide the config from another source, such as a zip archive? In this case assume that a stream-like zip access (maybe the zip is in the filesystem, maybe it was fetched via http or any number of other methods)
+This is perfectly fine, and works as intended. Some of the trade-offs of this approach are that `LoadConfig(path string) (*Config,error)` is loading some bytes specifically from the OS filesystem. By coupling with the filesystem, we're also testing the filesystem, file bytes, path issues, etc. What would this look like if we wanted to provide the config from another source, such as a zip archive? In this case assume a stream-like zip access. (maybe the zip is in the filesystem, maybe it was fetched via http or any number of other methods)
 
 ```go
 func main() {
@@ -202,7 +196,7 @@ zipReader, _ := zip.NewReader(bytes.NewReader(zipBytes), int64(len(zipBytes)))
 conf, _ := LoadConfig(zipReader, "config.json")
 ```
 
-Now let's look at testing. Go provides `MapFS` an in memory filesystem. Because fs isn't tied to the operating filesystem we can rely an in memory filesystem for testing.
+Now let's look at testing. Go provides `fstest.MapFS` an in memory filesystem. Because `io/fs` isn't tied to the operating filesystem we can rely an in-memory filesystem for testing.
 
 ```go 
 func TestLoadConfigValidFile(t *testing.T) {
@@ -229,8 +223,8 @@ func TestLoadConfigValidFile(t *testing.T) {
 }
 ```
 
-When to use `io/fs` and when to rely on `io/os`? When reading bytes from a file, fs is likely the best tool, if the logic relies on os specific functions, continue to rely on `io/os`
+When to use `io/fs` and when to rely on `os`? When reading bytes from a file, fs is likely the best tool, if the logic relies on os specific functions, continue to rely on `os`
 
-### Gotcha's
+### Gotchas
 
-symlinks! symlinks are specific operating filesystem functionality. As such they are not abstracted in `io/fs`
+**symlinks!** Symlinks are OS-specific filesystem functionality. As such they are not abstracted in `io/fs`
