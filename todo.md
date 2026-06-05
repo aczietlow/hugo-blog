@@ -1,18 +1,3 @@
-## Theme refactor
-
-- [x] fix build errors from broken templates
-- [x] rewrite sass to scss
-- [x] fix issue with highlighter and code fences
-  - turns out it was just a zen browser thing all along
-- [x] style single blog post first
-- [x] print post tags at bottom of post meta data section
-- [x] get libsass installed locally
-  - [x] switch transpiler to "dartsass" in head.html
-  - [x] update vulcan to include dartsass
-- [x] Refactor the config.toml global file to the newer more modulular config
-- [x] make pages for all categories and all tags
-- [x] update the list view for tags
-
 ## Indie Web stuffs
 
 - [x] implement h-card
@@ -25,18 +10,10 @@
 - [ ] webmentions
 - [ ] bridgy
 - [x] add webring
-
 - [ ] Look at microblog
 - [x] fix date in some posts metadata section in the header. Recent change caused issues
 
 ## Bugs 
-
-- [x] Fix line numbers appearing on code blocks
-
-## Books
-
-- [ ] Setup micropub
-- [ ] https://indiebookclub.biz
 
 ## Backlog
 
@@ -70,6 +47,8 @@
 - [x] fix go theming on fedora. currently not rendering scss
 - [ ] fix to-top button svg fill to match the rest of the buttons 
 - [ ] fix to-top button svg fill to match the rest of the buttons 
+- [ ] Update /books page for when only single book in row
+- [ ] add client side search
 
 ## Even later backlog
 - [ ] https://indiepass.app/
